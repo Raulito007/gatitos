@@ -1,0 +1,116 @@
+﻿2026-02-27T12:56:43.3358490Z ##[debug]Starting: Complete job
+2026-02-27T12:56:43.3361852Z Evaluate and set job outputs
+2026-02-27T12:56:43.3373163Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.code_push_failure_count
+2026-02-27T12:56:43.3374686Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3375578Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3376464Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3378083Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3379162Z ##[debug]......=> Object
+2026-02-27T12:56:43.3380048Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3381014Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3382073Z ##[debug]....=> Object
+2026-02-27T12:56:43.3382887Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3383777Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3384607Z ##[debug]..=> Object
+2026-02-27T12:56:43.3385401Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3386309Z ##[debug]..=> 'code_push_failure_count'
+2026-02-27T12:56:43.3387527Z ##[debug]=> null
+2026-02-27T12:56:43.3388385Z ##[debug]Result: null
+2026-02-27T12:56:43.3390234Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.code_push_failure_errors
+2026-02-27T12:56:43.3392374Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3393315Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3394207Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3395098Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3396054Z ##[debug]......=> Object
+2026-02-27T12:56:43.3397153Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3398135Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3399129Z ##[debug]....=> Object
+2026-02-27T12:56:43.3399948Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3400841Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3401666Z ##[debug]..=> Object
+2026-02-27T12:56:43.3402462Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3403376Z ##[debug]..=> 'code_push_failure_errors'
+2026-02-27T12:56:43.3404339Z ##[debug]=> null
+2026-02-27T12:56:43.3405099Z ##[debug]Result: null
+2026-02-27T12:56:43.3407398Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.create_discussion_error_count
+2026-02-27T12:56:43.3408954Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3409820Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3410699Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3411600Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3412511Z ##[debug]......=> Object
+2026-02-27T12:56:43.3413366Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3414313Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3415289Z ##[debug]....=> Object
+2026-02-27T12:56:43.3416101Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3417149Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3418001Z ##[debug]..=> Object
+2026-02-27T12:56:43.3418794Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3419734Z ##[debug]..=> 'create_discussion_error_count'
+2026-02-27T12:56:43.3420753Z ##[debug]=> null
+2026-02-27T12:56:43.3421515Z ##[debug]Result: null
+2026-02-27T12:56:43.3423160Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.create_discussion_errors
+2026-02-27T12:56:43.3424768Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3425627Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3426500Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3427590Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3428514Z ##[debug]......=> Object
+2026-02-27T12:56:43.3429363Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3430304Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3431279Z ##[debug]....=> Object
+2026-02-27T12:56:43.3432089Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3432965Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3433768Z ##[debug]..=> Object
+2026-02-27T12:56:43.3434546Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3435450Z ##[debug]..=> 'create_discussion_errors'
+2026-02-27T12:56:43.3436410Z ##[debug]=> null
+2026-02-27T12:56:43.3437362Z ##[debug]Result: null
+2026-02-27T12:56:43.3438947Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.processed_count
+2026-02-27T12:56:43.3440646Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3441514Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3442394Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3443295Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3444197Z ##[debug]......=> Object
+2026-02-27T12:56:43.3445042Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3445984Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3447245Z ##[debug]....=> Object
+2026-02-27T12:56:43.3448091Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3448979Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3449805Z ##[debug]..=> Object
+2026-02-27T12:56:43.3450597Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3451499Z ##[debug]..=> 'processed_count'
+2026-02-27T12:56:43.3452371Z ##[debug]=> '0'
+2026-02-27T12:56:43.3453115Z ##[debug]Result: '0'
+2026-02-27T12:56:43.3454692Z ##[debug]Evaluating: steps.process_safe_outputs.outputs.temporary_id_map
+2026-02-27T12:56:43.3456050Z ##[debug]Evaluating Index:
+2026-02-27T12:56:43.3457166Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:43.3458079Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:43.3458981Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:43.3459889Z ##[debug]......=> Object
+2026-02-27T12:56:43.3461584Z ##[debug]......Evaluating String:
+2026-02-27T12:56:43.3467245Z ##[debug]......=> 'process_safe_outputs'
+2026-02-27T12:56:43.3468875Z ##[debug]....=> Object
+2026-02-27T12:56:43.3470273Z ##[debug]....Evaluating String:
+2026-02-27T12:56:43.3473020Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:43.3474027Z ##[debug]..=> Object
+2026-02-27T12:56:43.3475392Z ##[debug]..Evaluating String:
+2026-02-27T12:56:43.3476425Z ##[debug]..=> 'temporary_id_map'
+2026-02-27T12:56:43.3477597Z ##[debug]=> '{}'
+2026-02-27T12:56:43.3478382Z ##[debug]Result: '{}'
+2026-02-27T12:56:43.3479727Z ##[debug]Skip output 'code_push_failure_count' since it's empty
+2026-02-27T12:56:43.3481949Z ##[debug]Skip output 'code_push_failure_errors' since it's empty
+2026-02-27T12:56:43.3483427Z ##[debug]Skip output 'create_discussion_error_count' since it's empty
+2026-02-27T12:56:43.3485167Z ##[debug]Skip output 'create_discussion_errors' since it's empty
+2026-02-27T12:56:43.3486774Z Set output 'process_safe_outputs_processed_count'
+2026-02-27T12:56:43.3491937Z Set output 'process_safe_outputs_temporary_id_map'
+2026-02-27T12:56:43.3496396Z Uploading runner diagnostic logs
+2026-02-27T12:56:43.3545124Z ##[debug]Starting diagnostic file upload.
+2026-02-27T12:56:43.3546308Z ##[debug]Setting up diagnostic log folders.
+2026-02-27T12:56:43.3553636Z ##[debug]Creating diagnostic log files folder.
+2026-02-27T12:56:43.3597237Z ##[debug]Copying 1 worker diagnostic logs.
+2026-02-27T12:56:43.3651141Z ##[debug]Copying 1 runner diagnostic logs.
+2026-02-27T12:56:43.3654864Z ##[debug]Zipping diagnostic files.
+2026-02-27T12:56:43.3837716Z ##[debug]Uploading diagnostic metadata file.
+2026-02-27T12:56:43.3883271Z ##[debug]Diagnostic file upload complete.
+2026-02-27T12:56:43.3885061Z Completed runner diagnostic log upload
+2026-02-27T12:56:43.3886119Z Cleaning up orphan processes
+2026-02-27T12:56:43.3912602Z ##[debug]Finishing: Complete job

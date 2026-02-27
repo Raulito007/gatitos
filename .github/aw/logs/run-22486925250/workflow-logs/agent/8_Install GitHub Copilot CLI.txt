@@ -1,0 +1,35 @@
+﻿2026-02-27T12:55:29.4212933Z ##[debug]Evaluating condition for step: 'Install GitHub Copilot CLI'
+2026-02-27T12:55:29.4214511Z ##[debug]Evaluating: success()
+2026-02-27T12:55:29.4214877Z ##[debug]Evaluating success:
+2026-02-27T12:55:29.4215248Z ##[debug]=> true
+2026-02-27T12:55:29.4215550Z ##[debug]Result: true
+2026-02-27T12:55:29.4216131Z ##[debug]Starting: Install GitHub Copilot CLI
+2026-02-27T12:55:29.4224563Z ##[debug]Loading inputs
+2026-02-27T12:55:29.4225616Z ##[debug]Loading env
+2026-02-27T12:55:29.4229727Z ##[group]Run /opt/gh-aw/actions/install_copilot_cli.sh 0.0.418
+2026-02-27T12:55:29.4230144Z [36;1m/opt/gh-aw/actions/install_copilot_cli.sh 0.0.418[0m
+2026-02-27T12:55:29.4278445Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:55:29.4278668Z env:
+2026-02-27T12:55:29.4278842Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:29.4279061Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:29.4279271Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:29.4279470Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:29.4279728Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:29.4280126Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:29.4280537Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:29.4280965Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:29.4281300Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:29.4281536Z ##[endgroup]
+2026-02-27T12:55:29.4330700Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/b9720fb5-d158-4396-856e-726d2e67371f.sh
+2026-02-27T12:55:29.4372208Z Ensuring correct ownership of /home/runner/.copilot...
+2026-02-27T12:55:29.4498804Z Installing GitHub Copilot CLI version v0.0.418 (os: Linux, arch: x86_64)...
+2026-02-27T12:55:29.4513237Z Downloading checksums from https://github.com/github/copilot-cli/releases/download/v0.0.418/SHA256SUMS.txt...
+2026-02-27T12:55:29.5985448Z Downloading binary from https://github.com/github/copilot-cli/releases/download/v0.0.418/copilot-linux-x64.tar.gz...
+2026-02-27T12:55:29.9191277Z Verifying SHA256 checksum for copilot-linux-x64.tar.gz...
+2026-02-27T12:55:29.9700939Z ✓ Checksum verification passed for copilot-linux-x64.tar.gz
+2026-02-27T12:55:29.9701903Z Installing binary to /usr/local/bin...
+2026-02-27T12:55:30.8630113Z Verifying Copilot CLI installation...
+2026-02-27T12:55:32.1332111Z GitHub Copilot CLI 0.0.418.
+2026-02-27T12:55:32.1332484Z Run 'copilot update' to check for updates.
+2026-02-27T12:55:32.1523920Z ✓ Copilot CLI installation complete
+2026-02-27T12:55:32.1666639Z ##[debug]Finishing: Install GitHub Copilot CLI

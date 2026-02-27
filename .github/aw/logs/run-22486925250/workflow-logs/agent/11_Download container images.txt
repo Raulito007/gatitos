@@ -1,0 +1,44 @@
+﻿2026-02-27T12:55:33.1527469Z ##[debug]Evaluating condition for step: 'Download container images'
+2026-02-27T12:55:33.1529009Z ##[debug]Evaluating: success()
+2026-02-27T12:55:33.1529357Z ##[debug]Evaluating success:
+2026-02-27T12:55:33.1529740Z ##[debug]=> true
+2026-02-27T12:55:33.1530052Z ##[debug]Result: true
+2026-02-27T12:55:33.1530532Z ##[debug]Starting: Download container images
+2026-02-27T12:55:33.1538031Z ##[debug]Loading inputs
+2026-02-27T12:55:33.1538954Z ##[debug]Loading env
+2026-02-27T12:55:33.1543475Z ##[group]Run bash /opt/gh-aw/actions/download_docker_images.sh ghcr.io/github/gh-aw-firewall/agent:0.23.0 ghcr.io/github/gh-aw-firewall/api-proxy:0.23.0 ghcr.io/github/gh-aw-firewall/squid:0.23.0 ghcr.io/github/gh-aw-mcpg:v0.1.5 ghcr.io/github/github-mcp-server:v0.31.0 node:lts-alpine
+2026-02-27T12:55:33.1545398Z [36;1mbash /opt/gh-aw/actions/download_docker_images.sh ghcr.io/github/gh-aw-firewall/agent:0.23.0 ghcr.io/github/gh-aw-firewall/api-proxy:0.23.0 ghcr.io/github/gh-aw-firewall/squid:0.23.0 ghcr.io/github/gh-aw-mcpg:v0.1.5 ghcr.io/github/github-mcp-server:v0.31.0 node:lts-alpine[0m
+2026-02-27T12:55:33.1595371Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:55:33.1595599Z env:
+2026-02-27T12:55:33.1595770Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:33.1595996Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:33.1596212Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:33.1596532Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:33.1596795Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:33.1597148Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:33.1597557Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:33.1598168Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:33.1598502Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:33.1598735Z ##[endgroup]
+2026-02-27T12:55:33.1643761Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/ac353f34-5c17-4c02-91bc-61713e0aaebf.sh
+2026-02-27T12:55:33.1679615Z Starting download of 6 image(s) with max 4 concurrent downloads...
+2026-02-27T12:55:33.1739953Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/agent:0.23.0...
+2026-02-27T12:55:33.1740876Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/api-proxy:0.23.0...
+2026-02-27T12:55:33.1742825Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-firewall/squid:0.23.0...
+2026-02-27T12:55:33.1745290Z Attempt 1 of 3: Pulling ghcr.io/github/gh-aw-mcpg:v0.1.5...
+2026-02-27T12:55:38.6031584Z ghcr.io/github/gh-aw-mcpg:v0.1.5
+2026-02-27T12:55:38.6052052Z Successfully pulled ghcr.io/github/gh-aw-mcpg:v0.1.5
+2026-02-27T12:55:38.6101714Z Attempt 1 of 3: Pulling ghcr.io/github/github-mcp-server:v0.31.0...
+2026-02-27T12:55:39.0807534Z ghcr.io/github/gh-aw-firewall/api-proxy:0.23.0
+2026-02-27T12:55:39.0832528Z Successfully pulled ghcr.io/github/gh-aw-firewall/api-proxy:0.23.0
+2026-02-27T12:55:39.0888085Z Attempt 1 of 3: Pulling node:lts-alpine...
+2026-02-27T12:55:40.2230545Z ghcr.io/github/github-mcp-server:v0.31.0
+2026-02-27T12:55:40.2251641Z Successfully pulled ghcr.io/github/github-mcp-server:v0.31.0
+2026-02-27T12:55:41.2338581Z ghcr.io/github/gh-aw-firewall/squid:0.23.0
+2026-02-27T12:55:41.2359655Z Successfully pulled ghcr.io/github/gh-aw-firewall/squid:0.23.0
+2026-02-27T12:55:42.2026906Z docker.io/library/node:lts-alpine
+2026-02-27T12:55:42.2046396Z Successfully pulled node:lts-alpine
+2026-02-27T12:55:43.6896134Z ghcr.io/github/gh-aw-firewall/agent:0.23.0
+2026-02-27T12:55:43.6911659Z Successfully pulled ghcr.io/github/gh-aw-firewall/agent:0.23.0
+2026-02-27T12:55:43.6916779Z All images downloaded successfully
+2026-02-27T12:55:43.6925646Z ##[debug]Finishing: Download container images

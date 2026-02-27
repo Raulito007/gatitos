@@ -1,0 +1,26 @@
+﻿2026-02-27T12:56:16.7904272Z ##[debug]Evaluating condition for step: 'Clear MCP configuration for detection'
+2026-02-27T12:56:16.7905687Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-02-27T12:56:16.7906251Z ##[debug]Evaluating And:
+2026-02-27T12:56:16.7906858Z ##[debug]..Evaluating always:
+2026-02-27T12:56:16.7907177Z ##[debug]..=> true
+2026-02-27T12:56:16.7907482Z ##[debug]..Evaluating Equal:
+2026-02-27T12:56:16.7907802Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7908116Z ##[debug]......Evaluating Index:
+2026-02-27T12:56:16.7908443Z ##[debug]........Evaluating Index:
+2026-02-27T12:56:16.7908776Z ##[debug]..........Evaluating steps:
+2026-02-27T12:56:16.7909110Z ##[debug]..........=> Object
+2026-02-27T12:56:16.7909436Z ##[debug]..........Evaluating String:
+2026-02-27T12:56:16.7909778Z ##[debug]..........=> 'detection_guard'
+2026-02-27T12:56:16.7910114Z ##[debug]........=> Object
+2026-02-27T12:56:16.7910419Z ##[debug]........Evaluating String:
+2026-02-27T12:56:16.7910748Z ##[debug]........=> 'outputs'
+2026-02-27T12:56:16.7911081Z ##[debug]......=> Object
+2026-02-27T12:56:16.7911390Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7911710Z ##[debug]......=> 'run_detection'
+2026-02-27T12:56:16.7912018Z ##[debug]....=> 'false'
+2026-02-27T12:56:16.7912308Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7912605Z ##[debug]....=> 'true'
+2026-02-27T12:56:16.7912874Z ##[debug]..=> false
+2026-02-27T12:56:16.7913140Z ##[debug]=> false
+2026-02-27T12:56:16.7913571Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-02-27T12:56:16.7913961Z ##[debug]Result: false

@@ -1,0 +1,58 @@
+﻿2026-02-27T12:56:15.8569328Z ##[debug]Evaluating condition for step: 'Parse agent logs for step summary'
+2026-02-27T12:56:15.8570230Z ##[debug]Evaluating: always()
+2026-02-27T12:56:15.8570551Z ##[debug]Evaluating always:
+2026-02-27T12:56:15.8570845Z ##[debug]=> true
+2026-02-27T12:56:15.8571155Z ##[debug]Result: true
+2026-02-27T12:56:15.8571588Z ##[debug]Starting: Parse agent logs for step summary
+2026-02-27T12:56:15.8594410Z ##[debug]Loading inputs
+2026-02-27T12:56:15.8595532Z ##[debug]Evaluating: github.token
+2026-02-27T12:56:15.8595805Z ##[debug]Evaluating Index:
+2026-02-27T12:56:15.8596038Z ##[debug]..Evaluating github:
+2026-02-27T12:56:15.8596276Z ##[debug]..=> Object
+2026-02-27T12:56:15.8596761Z ##[debug]..Evaluating String:
+2026-02-27T12:56:15.8597023Z ##[debug]..=> 'token'
+2026-02-27T12:56:15.8597405Z ##[debug]=> '***'
+2026-02-27T12:56:15.8597751Z ##[debug]Result: '***'
+2026-02-27T12:56:15.8598951Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:15.8599242Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:15.8599472Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:15.8599727Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:15.8599965Z ##[debug]....=> Object
+2026-02-27T12:56:15.8600216Z ##[debug]....Evaluating String:
+2026-02-27T12:56:15.8600442Z ##[debug]....=> 'debug'
+2026-02-27T12:56:15.8600656Z ##[debug]..=> '1'
+2026-02-27T12:56:15.8600857Z ##[debug]..Evaluating String:
+2026-02-27T12:56:15.8601083Z ##[debug]..=> '1'
+2026-02-27T12:56:15.8601271Z ##[debug]=> true
+2026-02-27T12:56:15.8601477Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:15.8601870Z ##[debug]Result: true
+2026-02-27T12:56:15.8605440Z ##[debug]Loading env
+2026-02-27T12:56:15.8609307Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:15.8609700Z with:
+2026-02-27T12:56:15.8610472Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/parse_copilot_log.cjs');
+await main();
+
+2026-02-27T12:56:15.8611425Z   github-token: ***
+2026-02-27T12:56:15.8611624Z   debug: true
+2026-02-27T12:56:15.8611819Z   user-agent: actions/github-script
+2026-02-27T12:56:15.8612079Z   result-encoding: json
+2026-02-27T12:56:15.8612281Z   retries: 0
+2026-02-27T12:56:15.8612493Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:15.8612774Z env:
+2026-02-27T12:56:15.8612946Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:15.8613162Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:15.8613389Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:15.8613595Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:15.8613862Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:15.8614221Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:15.8614623Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:15.8615051Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:15.8615395Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:15.8615676Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/sandbox/agent/logs/
+2026-02-27T12:56:15.8615963Z ##[endgroup]
+2026-02-27T12:56:15.9359370Z Copilot log parsed successfully
+2026-02-27T12:56:15.9440236Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:15.9449213Z ##[debug]Set output result = 
+2026-02-27T12:56:15.9449759Z ##[debug]Finishing: Parse agent logs for step summary

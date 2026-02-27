@@ -1,0 +1,67 @@
+﻿2026-02-27T12:56:57.0507227Z ##[debug]Evaluating: env.GH_AW_AGENT_OUTPUT
+2026-02-27T12:56:57.0507937Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.0508425Z ##[debug]..Evaluating env:
+2026-02-27T12:56:57.0508933Z ##[debug]..=> Object
+2026-02-27T12:56:57.0509394Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.0509898Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:57.0511000Z ##[debug]=> '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.0511797Z ##[debug]Result: '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.0512857Z ##[debug]Evaluating condition for step: 'Record Missing Tool'
+2026-02-27T12:56:57.0514808Z ##[debug]Evaluating: success()
+2026-02-27T12:56:57.0515485Z ##[debug]Evaluating success:
+2026-02-27T12:56:57.0516148Z ##[debug]=> true
+2026-02-27T12:56:57.0516778Z ##[debug]Result: true
+2026-02-27T12:56:57.0517966Z ##[debug]Starting: Record Missing Tool
+2026-02-27T12:56:57.0605490Z ##[debug]Loading inputs
+2026-02-27T12:56:57.0607925Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:56:57.0608758Z ##[debug]Evaluating Or:
+2026-02-27T12:56:57.0609234Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.0609718Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:57.0610248Z ##[debug]....=> Object
+2026-02-27T12:56:57.0611084Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.0611624Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:56:57.0612171Z ##[debug]..=> null
+2026-02-27T12:56:57.0612602Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.0613098Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:57.0613586Z ##[debug]....=> Object
+2026-02-27T12:56:57.0614026Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.0614528Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:56:57.0615270Z ##[debug]..=> '***'
+2026-02-27T12:56:57.0615873Z ##[debug]=> '***'
+2026-02-27T12:56:57.0616549Z ##[debug]Expanded: (null || '***')
+2026-02-27T12:56:57.0617241Z ##[debug]Result: '***'
+2026-02-27T12:56:57.0618874Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:57.0619474Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:57.0619961Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.0620446Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:57.0621317Z ##[debug]....=> Object
+2026-02-27T12:56:57.0621780Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.0622267Z ##[debug]....=> 'debug'
+2026-02-27T12:56:57.0623902Z ##[debug]..=> '1'
+2026-02-27T12:56:57.0624407Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.0624885Z ##[debug]..=> '1'
+2026-02-27T12:56:57.0625283Z ##[debug]=> true
+2026-02-27T12:56:57.0625722Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:57.0626186Z ##[debug]Result: true
+2026-02-27T12:56:57.0636076Z ##[debug]Loading env
+2026-02-27T12:56:57.0643134Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:57.0643851Z with:
+2026-02-27T12:56:57.0644416Z   github-token: ***
+2026-02-27T12:56:57.0647558Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/missing_tool.cjs');
+await main();
+
+2026-02-27T12:56:57.0649234Z   debug: true
+2026-02-27T12:56:57.0649645Z   user-agent: actions/github-script
+2026-02-27T12:56:57.0650159Z   result-encoding: json
+2026-02-27T12:56:57.0650574Z   retries: 0
+2026-02-27T12:56:57.0651268Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:57.0651819Z env:
+2026-02-27T12:56:57.0652313Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:57.0653117Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:57.0653773Z ##[endgroup]
+2026-02-27T12:56:57.1495570Z Max count: unlimited
+2026-02-27T12:56:57.1563184Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:57.1566389Z ##[debug]Set output result = 
+2026-02-27T12:56:57.1567240Z ##[debug]Finishing: Record Missing Tool

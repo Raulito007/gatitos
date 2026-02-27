@@ -1,0 +1,63 @@
+﻿2026-02-27T12:56:16.8238616Z ##[debug]Evaluating condition for step: 'Post Checkout repository'
+2026-02-27T12:56:16.8239674Z ##[debug]Evaluating: always()
+2026-02-27T12:56:16.8240076Z ##[debug]Evaluating always:
+2026-02-27T12:56:16.8240424Z ##[debug]=> true
+2026-02-27T12:56:16.8240784Z ##[debug]Result: true
+2026-02-27T12:56:16.8241252Z ##[debug]Starting: Post Checkout repository
+2026-02-27T12:56:16.8271386Z ##[debug]Loading inputs
+2026-02-27T12:56:16.8272526Z ##[debug]Evaluating: github.repository
+2026-02-27T12:56:16.8272836Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.8273074Z ##[debug]..Evaluating github:
+2026-02-27T12:56:16.8273313Z ##[debug]..=> Object
+2026-02-27T12:56:16.8273528Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.8273772Z ##[debug]..=> 'repository'
+2026-02-27T12:56:16.8274016Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:56:16.8274274Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:56:16.8275703Z ##[debug]Evaluating: github.token
+2026-02-27T12:56:16.8275979Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.8276244Z ##[debug]..Evaluating github:
+2026-02-27T12:56:16.8276798Z ##[debug]..=> Object
+2026-02-27T12:56:16.8277030Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.8277266Z ##[debug]..=> 'token'
+2026-02-27T12:56:16.8277593Z ##[debug]=> '***'
+2026-02-27T12:56:16.8277902Z ##[debug]Result: '***'
+2026-02-27T12:56:16.8286703Z ##[debug]Loading env
+2026-02-27T12:56:16.8290345Z Post job cleanup.
+2026-02-27T12:56:16.9053402Z ##[debug]Getting git version
+2026-02-27T12:56:16.9067324Z [command]/usr/bin/git version
+2026-02-27T12:56:16.9104178Z git version 2.53.0
+2026-02-27T12:56:16.9122262Z ##[debug]0
+2026-02-27T12:56:16.9122921Z ##[debug]git version 2.53.0
+2026-02-27T12:56:16.9123310Z ##[debug]
+2026-02-27T12:56:16.9127789Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout) actions_orchestration_id/5113e6a8-5011-493b-9b3a-183d2ce6fd94.agent.__default
+2026-02-27T12:56:16.9129345Z ::add-mask::***
+2026-02-27T12:56:16.9139181Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/19678232-0ec5-49b5-b0be-11d56746b990/.gitconfig'
+2026-02-27T12:56:16.9149537Z Temporarily overriding HOME='/home/runner/work/_temp/19678232-0ec5-49b5-b0be-11d56746b990' before making global git config changes
+2026-02-27T12:56:16.9152886Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-27T12:56:16.9158649Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gatitos/gatitos
+2026-02-27T12:56:16.9188425Z ##[debug]0
+2026-02-27T12:56:16.9189039Z ##[debug]
+2026-02-27T12:56:16.9190099Z Removing SSH command configuration
+2026-02-27T12:56:16.9196784Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-27T12:56:16.9224656Z ##[debug]1
+2026-02-27T12:56:16.9225474Z ##[debug]
+2026-02-27T12:56:16.9231419Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-27T12:56:16.9468653Z ##[debug]0
+2026-02-27T12:56:16.9469047Z ##[debug]
+2026-02-27T12:56:16.9470684Z Removing HTTP extra header
+2026-02-27T12:56:16.9475412Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-27T12:56:16.9503447Z ##[debug]1
+2026-02-27T12:56:16.9504035Z ##[debug]
+2026-02-27T12:56:16.9509441Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-27T12:56:16.9739815Z ##[debug]0
+2026-02-27T12:56:16.9740455Z ##[debug]
+2026-02-27T12:56:16.9740995Z Removing includeIf entries pointing to credentials config files
+2026-02-27T12:56:16.9746811Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-27T12:56:16.9774502Z ##[debug]1
+2026-02-27T12:56:16.9775126Z ##[debug]
+2026-02-27T12:56:16.9781410Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-27T12:56:17.0033956Z ##[debug]0
+2026-02-27T12:56:17.0034721Z ##[debug]
+2026-02-27T12:56:17.0035843Z ##[debug]Unsetting HOME override
+2026-02-27T12:56:17.0127050Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:17.0130522Z ##[debug]Finishing: Post Checkout repository

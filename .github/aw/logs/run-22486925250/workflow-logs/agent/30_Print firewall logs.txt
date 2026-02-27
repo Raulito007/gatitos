@@ -1,0 +1,44 @@
+﻿2026-02-27T12:56:16.1680690Z ##[debug]Evaluating condition for step: 'Print firewall logs'
+2026-02-27T12:56:16.1681531Z ##[debug]Evaluating: always()
+2026-02-27T12:56:16.1681720Z ##[debug]Evaluating always:
+2026-02-27T12:56:16.1681878Z ##[debug]=> true
+2026-02-27T12:56:16.1682084Z ##[debug]Result: true
+2026-02-27T12:56:16.1682396Z ##[debug]Starting: Print firewall logs
+2026-02-27T12:56:16.1689155Z ##[debug]Loading inputs
+2026-02-27T12:56:16.1689801Z ##[debug]Loading env
+2026-02-27T12:56:16.1693394Z ##[group]Run # Fix permissions on firewall logs so they can be uploaded as artifacts
+2026-02-27T12:56:16.1693636Z [36;1m# Fix permissions on firewall logs so they can be uploaded as artifacts[0m
+2026-02-27T12:56:16.1693770Z [36;1m# AWF runs with sudo, creating files owned by root[0m
+2026-02-27T12:56:16.1693973Z [36;1msudo chmod -R a+r /tmp/gh-aw/sandbox/firewall/logs 2>/dev/null || true[0m
+2026-02-27T12:56:16.1694308Z [36;1m# Only run awf logs summary if awf command exists (it may not be installed if workflow failed before install step)[0m
+2026-02-27T12:56:16.1694446Z [36;1mif command -v awf &> /dev/null; then[0m
+2026-02-27T12:56:16.1694583Z [36;1m  awf logs summary | tee -a "$GITHUB_STEP_SUMMARY"[0m
+2026-02-27T12:56:16.1694653Z [36;1melse[0m
+2026-02-27T12:56:16.1694838Z [36;1m  echo 'AWF binary not installed, skipping firewall log summary'[0m
+2026-02-27T12:56:16.1694906Z [36;1mfi[0m
+2026-02-27T12:56:16.1743228Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:56:16.1743310Z env:
+2026-02-27T12:56:16.1743395Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:16.1743479Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:16.1743558Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:16.1743635Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:16.1743771Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:16.1743922Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:16.1744110Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:16.1744269Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:16.1744374Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:16.1744483Z   AWF_LOGS_DIR: /tmp/gh-aw/sandbox/firewall/logs
+2026-02-27T12:56:16.1744558Z ##[endgroup]
+2026-02-27T12:56:16.1792123Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/25aad4fa-64e5-4e6d-a6ca-1063bb6bfad4.sh
+2026-02-27T12:56:16.3028691Z <details>
+2026-02-27T12:56:16.3029023Z <summary>Firewall Activity</summary>
+2026-02-27T12:56:16.3029261Z 
+2026-02-27T12:56:16.3029657Z ▼ 2 requests | 2 allowed | 0 blocked | 1 unique domain
+2026-02-27T12:56:16.3029935Z 
+2026-02-27T12:56:16.3030040Z | Domain | Allowed | Denied |
+2026-02-27T12:56:16.3030323Z |--------|---------|--------|
+2026-02-27T12:56:16.3030604Z | api.githubcopilot.com | 2 | 0 |
+2026-02-27T12:56:16.3030805Z 
+2026-02-27T12:56:16.3030886Z </details>
+2026-02-27T12:56:16.3031006Z 
+2026-02-27T12:56:16.3094610Z ##[debug]Finishing: Print firewall logs

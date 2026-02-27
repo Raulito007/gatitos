@@ -1,0 +1,126 @@
+﻿2026-02-27T12:56:41.2069222Z ##[debug]Evaluating condition for step: 'Download patch artifact'
+2026-02-27T12:56:41.2072794Z ##[debug]Evaluating: success()
+2026-02-27T12:56:41.2074002Z ##[debug]Evaluating success:
+2026-02-27T12:56:41.2076262Z ##[debug]=> true
+2026-02-27T12:56:41.2077874Z ##[debug]Result: true
+2026-02-27T12:56:41.2079453Z ##[debug]Starting: Download patch artifact
+2026-02-27T12:56:41.2146608Z ##[debug]Loading inputs
+2026-02-27T12:56:41.2156665Z ##[debug]Evaluating: github.repository
+2026-02-27T12:56:41.2158015Z ##[debug]Evaluating Index:
+2026-02-27T12:56:41.2158863Z ##[debug]..Evaluating github:
+2026-02-27T12:56:41.2159727Z ##[debug]..=> Object
+2026-02-27T12:56:41.2160512Z ##[debug]..Evaluating String:
+2026-02-27T12:56:41.2161365Z ##[debug]..=> 'repository'
+2026-02-27T12:56:41.2162254Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:56:41.2163174Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:56:41.2166703Z ##[debug]Evaluating: github.run_id
+2026-02-27T12:56:41.2167977Z ##[debug]Evaluating Index:
+2026-02-27T12:56:41.2169062Z ##[debug]..Evaluating github:
+2026-02-27T12:56:41.2169919Z ##[debug]..=> Object
+2026-02-27T12:56:41.2170697Z ##[debug]..Evaluating String:
+2026-02-27T12:56:41.2171535Z ##[debug]..=> 'run_id'
+2026-02-27T12:56:41.2172325Z ##[debug]=> '22486925250'
+2026-02-27T12:56:41.2173113Z ##[debug]Result: '22486925250'
+2026-02-27T12:56:41.2175381Z ##[debug]Loading env
+2026-02-27T12:56:41.2190977Z ##[group]Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+2026-02-27T12:56:41.2192351Z with:
+2026-02-27T12:56:41.2192998Z   name: agent-artifacts
+2026-02-27T12:56:41.2193768Z   path: /tmp/gh-aw/
+2026-02-27T12:56:41.2194501Z   merge-multiple: false
+2026-02-27T12:56:41.2195303Z   repository: Raulito007/gatitos
+2026-02-27T12:56:41.2196142Z   run-id: 22486925250
+2026-02-27T12:56:41.2197042Z env:
+2026-02-27T12:56:41.2197795Z   GH_AW_ENGINE_ID: copilot
+2026-02-27T12:56:41.2198671Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:56:41.2199779Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:41.2201246Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:41.2202351Z ##[endgroup]
+2026-02-27T12:56:41.4656136Z ##[debug]Resolved path is /tmp/gh-aw
+2026-02-27T12:56:41.4662004Z Downloading single artifact
+2026-02-27T12:56:41.4691942Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:41.4697616Z ##[debug]Workflow Job Run Backend ID: 7bbd714f-0fb9-56fd-a649-f6263a26245b
+2026-02-27T12:56:41.4718227Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:56:41.6829146Z ##[debug][Response] - 200
+2026-02-27T12:56:41.6834498Z ##[debug]Headers: {
+2026-02-27T12:56:41.6835705Z ##[debug]  "content-length": "672",
+2026-02-27T12:56:41.6837462Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:41.6838572Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:41 GMT",
+2026-02-27T12:56:41.6839952Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:41.6841259Z ##[debug]  "x-github-request-id": "2430:D33CF:578C5:6069A:69A19489"
+2026-02-27T12:56:41.6842653Z ##[debug]}
+2026-02-27T12:56:41.6848999Z ##[debug]Body: {
+2026-02-27T12:56:41.6849784Z ##[debug]  "artifacts": [
+2026-02-27T12:56:41.6850553Z ##[debug]    {
+2026-02-27T12:56:41.6851896Z ##[debug]      "workflow_run_backend_id": "418d9389-e065-450b-9f60-6b0abe09b7e3",
+2026-02-27T12:56:41.6853887Z ##[debug]      "workflow_job_run_backend_id": "e604e091-43aa-5b95-b2ef-e54501d04e47",
+2026-02-27T12:56:41.6855487Z ##[debug]      "database_id": "5690193957",
+2026-02-27T12:56:41.6856685Z ##[debug]      "name": "agent-artifacts",
+2026-02-27T12:56:41.6858090Z ##[debug]      "size": "44063",
+2026-02-27T12:56:41.6859735Z ##[debug]      "created_at": "2026-02-27T12:52:14Z",
+2026-02-27T12:56:41.6861591Z ##[debug]      "digest": "sha256:dfa5391818a9586460aac19f64c4af56142af30dcf6d80cf648ccf809ae561bd"
+2026-02-27T12:56:41.6863120Z ##[debug]    },
+2026-02-27T12:56:41.6864048Z ##[debug]    {
+2026-02-27T12:56:41.6865621Z ##[debug]      "workflow_run_backend_id": "5113e6a8-5011-493b-9b3a-183d2ce6fd94",
+2026-02-27T12:56:41.6867772Z ##[debug]      "workflow_job_run_backend_id": "d67c210d-b851-5326-a894-3c39bd19201d",
+2026-02-27T12:56:41.6869503Z ##[debug]      "database_id": "5690248406",
+2026-02-27T12:56:41.6870741Z ##[debug]      "name": "agent-artifacts",
+2026-02-27T12:56:41.6872318Z ##[debug]      "size": "44303",
+2026-02-27T12:56:41.6873243Z ##[debug]      "created_at": "2026-02-27T12:56:16Z",
+2026-02-27T12:56:41.6875082Z ##[debug]      "digest": "sha256:5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a"
+2026-02-27T12:56:41.6876829Z ##[debug]    }
+2026-02-27T12:56:41.6877707Z ##[debug]  ]
+2026-02-27T12:56:41.6878603Z ##[debug]}
+2026-02-27T12:56:41.6899466Z ##[debug]More than one artifact found for a single name, returning newest (id: 5690248406)
+2026-02-27T12:56:41.6917298Z ##[debug]Found named artifact 'agent-artifacts' (ID: 5690248406, Size: 44303)
+2026-02-27T12:56:41.6919392Z Preparing to download the following artifacts:
+2026-02-27T12:56:41.6921811Z - agent-artifacts (ID: 5690248406, Size: 44303, Expected Digest: sha256:5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a)
+2026-02-27T12:56:41.6930180Z ##[debug]Artifact destination folder already exists: /tmp/gh-aw
+2026-02-27T12:56:41.6952712Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:41.6958677Z ##[debug]Workflow Job Run Backend ID: 7bbd714f-0fb9-56fd-a649-f6263a26245b
+2026-02-27T12:56:41.6966738Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:56:41.7576534Z ##[debug][Response] - 200
+2026-02-27T12:56:41.7579717Z ##[debug]Headers: {
+2026-02-27T12:56:41.7580530Z ##[debug]  "content-length": "343",
+2026-02-27T12:56:41.7581549Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:41.7582672Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:41 GMT",
+2026-02-27T12:56:41.7583759Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:41.7584928Z ##[debug]  "x-github-request-id": "2430:D33CF:57935:60712:69A19489"
+2026-02-27T12:56:41.7586049Z ##[debug]}
+2026-02-27T12:56:41.7599682Z ##[debug]Body: {
+2026-02-27T12:56:41.7600445Z ##[debug]  "artifacts": [
+2026-02-27T12:56:41.7601232Z ##[debug]    {
+2026-02-27T12:56:41.7602264Z ##[debug]      "workflow_run_backend_id": "5113e6a8-5011-493b-9b3a-183d2ce6fd94",
+2026-02-27T12:56:41.7603905Z ##[debug]      "workflow_job_run_backend_id": "d67c210d-b851-5326-a894-3c39bd19201d",
+2026-02-27T12:56:41.7605238Z ##[debug]      "database_id": "5690248406",
+2026-02-27T12:56:41.7606207Z ##[debug]      "name": "agent-artifacts",
+2026-02-27T12:56:41.7607366Z ##[debug]      "size": "44303",
+2026-02-27T12:56:41.7608269Z ##[debug]      "created_at": "2026-02-27T12:56:16Z",
+2026-02-27T12:56:41.7609809Z ##[debug]      "digest": "sha256:5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a"
+2026-02-27T12:56:41.7611329Z ##[debug]    }
+2026-02-27T12:56:41.7611995Z ##[debug]  ]
+2026-02-27T12:56:41.7612634Z ##[debug]}
+2026-02-27T12:56:41.7615422Z ##[debug][Request] GetSignedArtifactURL https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/GetSignedArtifactURL
+2026-02-27T12:56:41.7998409Z ##[debug][Response] - 200
+2026-02-27T12:56:41.8000277Z ##[debug]Headers: {
+2026-02-27T12:56:41.8001052Z ##[debug]  "content-length": "648",
+2026-02-27T12:56:41.8002407Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:41.8003518Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:41 GMT",
+2026-02-27T12:56:41.8005059Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:41.8006256Z ##[debug]  "x-github-request-id": "2430:D33CF:57972:60766:69A19489"
+2026-02-27T12:56:41.8007872Z ##[debug]}
+2026-02-27T12:56:41.8016297Z ::add-mask::***
+2026-02-27T12:56:41.8026538Z ::add-mask::***
+2026-02-27T12:56:41.8029522Z ##[debug]Body: {
+2026-02-27T12:56:41.8046065Z ##[debug]  "signed_url": "https://productionresultssa0.blob.core.windows.net/actions-results/5113e6a8-5011-493b-9b3a-183d2ce6fd94/workflow-job-run-d67c210d-b851-5326-a894-3c39bd19201d/artifacts/048a8fab6d204fbc816c87d3d94fee39902cbc8b565ed4f9f5e5ffce7f8bc3e1.zip?rscd=attachment%3B+filename%3D%22agent-artifacts.zip%22&rsct=application%2Fzip&se=2026-02-27T13%3A06%3A41Z&sig=***&ske=2026-02-27T16%3A36%3A12Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-02-27T12%3A36%3A12Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=r&spr=https&sr=b&st=2026-02-27T12%3A56%3A36Z&sv=2025-11-05"
+2026-02-27T12:56:41.8055859Z ##[debug]}
+2026-02-27T12:56:41.8059825Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/5113e6a8-5011-493b-9b3a-183d2ce6fd94/workflow-job-run-d67c210d-b851-5326-a894-3c39bd19201d/artifacts/048a8fab6d204fbc816c87d3d94fee39902cbc8b565ed4f9f5e5ffce7f8bc3e1.zip
+2026-02-27T12:56:41.8063802Z Starting download of artifact to: /tmp/gh-aw
+2026-02-27T12:56:41.9301325Z (node:1008) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-02-27T12:56:41.9304957Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-02-27T12:56:41.9752730Z SHA256 digest of downloaded artifact is 5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a
+2026-02-27T12:56:41.9762490Z Artifact download completed successfully.
+2026-02-27T12:56:41.9767290Z Total of 1 artifact(s) downloaded
+2026-02-27T12:56:41.9786497Z Download artifact has finished successfully
+2026-02-27T12:56:41.9886790Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:41.9894545Z ##[debug]Set output download-path = /tmp/gh-aw
+2026-02-27T12:56:41.9898320Z ##[debug]Finishing: Download patch artifact

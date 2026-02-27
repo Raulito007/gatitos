@@ -1,0 +1,55 @@
+﻿2026-02-27T12:55:50.0875748Z ##[debug]Evaluating condition for step: 'Generate workflow overview'
+2026-02-27T12:55:50.0877467Z ##[debug]Evaluating: success()
+2026-02-27T12:55:50.0877799Z ##[debug]Evaluating success:
+2026-02-27T12:55:50.0878131Z ##[debug]=> true
+2026-02-27T12:55:50.0878444Z ##[debug]Result: true
+2026-02-27T12:55:50.0878921Z ##[debug]Starting: Generate workflow overview
+2026-02-27T12:55:50.0901342Z ##[debug]Loading inputs
+2026-02-27T12:55:50.0902792Z ##[debug]Evaluating: github.token
+2026-02-27T12:55:50.0903050Z ##[debug]Evaluating Index:
+2026-02-27T12:55:50.0903286Z ##[debug]..Evaluating github:
+2026-02-27T12:55:50.0903524Z ##[debug]..=> Object
+2026-02-27T12:55:50.0903755Z ##[debug]..Evaluating String:
+2026-02-27T12:55:50.0903982Z ##[debug]..=> 'token'
+2026-02-27T12:55:50.0904620Z ##[debug]=> '***'
+2026-02-27T12:55:50.0904922Z ##[debug]Result: '***'
+2026-02-27T12:55:50.0906177Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:55:50.0906723Z ##[debug]Evaluating Equal:
+2026-02-27T12:55:50.0906976Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:50.0907253Z ##[debug]....Evaluating runner:
+2026-02-27T12:55:50.0907495Z ##[debug]....=> Object
+2026-02-27T12:55:50.0907709Z ##[debug]....Evaluating String:
+2026-02-27T12:55:50.0907932Z ##[debug]....=> 'debug'
+2026-02-27T12:55:50.0908156Z ##[debug]..=> '1'
+2026-02-27T12:55:50.0908346Z ##[debug]..Evaluating String:
+2026-02-27T12:55:50.0908563Z ##[debug]..=> '1'
+2026-02-27T12:55:50.0908747Z ##[debug]=> true
+2026-02-27T12:55:50.0908951Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:55:50.0909169Z ##[debug]Result: true
+2026-02-27T12:55:50.0913086Z ##[debug]Loading env
+2026-02-27T12:55:50.0918932Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:55:50.0919317Z with:
+2026-02-27T12:55:50.0919889Z   script: const { generateWorkflowOverview } = require('/opt/gh-aw/actions/generate_workflow_overview.cjs');
+await generateWorkflowOverview(core);
+
+2026-02-27T12:55:50.0920673Z   github-token: ***
+2026-02-27T12:55:50.0920862Z   debug: true
+2026-02-27T12:55:50.0921060Z   user-agent: actions/github-script
+2026-02-27T12:55:50.0921314Z   result-encoding: json
+2026-02-27T12:55:50.0921501Z   retries: 0
+2026-02-27T12:55:50.0921715Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:55:50.0922028Z env:
+2026-02-27T12:55:50.0922193Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:50.0922397Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:50.0922614Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:50.0922813Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:50.0923070Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:50.0923408Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:50.0923795Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:50.0924205Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:50.0924540Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:50.0924768Z ##[endgroup]
+2026-02-27T12:55:50.1653606Z Generated workflow overview in step summary
+2026-02-27T12:55:50.1710142Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:55:50.1724706Z ##[debug]Set output result = 
+2026-02-27T12:55:50.1725200Z ##[debug]Finishing: Generate workflow overview

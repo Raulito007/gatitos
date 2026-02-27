@@ -1,0 +1,287 @@
+﻿2026-02-27T12:55:27.8793946Z ##[debug]Evaluating condition for step: 'Checkout repository'
+2026-02-27T12:55:27.8795656Z ##[debug]Evaluating: success()
+2026-02-27T12:55:27.8796011Z ##[debug]Evaluating success:
+2026-02-27T12:55:27.8796871Z ##[debug]=> true
+2026-02-27T12:55:27.8797246Z ##[debug]Result: true
+2026-02-27T12:55:27.8797784Z ##[debug]Starting: Checkout repository
+2026-02-27T12:55:27.8838079Z ##[debug]Register post job cleanup for action: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+2026-02-27T12:55:27.8856386Z ##[debug]Loading inputs
+2026-02-27T12:55:27.8858302Z ##[debug]Evaluating: github.repository
+2026-02-27T12:55:27.8858631Z ##[debug]Evaluating Index:
+2026-02-27T12:55:27.8858872Z ##[debug]..Evaluating github:
+2026-02-27T12:55:27.8859129Z ##[debug]..=> Object
+2026-02-27T12:55:27.8859350Z ##[debug]..Evaluating String:
+2026-02-27T12:55:27.8859586Z ##[debug]..=> 'repository'
+2026-02-27T12:55:27.8859870Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:55:27.8860135Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:55:27.8862165Z ##[debug]Evaluating: github.token
+2026-02-27T12:55:27.8862433Z ##[debug]Evaluating Index:
+2026-02-27T12:55:27.8862665Z ##[debug]..Evaluating github:
+2026-02-27T12:55:27.8862917Z ##[debug]..=> Object
+2026-02-27T12:55:27.8863126Z ##[debug]..Evaluating String:
+2026-02-27T12:55:27.8863349Z ##[debug]..=> 'token'
+2026-02-27T12:55:27.8863889Z ##[debug]=> '***'
+2026-02-27T12:55:27.8864231Z ##[debug]Result: '***'
+2026-02-27T12:55:27.8875945Z ##[debug]Loading env
+2026-02-27T12:55:27.8883376Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+2026-02-27T12:55:27.8883756Z with:
+2026-02-27T12:55:27.8883957Z   persist-credentials: false
+2026-02-27T12:55:27.8884205Z   repository: Raulito007/gatitos
+2026-02-27T12:55:27.8884586Z   token: ***
+2026-02-27T12:55:27.8884774Z   ssh-strict: true
+2026-02-27T12:55:27.8884964Z   ssh-user: git
+2026-02-27T12:55:27.8885137Z   clean: true
+2026-02-27T12:55:27.8885346Z   sparse-checkout-cone-mode: true
+2026-02-27T12:55:27.8885629Z   fetch-depth: 1
+2026-02-27T12:55:27.8885826Z   fetch-tags: false
+2026-02-27T12:55:27.8886016Z   show-progress: true
+2026-02-27T12:55:27.8886206Z   lfs: false
+2026-02-27T12:55:27.8886377Z   submodules: false
+2026-02-27T12:55:27.8886833Z   set-safe-directory: true
+2026-02-27T12:55:27.8887045Z env:
+2026-02-27T12:55:27.8887205Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:27.8887420Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:27.8887634Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:27.8887833Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:27.8888096Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:27.8888445Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:27.8888834Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:27.8889276Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:27.8889616Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:27.8889852Z ##[endgroup]
+2026-02-27T12:55:27.9687596Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/gatitos/gatitos'
+2026-02-27T12:55:27.9689020Z ##[debug]qualified repository = 'Raulito007/gatitos'
+2026-02-27T12:55:27.9689882Z ##[debug]ref = 'refs/heads/master'
+2026-02-27T12:55:27.9690720Z ##[debug]commit = '53d63d7377194d8cd97ec92a8ec48a1dcef34bbc'
+2026-02-27T12:55:27.9691596Z ##[debug]clean = true
+2026-02-27T12:55:27.9692293Z ##[debug]filter = undefined
+2026-02-27T12:55:27.9693007Z ##[debug]fetch depth = 1
+2026-02-27T12:55:27.9693720Z ##[debug]fetch tags = false
+2026-02-27T12:55:27.9694458Z ##[debug]show progress = true
+2026-02-27T12:55:27.9695188Z ##[debug]lfs = false
+2026-02-27T12:55:27.9695809Z ##[debug]submodules = false
+2026-02-27T12:55:27.9696766Z ##[debug]recursive submodules = false
+2026-02-27T12:55:27.9697531Z ##[debug]GitHub Host URL = 
+2026-02-27T12:55:27.9699268Z ::add-matcher::/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd/dist/problem-matcher.json
+2026-02-27T12:55:27.9797437Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-02-27T12:55:27.9802193Z Syncing repository: Raulito007/gatitos
+2026-02-27T12:55:27.9803223Z ::group::Getting Git version info
+2026-02-27T12:55:27.9804123Z ##[group]Getting Git version info
+2026-02-27T12:55:27.9804531Z Working directory is '/home/runner/work/gatitos/gatitos'
+2026-02-27T12:55:27.9805062Z ##[debug]Getting git version
+2026-02-27T12:55:27.9805326Z [command]/usr/bin/git version
+2026-02-27T12:55:27.9969323Z git version 2.53.0
+2026-02-27T12:55:28.0019495Z ##[debug]0
+2026-02-27T12:55:28.0020191Z ##[debug]git version 2.53.0
+2026-02-27T12:55:28.0020574Z ##[debug]
+2026-02-27T12:55:28.0024376Z ##[debug]Set git useragent to: git/2.53.0 (github-actions-checkout) actions_orchestration_id/5113e6a8-5011-493b-9b3a-183d2ce6fd94.agent.__default
+2026-02-27T12:55:28.0025961Z ::endgroup::
+2026-02-27T12:55:28.0026351Z ##[endgroup]
+2026-02-27T12:55:28.0030613Z ::add-mask::***
+2026-02-27T12:55:28.0040062Z Temporarily overriding HOME='/home/runner/work/_temp/47808922-35cf-49b3-8c18-09281e770fbd' before making global git config changes
+2026-02-27T12:55:28.0041577Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-27T12:55:28.0046400Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gatitos/gatitos
+2026-02-27T12:55:28.0086105Z ##[debug]0
+2026-02-27T12:55:28.0086925Z ##[debug]
+2026-02-27T12:55:28.0092116Z Deleting the contents of '/home/runner/work/gatitos/gatitos'
+2026-02-27T12:55:28.0095825Z ::group::Initializing the repository
+2026-02-27T12:55:28.0096351Z ##[group]Initializing the repository
+2026-02-27T12:55:28.0100863Z [command]/usr/bin/git init /home/runner/work/gatitos/gatitos
+2026-02-27T12:55:28.0285738Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-27T12:55:28.0286937Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-27T12:55:28.0287636Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-27T12:55:28.0288092Z hint: call:
+2026-02-27T12:55:28.0288391Z hint:
+2026-02-27T12:55:28.0288717Z hint: 	git config --global init.defaultBranch <name>
+2026-02-27T12:55:28.0289070Z hint:
+2026-02-27T12:55:28.0289431Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-27T12:55:28.0290048Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-27T12:55:28.0290714Z hint:
+2026-02-27T12:55:28.0291090Z hint: 	git branch -m <name>
+2026-02-27T12:55:28.0291483Z hint:
+2026-02-27T12:55:28.0291884Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-27T12:55:28.0292646Z Initialized empty Git repository in /home/runner/work/gatitos/gatitos/.git/
+2026-02-27T12:55:28.0297970Z ##[debug]0
+2026-02-27T12:55:28.0299036Z ##[debug]Initialized empty Git repository in /home/runner/work/gatitos/gatitos/.git/
+2026-02-27T12:55:28.0299759Z ##[debug]
+2026-02-27T12:55:28.0303742Z [command]/usr/bin/git remote add origin https://github.com/Raulito007/gatitos
+2026-02-27T12:55:28.0338561Z ##[debug]0
+2026-02-27T12:55:28.0339219Z ##[debug]
+2026-02-27T12:55:28.0339842Z ::endgroup::
+2026-02-27T12:55:28.0340149Z ##[endgroup]
+2026-02-27T12:55:28.0340860Z ::group::Disabling automatic garbage collection
+2026-02-27T12:55:28.0341425Z ##[group]Disabling automatic garbage collection
+2026-02-27T12:55:28.0344275Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-27T12:55:28.0372942Z ##[debug]0
+2026-02-27T12:55:28.0373575Z ##[debug]
+2026-02-27T12:55:28.0374123Z ::endgroup::
+2026-02-27T12:55:28.0374437Z ##[endgroup]
+2026-02-27T12:55:28.0375071Z ::group::Setting up auth
+2026-02-27T12:55:28.0375485Z ##[group]Setting up auth
+2026-02-27T12:55:28.0375983Z Removing SSH command configuration
+2026-02-27T12:55:28.0381976Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-27T12:55:28.0408244Z ##[debug]1
+2026-02-27T12:55:28.0408875Z ##[debug]
+2026-02-27T12:55:28.0414859Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-27T12:55:28.0782164Z ##[debug]0
+2026-02-27T12:55:28.0783072Z ##[debug]
+2026-02-27T12:55:28.0783896Z Removing HTTP extra header
+2026-02-27T12:55:28.0789413Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-27T12:55:28.0814901Z ##[debug]1
+2026-02-27T12:55:28.0815468Z ##[debug]
+2026-02-27T12:55:28.0821040Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-27T12:55:28.1052396Z ##[debug]0
+2026-02-27T12:55:28.1053073Z ##[debug]
+2026-02-27T12:55:28.1053477Z Removing includeIf entries pointing to credentials config files
+2026-02-27T12:55:28.1060360Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-27T12:55:28.1087701Z ##[debug]1
+2026-02-27T12:55:28.1088319Z ##[debug]
+2026-02-27T12:55:28.1093427Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-27T12:55:28.1319682Z ##[debug]0
+2026-02-27T12:55:28.1320333Z ##[debug]
+2026-02-27T12:55:28.1327038Z ##[debug]Credentials config path: /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:28.1332681Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-27T12:55:28.1359458Z ##[debug]0
+2026-02-27T12:55:28.1360112Z ##[debug]
+2026-02-27T12:55:28.1371175Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gatitos/gatitos/.git.path /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:28.1397729Z ##[debug]0
+2026-02-27T12:55:28.1398097Z ##[debug]
+2026-02-27T12:55:28.1403137Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/gatitos/gatitos/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:28.1429700Z ##[debug]0
+2026-02-27T12:55:28.1430293Z ##[debug]
+2026-02-27T12:55:28.1435356Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:28.1463330Z ##[debug]0
+2026-02-27T12:55:28.1463900Z ##[debug]
+2026-02-27T12:55:28.1469023Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:28.1495732Z ##[debug]0
+2026-02-27T12:55:28.1496642Z ##[debug]
+2026-02-27T12:55:28.1497249Z ::endgroup::
+2026-02-27T12:55:28.1497568Z ##[endgroup]
+2026-02-27T12:55:28.1498172Z ::group::Fetching the repository
+2026-02-27T12:55:28.1498653Z ##[group]Fetching the repository
+2026-02-27T12:55:28.1507217Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53d63d7377194d8cd97ec92a8ec48a1dcef34bbc:refs/remotes/origin/master
+2026-02-27T12:55:29.0255010Z From https://github.com/Raulito007/gatitos
+2026-02-27T12:55:29.0256102Z  * [new ref]         53d63d7377194d8cd97ec92a8ec48a1dcef34bbc -> origin/master
+2026-02-27T12:55:29.0283977Z ##[debug]0
+2026-02-27T12:55:29.0284532Z ##[debug]
+2026-02-27T12:55:29.0292289Z [command]/usr/bin/git branch --list --remote origin/master
+2026-02-27T12:55:29.0318656Z   origin/master
+2026-02-27T12:55:29.0322586Z ##[debug]0
+2026-02-27T12:55:29.0322950Z ##[debug]  origin/master
+2026-02-27T12:55:29.0323158Z ##[debug]
+2026-02-27T12:55:29.0327775Z [command]/usr/bin/git rev-parse refs/remotes/origin/master
+2026-02-27T12:55:29.0356040Z 53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.0360809Z ##[debug]0
+2026-02-27T12:55:29.0361933Z ##[debug]53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.0362491Z ##[debug]
+2026-02-27T12:55:29.0363160Z ::endgroup::
+2026-02-27T12:55:29.0363512Z ##[endgroup]
+2026-02-27T12:55:29.0364455Z ::group::Determining the checkout info
+2026-02-27T12:55:29.0364970Z ##[group]Determining the checkout info
+2026-02-27T12:55:29.0365716Z ::endgroup::
+2026-02-27T12:55:29.0366030Z ##[endgroup]
+2026-02-27T12:55:29.0369467Z [command]/usr/bin/git sparse-checkout disable
+2026-02-27T12:55:29.0404929Z ##[debug]0
+2026-02-27T12:55:29.0405482Z ##[debug]
+2026-02-27T12:55:29.0409875Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-27T12:55:29.0437249Z ##[debug]0
+2026-02-27T12:55:29.0441122Z ##[debug]
+2026-02-27T12:55:29.0441714Z ::group::Checking out the ref
+2026-02-27T12:55:29.0442127Z ##[group]Checking out the ref
+2026-02-27T12:55:29.0442817Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2026-02-27T12:55:29.1560137Z Reset branch 'master'
+2026-02-27T12:55:29.1562523Z branch 'master' set up to track 'origin/master'.
+2026-02-27T12:55:29.1568676Z ##[debug]0
+2026-02-27T12:55:29.1569421Z ##[debug]branch 'master' set up to track 'origin/master'.
+2026-02-27T12:55:29.1569988Z ##[debug]
+2026-02-27T12:55:29.1570573Z ::endgroup::
+2026-02-27T12:55:29.1570894Z ##[endgroup]
+2026-02-27T12:55:29.1608339Z ##[debug]0
+2026-02-27T12:55:29.1609439Z ##[debug]commit 53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.1610390Z ##[debug]Author: Raúl García <raul.garcia.gomez1982@gmail.com>
+2026-02-27T12:55:29.1611037Z ##[debug]Date:   Fri Feb 27 13:02:53 2026 +0100
+2026-02-27T12:55:29.1611495Z ##[debug]
+2026-02-27T12:55:29.1611834Z ##[debug]    chore: compile astro workflow
+2026-02-27T12:55:29.1612276Z ##[debug]
+2026-02-27T12:55:29.1612727Z [command]/usr/bin/git log -1 --format=%H
+2026-02-27T12:55:29.1639352Z 53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.1643784Z ##[debug]0
+2026-02-27T12:55:29.1644499Z ##[debug]53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.1645060Z ##[debug]
+2026-02-27T12:55:29.1649824Z ::group::Removing auth
+2026-02-27T12:55:29.1650237Z ##[group]Removing auth
+2026-02-27T12:55:29.1650695Z Removing SSH command configuration
+2026-02-27T12:55:29.1654916Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-27T12:55:29.1683266Z ##[debug]1
+2026-02-27T12:55:29.1683859Z ##[debug]
+2026-02-27T12:55:29.1688444Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-27T12:55:29.1939155Z ##[debug]0
+2026-02-27T12:55:29.1939714Z ##[debug]
+2026-02-27T12:55:29.1939970Z Removing HTTP extra header
+2026-02-27T12:55:29.1943515Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-27T12:55:29.1970948Z ##[debug]1
+2026-02-27T12:55:29.1971521Z ##[debug]
+2026-02-27T12:55:29.1976135Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-27T12:55:29.2209070Z ##[debug]0
+2026-02-27T12:55:29.2209878Z ##[debug]
+2026-02-27T12:55:29.2210412Z Removing includeIf entries pointing to credentials config files
+2026-02-27T12:55:29.2214785Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-27T12:55:29.2238545Z includeif.gitdir:/home/runner/work/gatitos/gatitos/.git.path
+2026-02-27T12:55:29.2239399Z includeif.gitdir:/home/runner/work/gatitos/gatitos/.git/worktrees/*.path
+2026-02-27T12:55:29.2240149Z includeif.gitdir:/github/workspace/.git.path
+2026-02-27T12:55:29.2240762Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-02-27T12:55:29.2242004Z ##[debug]0
+2026-02-27T12:55:29.2249412Z ##[debug]includeif.gitdir:/home/runner/work/gatitos/gatitos/.git.path
+2026-02-27T12:55:29.2249924Z ##[debug]includeif.gitdir:/home/runner/work/gatitos/gatitos/.git/worktrees/*.path
+2026-02-27T12:55:29.2250629Z ##[debug]includeif.gitdir:/github/workspace/.git.path
+2026-02-27T12:55:29.2250999Z ##[debug]includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-02-27T12:55:29.2251439Z ##[debug]
+2026-02-27T12:55:29.2251885Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gatitos/gatitos/.git.path
+2026-02-27T12:55:29.2271433Z /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2275760Z ##[debug]0
+2026-02-27T12:55:29.2276959Z ##[debug]/home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2277801Z ##[debug]
+2026-02-27T12:55:29.2283641Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gatitos/gatitos/.git.path /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2313215Z ##[debug]0
+2026-02-27T12:55:29.2313797Z ##[debug]
+2026-02-27T12:55:29.2318080Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/gatitos/gatitos/.git/worktrees/*.path
+2026-02-27T12:55:29.2343715Z /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2347045Z ##[debug]0
+2026-02-27T12:55:29.2347667Z ##[debug]/home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2348122Z ##[debug]
+2026-02-27T12:55:29.2352675Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/gatitos/gatitos/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2381599Z ##[debug]0
+2026-02-27T12:55:29.2382147Z ##[debug]
+2026-02-27T12:55:29.2385420Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-02-27T12:55:29.2410311Z /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2414823Z ##[debug]0
+2026-02-27T12:55:29.2415870Z ##[debug]/github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2416868Z ##[debug]
+2026-02-27T12:55:29.2421244Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2449364Z ##[debug]0
+2026-02-27T12:55:29.2449899Z ##[debug]
+2026-02-27T12:55:29.2454081Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-02-27T12:55:29.2484463Z /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2488212Z ##[debug]0
+2026-02-27T12:55:29.2488899Z ##[debug]/github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2489335Z ##[debug]
+2026-02-27T12:55:29.2493077Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config
+2026-02-27T12:55:29.2521888Z ##[debug]0
+2026-02-27T12:55:29.2522714Z ##[debug]
+2026-02-27T12:55:29.2525959Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-27T12:55:29.2753789Z ##[debug]0
+2026-02-27T12:55:29.2754145Z ##[debug]
+2026-02-27T12:55:29.2754638Z Removing credentials config '/home/runner/work/_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config'
+2026-02-27T12:55:29.2762800Z ##[debug]Skipping removal of credentials config '/github/runner_temp/git-credentials-29009378-b762-4bab-9aa1-5c18b5fe8cff.config' - not under RUNNER_TEMP
+2026-02-27T12:55:29.2763913Z ::endgroup::
+2026-02-27T12:55:29.2764105Z ##[endgroup]
+2026-02-27T12:55:29.2764449Z ##[debug]Unsetting HOME override
+2026-02-27T12:55:29.2769060Z ::remove-matcher owner=checkout-git::
+2026-02-27T12:55:29.2781672Z ##[debug]Removed matchers: 'checkout-git'
+2026-02-27T12:55:29.2838954Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:55:29.2842710Z ##[debug]Save intra-action state isPost = true
+2026-02-27T12:55:29.2843105Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-02-27T12:55:29.2843776Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/gatitos/gatitos
+2026-02-27T12:55:29.2844569Z ##[debug]Set output commit = 53d63d7377194d8cd97ec92a8ec48a1dcef34bbc
+2026-02-27T12:55:29.2844938Z ##[debug]Set output ref = refs/heads/master
+2026-02-27T12:55:29.2845487Z ##[debug]Finishing: Checkout repository

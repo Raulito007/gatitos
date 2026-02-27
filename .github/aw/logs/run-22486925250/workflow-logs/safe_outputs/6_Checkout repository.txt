@@ -1,0 +1,42 @@
+﻿2026-02-27T12:56:41.9935999Z ##[debug]Evaluating condition for step: 'Checkout repository'
+2026-02-27T12:56:41.9959988Z ##[debug]Evaluating: (!cancelled() && (needs.agent.result != 'skipped') && contains(needs.agent.outputs.output_types, 'create_pull_request'))
+2026-02-27T12:56:41.9964669Z ##[debug]Evaluating And:
+2026-02-27T12:56:41.9970724Z ##[debug]..Evaluating Not:
+2026-02-27T12:56:41.9973006Z ##[debug]....Evaluating cancelled:
+2026-02-27T12:56:41.9976207Z ##[debug]....=> false
+2026-02-27T12:56:41.9978587Z ##[debug]..=> true
+2026-02-27T12:56:41.9980646Z ##[debug]..Evaluating NotEqual:
+2026-02-27T12:56:41.9983786Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:41.9986563Z ##[debug]......Evaluating Index:
+2026-02-27T12:56:41.9989808Z ##[debug]........Evaluating needs:
+2026-02-27T12:56:41.9991621Z ##[debug]........=> Object
+2026-02-27T12:56:41.9993380Z ##[debug]........Evaluating String:
+2026-02-27T12:56:41.9994607Z ##[debug]........=> 'agent'
+2026-02-27T12:56:41.9995852Z ##[debug]......=> Object
+2026-02-27T12:56:41.9997710Z ##[debug]......Evaluating String:
+2026-02-27T12:56:41.9999802Z ##[debug]......=> 'result'
+2026-02-27T12:56:42.0002552Z ##[debug]....=> 'failure'
+2026-02-27T12:56:42.0004274Z ##[debug]....Evaluating String:
+2026-02-27T12:56:42.0005820Z ##[debug]....=> 'skipped'
+2026-02-27T12:56:42.0011763Z ##[debug]..=> true
+2026-02-27T12:56:42.0013515Z ##[debug]..Evaluating contains:
+2026-02-27T12:56:42.0020162Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:42.0023054Z ##[debug]......Evaluating Index:
+2026-02-27T12:56:42.0024718Z ##[debug]........Evaluating Index:
+2026-02-27T12:56:42.0026445Z ##[debug]..........Evaluating needs:
+2026-02-27T12:56:42.0029118Z ##[debug]..........=> Object
+2026-02-27T12:56:42.0030393Z ##[debug]..........Evaluating String:
+2026-02-27T12:56:42.0031616Z ##[debug]..........=> 'agent'
+2026-02-27T12:56:42.0033232Z ##[debug]........=> Object
+2026-02-27T12:56:42.0034418Z ##[debug]........Evaluating String:
+2026-02-27T12:56:42.0038145Z ##[debug]........=> 'outputs'
+2026-02-27T12:56:42.0039658Z ##[debug]......=> Object
+2026-02-27T12:56:42.0041485Z ##[debug]......Evaluating String:
+2026-02-27T12:56:42.0043103Z ##[debug]......=> 'output_types'
+2026-02-27T12:56:42.0044403Z ##[debug]....=> null
+2026-02-27T12:56:42.0045980Z ##[debug]....Evaluating String:
+2026-02-27T12:56:42.0048039Z ##[debug]....=> 'create_pull_request'
+2026-02-27T12:56:42.0049664Z ##[debug]..=> false
+2026-02-27T12:56:42.0051081Z ##[debug]=> false
+2026-02-27T12:56:42.0066433Z ##[debug]Expanded: (!false && ('failure' != 'skipped') && contains(null, 'create_pull_request'))
+2026-02-27T12:56:42.0068680Z ##[debug]Result: false

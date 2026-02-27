@@ -1,0 +1,17 @@
+﻿2026-02-27T12:56:56.6734333Z ##[debug]Evaluating condition for step: 'Setup agent output environment variable'
+2026-02-27T12:56:56.6736706Z ##[debug]Evaluating: success()
+2026-02-27T12:56:56.6737592Z ##[debug]Evaluating success:
+2026-02-27T12:56:56.6738359Z ##[debug]=> true
+2026-02-27T12:56:56.6739017Z ##[debug]Result: true
+2026-02-27T12:56:56.6739964Z ##[debug]Starting: Setup agent output environment variable
+2026-02-27T12:56:56.6757634Z ##[debug]Loading inputs
+2026-02-27T12:56:56.6761551Z ##[debug]Loading env
+2026-02-27T12:56:56.6771256Z ##[group]Run mkdir -p /tmp/gh-aw/safeoutputs/
+2026-02-27T12:56:56.6771947Z [36;1mmkdir -p /tmp/gh-aw/safeoutputs/[0m
+2026-02-27T12:56:56.6773753Z [36;1mfind "/tmp/gh-aw/safeoutputs/" -type f -print[0m
+2026-02-27T12:56:56.6774760Z [36;1mecho "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/safeoutputs/agent_output.json" >> "$GITHUB_ENV"[0m
+2026-02-27T12:56:56.6782218Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:56:56.6787346Z ##[endgroup]
+2026-02-27T12:56:56.6799649Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/784a6e4b-2228-487b-8eb4-a9f5a13db69a.sh
+2026-02-27T12:56:56.6875759Z ##[debug]GH_AW_AGENT_OUTPUT='/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:56.6878519Z ##[debug]Finishing: Setup agent output environment variable

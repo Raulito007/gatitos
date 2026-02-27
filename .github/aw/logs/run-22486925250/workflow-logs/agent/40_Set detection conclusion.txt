@@ -1,0 +1,73 @@
+﻿2026-02-27T12:56:16.8026095Z ##[debug]Evaluating: steps.detection_guard.outputs.run_detection
+2026-02-27T12:56:16.8026624Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.8026872Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:16.8027112Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.8027351Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:16.8027600Z ##[debug]......=> Object
+2026-02-27T12:56:16.8027830Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.8028085Z ##[debug]......=> 'detection_guard'
+2026-02-27T12:56:16.8028339Z ##[debug]....=> Object
+2026-02-27T12:56:16.8028553Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.8028787Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:16.8029004Z ##[debug]..=> Object
+2026-02-27T12:56:16.8029216Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.8029453Z ##[debug]..=> 'run_detection'
+2026-02-27T12:56:16.8029684Z ##[debug]=> 'false'
+2026-02-27T12:56:16.8029892Z ##[debug]Result: 'false'
+2026-02-27T12:56:16.8030323Z ##[debug]Evaluating: steps.parse_detection_results.outputs.success
+2026-02-27T12:56:16.8030716Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.8030957Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:16.8031195Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.8031435Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:16.8031680Z ##[debug]......=> Object
+2026-02-27T12:56:16.8031905Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.8032172Z ##[debug]......=> 'parse_detection_results'
+2026-02-27T12:56:16.8032452Z ##[debug]....=> Object
+2026-02-27T12:56:16.8032664Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.8032898Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:16.8033110Z ##[debug]..=> Object
+2026-02-27T12:56:16.8033321Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.8033552Z ##[debug]..=> 'success'
+2026-02-27T12:56:16.8033766Z ##[debug]=> null
+2026-02-27T12:56:16.8033963Z ##[debug]Result: null
+2026-02-27T12:56:16.8034323Z ##[debug]Evaluating condition for step: 'Set detection conclusion'
+2026-02-27T12:56:16.8035174Z ##[debug]Evaluating: always()
+2026-02-27T12:56:16.8035509Z ##[debug]Evaluating always:
+2026-02-27T12:56:16.8035804Z ##[debug]=> true
+2026-02-27T12:56:16.8036117Z ##[debug]Result: true
+2026-02-27T12:56:16.8036627Z ##[debug]Starting: Set detection conclusion
+2026-02-27T12:56:16.8043507Z ##[debug]Loading inputs
+2026-02-27T12:56:16.8044275Z ##[debug]Loading env
+2026-02-27T12:56:16.8048108Z ##[group]Run if [[ "$RUN_DETECTION" != "true" ]]; then
+2026-02-27T12:56:16.8048464Z [36;1mif [[ "$RUN_DETECTION" != "true" ]]; then[0m
+2026-02-27T12:56:16.8048804Z [36;1m  echo "conclusion=skipped" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8049143Z [36;1m  echo "success=true" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8049495Z [36;1m  echo "Detection was not needed, marking as skipped"[0m
+2026-02-27T12:56:16.8049867Z [36;1melif [[ "$DETECTION_SUCCESS" == "true" ]]; then[0m
+2026-02-27T12:56:16.8050216Z [36;1m  echo "conclusion=success" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8050538Z [36;1m  echo "success=true" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8050860Z [36;1m  echo "Detection passed successfully"[0m
+2026-02-27T12:56:16.8051273Z [36;1melse[0m
+2026-02-27T12:56:16.8051505Z [36;1m  echo "conclusion=failure" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8051834Z [36;1m  echo "success=false" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.8052132Z [36;1m  echo "Detection found issues"[0m
+2026-02-27T12:56:16.8052390Z [36;1mfi[0m
+2026-02-27T12:56:16.8096800Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:56:16.8097048Z env:
+2026-02-27T12:56:16.8097233Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:16.8097475Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:16.8097716Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:16.8097933Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:16.8098211Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:16.8098584Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:16.8098997Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:16.8099429Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:16.8099967Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:16.8100220Z   RUN_DETECTION: false
+2026-02-27T12:56:16.8100427Z   DETECTION_SUCCESS: 
+2026-02-27T12:56:16.8100626Z ##[endgroup]
+2026-02-27T12:56:16.8146223Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/96ed677f-2f45-424c-8b28-57ff2a986c9a.sh
+2026-02-27T12:56:16.8224436Z Detection was not needed, marking as skipped
+2026-02-27T12:56:16.8229894Z ##[debug]Set output conclusion = skipped
+2026-02-27T12:56:16.8230262Z ##[debug]Set output success = true
+2026-02-27T12:56:16.8230763Z ##[debug]Finishing: Set detection conclusion

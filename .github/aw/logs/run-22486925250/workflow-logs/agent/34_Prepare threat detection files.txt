@@ -1,0 +1,26 @@
+﻿2026-02-27T12:56:16.7918720Z ##[debug]Evaluating condition for step: 'Prepare threat detection files'
+2026-02-27T12:56:16.7920057Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-02-27T12:56:16.7920583Z ##[debug]Evaluating And:
+2026-02-27T12:56:16.7920894Z ##[debug]..Evaluating always:
+2026-02-27T12:56:16.7921200Z ##[debug]..=> true
+2026-02-27T12:56:16.7921482Z ##[debug]..Evaluating Equal:
+2026-02-27T12:56:16.7921811Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7922127Z ##[debug]......Evaluating Index:
+2026-02-27T12:56:16.7922460Z ##[debug]........Evaluating Index:
+2026-02-27T12:56:16.7922785Z ##[debug]..........Evaluating steps:
+2026-02-27T12:56:16.7923172Z ##[debug]..........=> Object
+2026-02-27T12:56:16.7923490Z ##[debug]..........Evaluating String:
+2026-02-27T12:56:16.7923835Z ##[debug]..........=> 'detection_guard'
+2026-02-27T12:56:16.7924158Z ##[debug]........=> Object
+2026-02-27T12:56:16.7924463Z ##[debug]........Evaluating String:
+2026-02-27T12:56:16.7924781Z ##[debug]........=> 'outputs'
+2026-02-27T12:56:16.7925092Z ##[debug]......=> Object
+2026-02-27T12:56:16.7925391Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7925708Z ##[debug]......=> 'run_detection'
+2026-02-27T12:56:16.7926003Z ##[debug]....=> 'false'
+2026-02-27T12:56:16.7926292Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7926853Z ##[debug]....=> 'true'
+2026-02-27T12:56:16.7927135Z ##[debug]..=> false
+2026-02-27T12:56:16.7927392Z ##[debug]=> false
+2026-02-27T12:56:16.7927819Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-02-27T12:56:16.7928359Z ##[debug]Result: false

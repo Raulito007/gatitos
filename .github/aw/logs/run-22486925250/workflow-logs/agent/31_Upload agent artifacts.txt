@@ -1,0 +1,115 @@
+﻿2026-02-27T12:56:16.3101353Z ##[debug]Evaluating condition for step: 'Upload agent artifacts'
+2026-02-27T12:56:16.3102571Z ##[debug]Evaluating: always()
+2026-02-27T12:56:16.3102900Z ##[debug]Evaluating always:
+2026-02-27T12:56:16.3103209Z ##[debug]=> true
+2026-02-27T12:56:16.3103535Z ##[debug]Result: true
+2026-02-27T12:56:16.3104019Z ##[debug]Starting: Upload agent artifacts
+2026-02-27T12:56:16.3125361Z ##[debug]Loading inputs
+2026-02-27T12:56:16.3128857Z ##[debug]Loading env
+2026-02-27T12:56:16.3132842Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+2026-02-27T12:56:16.3133252Z with:
+2026-02-27T12:56:16.3133435Z   name: agent-artifacts
+2026-02-27T12:56:16.3134169Z   path: /tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw_info.json
+/tmp/gh-aw/mcp-logs/
+/tmp/gh-aw/sandbox/firewall/logs/
+/tmp/gh-aw/agent-stdio.log
+/tmp/gh-aw/agent/
+/tmp/gh-aw/aw-*.patch
+
+2026-02-27T12:56:16.3134956Z   if-no-files-found: ignore
+2026-02-27T12:56:16.3135195Z   compression-level: 6
+2026-02-27T12:56:16.3135400Z   overwrite: false
+2026-02-27T12:56:16.3135631Z   include-hidden-files: false
+2026-02-27T12:56:16.3135855Z env:
+2026-02-27T12:56:16.3136020Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:16.3136240Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:16.3136704Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:16.3137073Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:16.3137399Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:16.3137757Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:16.3138168Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:16.3138592Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:16.3138934Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:16.3139171Z ##[endgroup]
+2026-02-27T12:56:16.4627726Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:16.4629874Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:16.4630416Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:16.4630938Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:16.4657407Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:16.4658307Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:16.4659198Z ##[debug]matchDirectories 'true'
+2026-02-27T12:56:16.4660065Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:16.4660571Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:16.4667030Z ##[debug]Search path '/tmp/gh-aw'
+2026-02-27T12:56:16.4732740Z ##[debug]Removing /tmp/gh-aw/agent from rawSearchResults because it is a directory
+2026-02-27T12:56:16.4733952Z ##[debug]File:/tmp/gh-aw/agent-stdio.log was found using the provided searchPath
+2026-02-27T12:56:16.4735001Z ##[debug]File:/tmp/gh-aw/aw-prompts/prompt.txt was found using the provided searchPath
+2026-02-27T12:56:16.4736181Z ##[debug]File:/tmp/gh-aw/aw_info.json was found using the provided searchPath
+2026-02-27T12:56:16.4737486Z ##[debug]Removing /tmp/gh-aw/mcp-logs from rawSearchResults because it is a directory
+2026-02-27T12:56:16.4738667Z ##[debug]File:/tmp/gh-aw/mcp-logs/gateway.md was found using the provided searchPath
+2026-02-27T12:56:16.4739767Z ##[debug]File:/tmp/gh-aw/mcp-logs/github.log was found using the provided searchPath
+2026-02-27T12:56:16.4740692Z ##[debug]File:/tmp/gh-aw/mcp-logs/mcp-gateway.log was found using the provided searchPath
+2026-02-27T12:56:16.4741991Z ##[debug]File:/tmp/gh-aw/mcp-logs/rpc-messages.jsonl was found using the provided searchPath
+2026-02-27T12:56:16.4743332Z ##[debug]Removing /tmp/gh-aw/mcp-logs/safeoutputs from rawSearchResults because it is a directory
+2026-02-27T12:56:16.4744701Z ##[debug]File:/tmp/gh-aw/mcp-logs/safeoutputs/server.log was found using the provided searchPath
+2026-02-27T12:56:16.4745999Z ##[debug]File:/tmp/gh-aw/mcp-logs/safeoutputs.log was found using the provided searchPath
+2026-02-27T12:56:16.4747501Z ##[debug]File:/tmp/gh-aw/mcp-logs/start-gateway.log was found using the provided searchPath
+2026-02-27T12:56:16.4748470Z ##[debug]File:/tmp/gh-aw/mcp-logs/stderr.log was found using the provided searchPath
+2026-02-27T12:56:16.4749454Z ##[debug]File:/tmp/gh-aw/mcp-logs/tools.json was found using the provided searchPath
+2026-02-27T12:56:16.4750169Z ##[debug]Removing /tmp/gh-aw/sandbox/firewall/logs from rawSearchResults because it is a directory
+2026-02-27T12:56:16.4750938Z ##[debug]File:/tmp/gh-aw/sandbox/firewall/logs/access.log was found using the provided searchPath
+2026-02-27T12:56:16.4752082Z ##[debug]File:/tmp/gh-aw/sandbox/firewall/logs/cache.log was found using the provided searchPath
+2026-02-27T12:56:16.4753189Z With the provided path, there will be 14 files uploaded
+2026-02-27T12:56:16.4753832Z ##[debug]Root artifact directory is /tmp/gh-aw
+2026-02-27T12:56:16.4754124Z Artifact name is valid!
+2026-02-27T12:56:16.4754540Z Root directory input is valid!
+2026-02-27T12:56:16.4766621Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:16.4767540Z ##[debug]Workflow Job Run Backend ID: d67c210d-b851-5326-a894-3c39bd19201d
+2026-02-27T12:56:16.4775554Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-02-27T12:56:16.5370895Z ##[debug][Response] - 200
+2026-02-27T12:56:16.5374360Z ##[debug]Headers: {
+2026-02-27T12:56:16.5374820Z ##[debug]  "content-length": "580",
+2026-02-27T12:56:16.5375344Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:16.5375923Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:16 GMT",
+2026-02-27T12:56:16.5376741Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:16.5377411Z ##[debug]  "x-github-request-id": "FC00:13E938:5406E:5C350:69A19470"
+2026-02-27T12:56:16.5378034Z ##[debug]}
+2026-02-27T12:56:16.5378806Z ::add-mask::***
+2026-02-27T12:56:16.5380186Z ::add-mask::***
+2026-02-27T12:56:16.5381265Z ##[debug]Body: {
+2026-02-27T12:56:16.5381639Z ##[debug]  "ok": true,
+2026-02-27T12:56:16.5385919Z ##[debug]  "signed_upload_url": "https://productionresultssa0.blob.core.windows.net/actions-results/5113e6a8-5011-493b-9b3a-183d2ce6fd94/workflow-job-run-d67c210d-b851-5326-a894-3c39bd19201d/artifacts/048a8fab6d204fbc816c87d3d94fee39902cbc8b565ed4f9f5e5ffce7f8bc3e1.zip?se=2026-02-27T13%3A56%3A16Z&sig=***&ske=2026-02-27T16%3A37%3A14Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-02-27T12%3A37%3A14Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-02-27T12%3A56%3A11Z&sv=2025-11-05"
+2026-02-27T12:56:16.5390111Z ##[debug]}
+2026-02-27T12:56:16.5390916Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-02-27T12:56:16.5410230Z ##[debug]Zip write high watermark value 8388608
+2026-02-27T12:56:16.5411156Z ##[debug]Zip read high watermark value 8388608
+2026-02-27T12:56:16.5448490Z ##[debug]Uploading artifact zip to blob storage with maxConcurrency: 5, bufferSize: 8388608
+2026-02-27T12:56:16.5488456Z Beginning upload of artifact content to blob storage
+2026-02-27T12:56:16.5837215Z ##[debug]Zip stream for upload has ended.
+2026-02-27T12:56:16.5840369Z ##[debug]Zip stream for upload has finished.
+2026-02-27T12:56:16.6469456Z Uploaded bytes 44303
+2026-02-27T12:56:16.6629830Z Finished uploading artifact content to blob storage!
+2026-02-27T12:56:16.6630985Z SHA256 digest of uploaded artifact zip is 5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a
+2026-02-27T12:56:16.6633095Z Finalizing artifact upload
+2026-02-27T12:56:16.6638359Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-02-27T12:56:16.7644773Z ##[debug][Response] - 200
+2026-02-27T12:56:16.7645542Z ##[debug]Headers: {
+2026-02-27T12:56:16.7645959Z ##[debug]  "content-length": "39",
+2026-02-27T12:56:16.7646695Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:16.7647318Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:16 GMT",
+2026-02-27T12:56:16.7647932Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:16.7648632Z ##[debug]  "x-github-request-id": "FC01:1526AA:53774:5BAF8:69A19470"
+2026-02-27T12:56:16.7649570Z ##[debug]}
+2026-02-27T12:56:16.7650242Z ##[debug]Body: {
+2026-02-27T12:56:16.7650623Z ##[debug]  "ok": true,
+2026-02-27T12:56:16.7651047Z ##[debug]  "artifact_id": "5690248406"
+2026-02-27T12:56:16.7651535Z ##[debug]}
+2026-02-27T12:56:16.7652169Z Artifact agent-artifacts.zip successfully finalized. Artifact ID 5690248406
+2026-02-27T12:56:16.7653411Z Artifact agent-artifacts has been successfully uploaded! Final size is 44303 bytes. Artifact ID is 5690248406
+2026-02-27T12:56:16.7655039Z Artifact download URL: https://github.com/Raulito007/gatitos/actions/runs/22486925250/artifacts/5690248406
+2026-02-27T12:56:16.7734265Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:16.7736223Z ##[debug]Set output artifact-id = 5690248406
+2026-02-27T12:56:16.7737536Z ##[debug]Set output artifact-digest = 5c19f3cd4a27f32c90e8a8c346cd3935f37228a0c6f8c4513b9deebf3ad9334a
+2026-02-27T12:56:16.7738405Z ##[debug]Set output artifact-url = https://github.com/Raulito007/gatitos/actions/runs/22486925250/artifacts/5690248406
+2026-02-27T12:56:16.7739241Z ##[debug]Finishing: Upload agent artifacts

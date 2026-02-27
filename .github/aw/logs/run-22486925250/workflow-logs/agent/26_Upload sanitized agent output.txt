@@ -1,0 +1,14 @@
+﻿2026-02-27T12:56:15.8551500Z ##[debug]Evaluating condition for step: 'Upload sanitized agent output'
+2026-02-27T12:56:15.8553335Z ##[debug]Evaluating: (always() && env.GH_AW_AGENT_OUTPUT)
+2026-02-27T12:56:15.8553794Z ##[debug]Evaluating And:
+2026-02-27T12:56:15.8554106Z ##[debug]..Evaluating always:
+2026-02-27T12:56:15.8554409Z ##[debug]..=> true
+2026-02-27T12:56:15.8554697Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:15.8554998Z ##[debug]....Evaluating env:
+2026-02-27T12:56:15.8555292Z ##[debug]....=> Object
+2026-02-27T12:56:15.8555584Z ##[debug]....Evaluating String:
+2026-02-27T12:56:15.8555902Z ##[debug]....=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:15.8556235Z ##[debug]..=> null
+2026-02-27T12:56:15.8556829Z ##[debug]=> null
+2026-02-27T12:56:15.8557334Z ##[debug]Expanded: (true && null)
+2026-02-27T12:56:15.8557682Z ##[debug]Result: null

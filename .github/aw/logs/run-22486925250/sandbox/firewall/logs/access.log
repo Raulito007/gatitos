@@ -1,0 +1,4 @@
+1772196714.937 ::1:58760 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"
+1772196717.260 172.30.0.30:33100 api.githubcopilot.com:443 140.82.112.22:443 1.1 CONNECT 200 TCP_TUNNEL:HIER_DIRECT api.githubcopilot.com:443 "-"
+1772196717.517 172.30.0.30:33102 api.githubcopilot.com:443 140.82.112.22:443 1.1 CONNECT 200 TCP_TUNNEL:HIER_DIRECT api.githubcopilot.com:443 "-"
+1772196719.972 ::1:58766 - -:- 0.0 - 0 NONE_NONE:HIER_NONE error:transaction-end-before-headers "-"

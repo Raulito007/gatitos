@@ -1,0 +1,92 @@
+﻿2026-02-27T12:56:58.3566790Z ##[debug]Evaluating: env.GH_AW_AGENT_OUTPUT
+2026-02-27T12:56:58.3567762Z ##[debug]Evaluating Index:
+2026-02-27T12:56:58.3568253Z ##[debug]..Evaluating env:
+2026-02-27T12:56:58.3568775Z ##[debug]..=> Object
+2026-02-27T12:56:58.3569224Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.3569716Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:58.3570355Z ##[debug]=> '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:58.3572155Z ##[debug]Result: '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:58.3574136Z ##[debug]Evaluating: format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id)
+2026-02-27T12:56:58.3575093Z ##[debug]Evaluating format:
+2026-02-27T12:56:58.3575582Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.3576072Z ##[debug]..=> '{0}/{1}/actions/runs/{2}'
+2026-02-27T12:56:58.3577480Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3577995Z ##[debug]....Evaluating github:
+2026-02-27T12:56:58.3578491Z ##[debug]....=> Object
+2026-02-27T12:56:58.3579001Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3579495Z ##[debug]....=> 'server_url'
+2026-02-27T12:56:58.3580021Z ##[debug]..=> 'https://github.com'
+2026-02-27T12:56:58.3580545Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3581326Z ##[debug]....Evaluating github:
+2026-02-27T12:56:58.3581814Z ##[debug]....=> Object
+2026-02-27T12:56:58.3583033Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3583572Z ##[debug]....=> 'repository'
+2026-02-27T12:56:58.3584077Z ##[debug]..=> 'Raulito007/gatitos'
+2026-02-27T12:56:58.3584607Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3585074Z ##[debug]....Evaluating github:
+2026-02-27T12:56:58.3585556Z ##[debug]....=> Object
+2026-02-27T12:56:58.3586007Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3586471Z ##[debug]....=> 'run_id'
+2026-02-27T12:56:58.3586925Z ##[debug]..=> '22486925250'
+2026-02-27T12:56:58.3588335Z ##[debug]=> 'https://github.com/Raulito007/gatitos/actions/runs/22486925250'
+2026-02-27T12:56:58.3589323Z ##[debug]Result: 'https://github.com/Raulito007/gatitos/actions/runs/22486925250'
+2026-02-27T12:56:58.3590522Z ##[debug]Evaluating condition for step: 'Handle Create Pull Request Error'
+2026-02-27T12:56:58.3592800Z ##[debug]Evaluating: success()
+2026-02-27T12:56:58.3594356Z ##[debug]Evaluating success:
+2026-02-27T12:56:58.3595066Z ##[debug]=> true
+2026-02-27T12:56:58.3595754Z ##[debug]Result: true
+2026-02-27T12:56:58.3596662Z ##[debug]Starting: Handle Create Pull Request Error
+2026-02-27T12:56:58.3652637Z ##[debug]Loading inputs
+2026-02-27T12:56:58.3656183Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:56:58.3657006Z ##[debug]Evaluating Or:
+2026-02-27T12:56:58.3657486Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3658081Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:58.3658608Z ##[debug]....=> Object
+2026-02-27T12:56:58.3659076Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3659574Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:56:58.3660106Z ##[debug]..=> null
+2026-02-27T12:56:58.3660555Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3661966Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:58.3662502Z ##[debug]....=> Object
+2026-02-27T12:56:58.3662956Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3663449Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:56:58.3664514Z ##[debug]..=> '***'
+2026-02-27T12:56:58.3665171Z ##[debug]=> '***'
+2026-02-27T12:56:58.3665871Z ##[debug]Expanded: (null || '***')
+2026-02-27T12:56:58.3666510Z ##[debug]Result: '***'
+2026-02-27T12:56:58.3668781Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:58.3669383Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:58.3669856Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.3670353Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:58.3671228Z ##[debug]....=> Object
+2026-02-27T12:56:58.3671689Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.3672275Z ##[debug]....=> 'debug'
+2026-02-27T12:56:58.3673137Z ##[debug]..=> '1'
+2026-02-27T12:56:58.3673571Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.3674310Z ##[debug]..=> '1'
+2026-02-27T12:56:58.3674813Z ##[debug]=> true
+2026-02-27T12:56:58.3675247Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:58.3675714Z ##[debug]Result: true
+2026-02-27T12:56:58.3684990Z ##[debug]Loading env
+2026-02-27T12:56:58.3692104Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:58.3692835Z with:
+2026-02-27T12:56:58.3693420Z   github-token: ***
+2026-02-27T12:56:58.3694888Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/handle_create_pr_error.cjs');
+await main();
+
+2026-02-27T12:56:58.3696476Z   debug: true
+2026-02-27T12:56:58.3696879Z   user-agent: actions/github-script
+2026-02-27T12:56:58.3697378Z   result-encoding: json
+2026-02-27T12:56:58.3697792Z   retries: 0
+2026-02-27T12:56:58.3698217Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:58.3698764Z env:
+2026-02-27T12:56:58.3699249Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:58.3700069Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:58.3701175Z   GH_AW_RUN_URL: https://github.com/Raulito007/gatitos/actions/runs/22486925250
+2026-02-27T12:56:58.3701924Z ##[endgroup]
+2026-02-27T12:56:58.4782681Z No create_pull_request error message - skipping
+2026-02-27T12:56:58.4853771Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:58.4857081Z ##[debug]Set output result = 
+2026-02-27T12:56:58.4858003Z ##[debug]Finishing: Handle Create Pull Request Error

@@ -1,0 +1,57 @@
+﻿2026-02-27T12:56:40.3676392Z ##[debug]Evaluating condition for step: 'Download agent output artifact'
+2026-02-27T12:56:40.3680821Z ##[debug]Evaluating: success()
+2026-02-27T12:56:40.3682039Z ##[debug]Evaluating success:
+2026-02-27T12:56:40.3683358Z ##[debug]=> true
+2026-02-27T12:56:40.3684445Z ##[debug]Result: true
+2026-02-27T12:56:40.3685937Z ##[debug]Starting: Download agent output artifact
+2026-02-27T12:56:40.3753430Z ##[debug]Loading inputs
+2026-02-27T12:56:40.3764882Z ##[debug]Evaluating: github.repository
+2026-02-27T12:56:40.3766057Z ##[debug]Evaluating Index:
+2026-02-27T12:56:40.3767307Z ##[debug]..Evaluating github:
+2026-02-27T12:56:40.3768220Z ##[debug]..=> Object
+2026-02-27T12:56:40.3769033Z ##[debug]..Evaluating String:
+2026-02-27T12:56:40.3769908Z ##[debug]..=> 'repository'
+2026-02-27T12:56:40.3770978Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:56:40.3771914Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:56:40.3775749Z ##[debug]Evaluating: github.run_id
+2026-02-27T12:56:40.3776792Z ##[debug]Evaluating Index:
+2026-02-27T12:56:40.3778069Z ##[debug]..Evaluating github:
+2026-02-27T12:56:40.3778944Z ##[debug]..=> Object
+2026-02-27T12:56:40.3779739Z ##[debug]..Evaluating String:
+2026-02-27T12:56:40.3780599Z ##[debug]..=> 'run_id'
+2026-02-27T12:56:40.3781453Z ##[debug]=> '22486925250'
+2026-02-27T12:56:40.3782296Z ##[debug]Result: '22486925250'
+2026-02-27T12:56:40.3784813Z ##[debug]Loading env
+2026-02-27T12:56:40.3912931Z ##[group]Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+2026-02-27T12:56:40.3916803Z with:
+2026-02-27T12:56:40.3918186Z   name: agent-output
+2026-02-27T12:56:40.3919278Z   path: /tmp/gh-aw/safeoutputs/
+2026-02-27T12:56:40.3920937Z   merge-multiple: false
+2026-02-27T12:56:40.3921812Z   repository: Raulito007/gatitos
+2026-02-27T12:56:40.3923994Z   run-id: 22486925250
+2026-02-27T12:56:40.3925168Z env:
+2026-02-27T12:56:40.3927673Z   GH_AW_ENGINE_ID: copilot
+2026-02-27T12:56:40.3928610Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:56:40.3929878Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:40.3931168Z ##[endgroup]
+2026-02-27T12:56:40.9498579Z ##[debug]Resolved path is /tmp/gh-aw/safeoutputs
+2026-02-27T12:56:40.9503596Z Downloading single artifact
+2026-02-27T12:56:40.9594030Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:40.9602863Z ##[debug]Workflow Job Run Backend ID: 7bbd714f-0fb9-56fd-a649-f6263a26245b
+2026-02-27T12:56:40.9625892Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:56:41.1625423Z ##[debug][Response] - 200
+2026-02-27T12:56:41.1630453Z ##[debug]Headers: {
+2026-02-27T12:56:41.1631288Z ##[debug]  "content-length": "16",
+2026-02-27T12:56:41.1632284Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:41.1633365Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:41 GMT",
+2026-02-27T12:56:41.1634430Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:41.1635643Z ##[debug]  "x-github-request-id": "2432:17A142:A6FF25:B94102:69A19489"
+2026-02-27T12:56:41.1637163Z ##[debug]}
+2026-02-27T12:56:41.1641277Z ##[debug]Body: {
+2026-02-27T12:56:41.1643498Z ##[debug]  "artifacts": []
+2026-02-27T12:56:41.1644744Z ##[debug]}
+2026-02-27T12:56:41.1689507Z ##[error]Unable to download artifact(s): Artifact not found for name: agent-output
+        Please ensure that your artifact is not expired and the artifact was uploaded using a compatible version of toolkit/upload-artifact.
+        For more information, visit the GitHub Artifacts FAQ: https://github.com/actions/toolkit/blob/main/packages/artifact/docs/faq.md
+2026-02-27T12:56:41.1825927Z ##[debug]Node Action run completed with exit code 1
+2026-02-27T12:56:41.1836641Z ##[debug]Finishing: Download agent output artifact

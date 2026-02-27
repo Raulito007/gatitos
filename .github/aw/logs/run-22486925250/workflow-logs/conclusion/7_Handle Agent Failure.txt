@@ -1,0 +1,317 @@
+﻿2026-02-27T12:56:57.1604780Z ##[debug]Evaluating: env.GH_AW_AGENT_OUTPUT
+2026-02-27T12:56:57.1605484Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1605977Z ##[debug]..Evaluating env:
+2026-02-27T12:56:57.1606489Z ##[debug]..=> Object
+2026-02-27T12:56:57.1606940Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1607448Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:57.1608092Z ##[debug]=> '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.1608792Z ##[debug]Result: '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.1610608Z ##[debug]Evaluating: format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id)
+2026-02-27T12:56:57.1615196Z ##[debug]Evaluating format:
+2026-02-27T12:56:57.1615700Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1616214Z ##[debug]..=> '{0}/{1}/actions/runs/{2}'
+2026-02-27T12:56:57.1616914Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1617395Z ##[debug]....Evaluating github:
+2026-02-27T12:56:57.1617892Z ##[debug]....=> Object
+2026-02-27T12:56:57.1618419Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1618910Z ##[debug]....=> 'server_url'
+2026-02-27T12:56:57.1619980Z ##[debug]..=> 'https://github.com'
+2026-02-27T12:56:57.1622222Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1622739Z ##[debug]....Evaluating github:
+2026-02-27T12:56:57.1623247Z ##[debug]....=> Object
+2026-02-27T12:56:57.1623698Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1624185Z ##[debug]....=> 'repository'
+2026-02-27T12:56:57.1624687Z ##[debug]..=> 'Raulito007/gatitos'
+2026-02-27T12:56:57.1625212Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1625684Z ##[debug]....Evaluating github:
+2026-02-27T12:56:57.1626148Z ##[debug]....=> Object
+2026-02-27T12:56:57.1626583Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1627043Z ##[debug]....=> 'run_id'
+2026-02-27T12:56:57.1627491Z ##[debug]..=> '22486925250'
+2026-02-27T12:56:57.1628149Z ##[debug]=> 'https://github.com/Raulito007/gatitos/actions/runs/22486925250'
+2026-02-27T12:56:57.1629147Z ##[debug]Result: 'https://github.com/Raulito007/gatitos/actions/runs/22486925250'
+2026-02-27T12:56:57.1630405Z ##[debug]Evaluating: needs.agent.result
+2026-02-27T12:56:57.1631276Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1631754Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1632229Z ##[debug]....Evaluating needs:
+2026-02-27T12:56:57.1632719Z ##[debug]....=> Object
+2026-02-27T12:56:57.1633169Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1633650Z ##[debug]....=> 'agent'
+2026-02-27T12:56:57.1634116Z ##[debug]..=> Object
+2026-02-27T12:56:57.1634549Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1635012Z ##[debug]..=> 'result'
+2026-02-27T12:56:57.1635742Z ##[debug]=> 'failure'
+2026-02-27T12:56:57.1636183Z ##[debug]Result: 'failure'
+2026-02-27T12:56:57.1637266Z ##[debug]Evaluating: needs.activation.outputs.secret_verification_result
+2026-02-27T12:56:57.1638007Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1638462Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1638927Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:57.1639637Z ##[debug]......Evaluating needs:
+2026-02-27T12:56:57.1640132Z ##[debug]......=> Object
+2026-02-27T12:56:57.1640595Z ##[debug]......Evaluating String:
+2026-02-27T12:56:57.1641721Z ##[debug]......=> 'activation'
+2026-02-27T12:56:57.1642245Z ##[debug]....=> Object
+2026-02-27T12:56:57.1642690Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1643165Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:57.1643632Z ##[debug]..=> Object
+2026-02-27T12:56:57.1644055Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1644552Z ##[debug]..=> 'secret_verification_result'
+2026-02-27T12:56:57.1645097Z ##[debug]=> 'success'
+2026-02-27T12:56:57.1645539Z ##[debug]Result: 'success'
+2026-02-27T12:56:57.1646533Z ##[debug]Evaluating: needs.agent.outputs.checkout_pr_success
+2026-02-27T12:56:57.1647191Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1647679Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1648145Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:57.1648626Z ##[debug]......Evaluating needs:
+2026-02-27T12:56:57.1649396Z ##[debug]......=> Object
+2026-02-27T12:56:57.1649856Z ##[debug]......Evaluating String:
+2026-02-27T12:56:57.1650351Z ##[debug]......=> 'agent'
+2026-02-27T12:56:57.1651065Z ##[debug]....=> Object
+2026-02-27T12:56:57.1651513Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1651992Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:57.1652428Z ##[debug]..=> Object
+2026-02-27T12:56:57.1652973Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1653464Z ##[debug]..=> 'checkout_pr_success'
+2026-02-27T12:56:57.1653986Z ##[debug]=> 'true'
+2026-02-27T12:56:57.1654414Z ##[debug]Result: 'true'
+2026-02-27T12:56:57.1655463Z ##[debug]Evaluating: needs.safe_outputs.outputs.code_push_failure_errors
+2026-02-27T12:56:57.1656207Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1656667Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1657128Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:57.1658584Z ##[debug]......Evaluating needs:
+2026-02-27T12:56:57.1659200Z ##[debug]......=> Object
+2026-02-27T12:56:57.1659727Z ##[debug]......Evaluating String:
+2026-02-27T12:56:57.1660246Z ##[debug]......=> 'safe_outputs'
+2026-02-27T12:56:57.1660985Z ##[debug]....=> Object
+2026-02-27T12:56:57.1661465Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1661943Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:57.1662420Z ##[debug]..=> Object
+2026-02-27T12:56:57.1662861Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1663351Z ##[debug]..=> 'code_push_failure_errors'
+2026-02-27T12:56:57.1663875Z ##[debug]=> null
+2026-02-27T12:56:57.1664289Z ##[debug]Result: null
+2026-02-27T12:56:57.1666304Z ##[debug]Evaluating: needs.safe_outputs.outputs.code_push_failure_count
+2026-02-27T12:56:57.1667102Z ##[debug]Evaluating Index:
+2026-02-27T12:56:57.1667578Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1668065Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:57.1668548Z ##[debug]......Evaluating needs:
+2026-02-27T12:56:57.1669054Z ##[debug]......=> Object
+2026-02-27T12:56:57.1669534Z ##[debug]......Evaluating String:
+2026-02-27T12:56:57.1670060Z ##[debug]......=> 'safe_outputs'
+2026-02-27T12:56:57.1670585Z ##[debug]....=> Object
+2026-02-27T12:56:57.1671354Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1671835Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:57.1672294Z ##[debug]..=> Object
+2026-02-27T12:56:57.1672714Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1673207Z ##[debug]..=> 'code_push_failure_count'
+2026-02-27T12:56:57.1673722Z ##[debug]=> null
+2026-02-27T12:56:57.1674129Z ##[debug]Result: null
+2026-02-27T12:56:57.1674977Z ##[debug]Evaluating condition for step: 'Handle Agent Failure'
+2026-02-27T12:56:57.1676898Z ##[debug]Evaluating: success()
+2026-02-27T12:56:57.1677698Z ##[debug]Evaluating success:
+2026-02-27T12:56:57.1678817Z ##[debug]=> true
+2026-02-27T12:56:57.1679511Z ##[debug]Result: true
+2026-02-27T12:56:57.1680376Z ##[debug]Starting: Handle Agent Failure
+2026-02-27T12:56:57.1725826Z ##[debug]Loading inputs
+2026-02-27T12:56:57.1727990Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:56:57.1728955Z ##[debug]Evaluating Or:
+2026-02-27T12:56:57.1729451Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1729930Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:57.1730432Z ##[debug]....=> Object
+2026-02-27T12:56:57.1731290Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1731803Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:56:57.1732334Z ##[debug]..=> null
+2026-02-27T12:56:57.1732763Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1733259Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:57.1733756Z ##[debug]....=> Object
+2026-02-27T12:56:57.1734208Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1734700Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:56:57.1735434Z ##[debug]..=> '***'
+2026-02-27T12:56:57.1735996Z ##[debug]=> '***'
+2026-02-27T12:56:57.1736717Z ##[debug]Expanded: (null || '***')
+2026-02-27T12:56:57.1737357Z ##[debug]Result: '***'
+2026-02-27T12:56:57.1738859Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:57.1739456Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:57.1740139Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:57.1740620Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:57.1741483Z ##[debug]....=> Object
+2026-02-27T12:56:57.1741939Z ##[debug]....Evaluating String:
+2026-02-27T12:56:57.1742426Z ##[debug]....=> 'debug'
+2026-02-27T12:56:57.1742892Z ##[debug]..=> '1'
+2026-02-27T12:56:57.1743308Z ##[debug]..Evaluating String:
+2026-02-27T12:56:57.1743781Z ##[debug]..=> '1'
+2026-02-27T12:56:57.1744185Z ##[debug]=> true
+2026-02-27T12:56:57.1744613Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:57.1745083Z ##[debug]Result: true
+2026-02-27T12:56:57.1754366Z ##[debug]Loading env
+2026-02-27T12:56:57.1761475Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:57.1762201Z with:
+2026-02-27T12:56:57.1762777Z   github-token: ***
+2026-02-27T12:56:57.1764235Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/handle_agent_failure.cjs');
+await main();
+
+2026-02-27T12:56:57.1765828Z   debug: true
+2026-02-27T12:56:57.1766251Z   user-agent: actions/github-script
+2026-02-27T12:56:57.1766758Z   result-encoding: json
+2026-02-27T12:56:57.1767178Z   retries: 0
+2026-02-27T12:56:57.1769836Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:57.1770493Z env:
+2026-02-27T12:56:57.1771234Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:57.1772503Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:57.1773439Z   GH_AW_RUN_URL: https://github.com/Raulito007/gatitos/actions/runs/22486925250
+2026-02-27T12:56:57.1774203Z   GH_AW_AGENT_CONCLUSION: failure
+2026-02-27T12:56:57.1774692Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:56:57.1775174Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-02-27T12:56:57.1775721Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-02-27T12:56:57.1776210Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-02-27T12:56:57.1776744Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 
+2026-02-27T12:56:57.1777239Z   GH_AW_GROUP_REPORTS: false
+2026-02-27T12:56:57.1777728Z ##[endgroup]
+2026-02-27T12:56:57.2705054Z Agent conclusion: failure
+2026-02-27T12:56:57.2711497Z Workflow name: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:57.2714644Z Workflow ID: astro
+2026-02-27T12:56:57.2717345Z Secret verification result: success
+2026-02-27T12:56:57.2720074Z Assignment error count: 0
+2026-02-27T12:56:57.2723317Z Create discussion error count: 0
+2026-02-27T12:56:57.2726063Z Code push failure count: 0
+2026-02-27T12:56:57.2729100Z Checkout PR success: true
+2026-02-27T12:56:57.2904190Z fatal: not a git repository (or any of the parent directories): .git
+2026-02-27T12:56:57.2905333Z Searching for pull request from branch: master
+2026-02-27T12:56:57.2917988Z request {
+2026-02-27T12:56:57.2918640Z   method: 'GET',
+2026-02-27T12:56:57.2919285Z   baseUrl: 'https://api.github.com',
+2026-02-27T12:56:57.3101581Z   headers: {
+2026-02-27T12:56:57.3102630Z     accept: 'application/vnd.github.v3+json',
+2026-02-27T12:56:57.3103411Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-02-27T12:56:57.3104089Z   },
+2026-02-27T12:56:57.3104475Z   mediaType: { format: '', previews: [] },
+2026-02-27T12:56:57.3104992Z   request: {
+2026-02-27T12:56:57.3105358Z     agent: Agent {
+2026-02-27T12:56:57.3105786Z       _events: [Object: null prototype],
+2026-02-27T12:56:57.3106288Z       _eventsCount: 2,
+2026-02-27T12:56:57.3106847Z       _maxListeners: undefined,
+2026-02-27T12:56:57.3107354Z       options: [Object: null prototype],
+2026-02-27T12:56:57.3107863Z       defaultPort: 443,
+2026-02-27T12:56:57.3108288Z       protocol: 'https:',
+2026-02-27T12:56:57.3108761Z       requests: [Object: null prototype] {},
+2026-02-27T12:56:57.3109315Z       sockets: [Object: null prototype] {},
+2026-02-27T12:56:57.3109871Z       freeSockets: [Object: null prototype] {},
+2026-02-27T12:56:57.3110417Z       keepAliveMsecs: 1000,
+2026-02-27T12:56:57.3116976Z       keepAlive: true,
+2026-02-27T12:56:57.3117806Z       maxSockets: Infinity,
+2026-02-27T12:56:57.3118280Z       maxFreeSockets: 256,
+2026-02-27T12:56:57.3118745Z       scheduling: 'lifo',
+2026-02-27T12:56:57.3119204Z       maxTotalSockets: Infinity,
+2026-02-27T12:56:57.3119726Z       totalSocketCount: 0,
+2026-02-27T12:56:57.3120207Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-02-27T12:56:57.3121112Z       maxCachedSessions: 100,
+2026-02-27T12:56:57.3121615Z       _sessionCache: [Object],
+2026-02-27T12:56:57.3122081Z       Symbol(shapeMode): false,
+2026-02-27T12:56:57.3122569Z       Symbol(kCapture): false
+2026-02-27T12:56:57.3123003Z     },
+2026-02-27T12:56:57.3123387Z     fetch: [Function: proxyFetch],
+2026-02-27T12:56:57.3124846Z     hook: [Function: bound bound register]
+2026-02-27T12:56:57.3125467Z   },
+2026-02-27T12:56:57.3125824Z   url: '/search/issues',
+2026-02-27T12:56:57.3126372Z   q: 'repo:Raulito007/gatitos is:pr is:open head:master',
+2026-02-27T12:56:57.3126956Z   per_page: 1
+2026-02-27T12:56:57.3127352Z }
+2026-02-27T12:56:57.4874143Z GET /search/issues?q=repo%3ARaulito007%2Fgatitos%20is%3Apr%20is%3Aopen%20head%3Amaster&per_page=1 - 200 in 194ms
+2026-02-27T12:56:57.4878642Z No pull request found for branch: master
+2026-02-27T12:56:57.4882227Z Parent issue creation is disabled (group-reports: false)
+2026-02-27T12:56:57.4934486Z Checking for existing issue with title: "[aw] Astro — Workflow de scaffolding del blog Hugo failed"
+2026-02-27T12:56:57.4943606Z request {
+2026-02-27T12:56:57.4944264Z   method: 'GET',
+2026-02-27T12:56:57.4944927Z   baseUrl: 'https://api.github.com',
+2026-02-27T12:56:57.4946323Z   headers: {
+2026-02-27T12:56:57.4988075Z     accept: 'application/vnd.github.v3+json',
+2026-02-27T12:56:57.4988906Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-02-27T12:56:57.4989582Z   },
+2026-02-27T12:56:57.4989975Z   mediaType: { format: '', previews: [] },
+2026-02-27T12:56:57.4990488Z   request: {
+2026-02-27T12:56:57.4991209Z     agent: Agent {
+2026-02-27T12:56:57.4991711Z       _events: [Object: null prototype],
+2026-02-27T12:56:57.4992254Z       _eventsCount: 2,
+2026-02-27T12:56:57.4992690Z       _maxListeners: undefined,
+2026-02-27T12:56:57.4993182Z       options: [Object: null prototype],
+2026-02-27T12:56:57.4993685Z       defaultPort: 443,
+2026-02-27T12:56:57.4994119Z       protocol: 'https:',
+2026-02-27T12:56:57.4994603Z       requests: [Object: null prototype] {},
+2026-02-27T12:56:57.4995163Z       sockets: [Object: null prototype] {},
+2026-02-27T12:56:57.4995722Z       freeSockets: [Object: null prototype] {},
+2026-02-27T12:56:57.4996262Z       keepAliveMsecs: 1000,
+2026-02-27T12:56:57.4996709Z       keepAlive: true,
+2026-02-27T12:56:57.4997124Z       maxSockets: Infinity,
+2026-02-27T12:56:57.4998518Z       maxFreeSockets: 256,
+2026-02-27T12:56:57.4999017Z       scheduling: 'lifo',
+2026-02-27T12:56:57.4999500Z       maxTotalSockets: Infinity,
+2026-02-27T12:56:57.4999979Z       totalSocketCount: 0,
+2026-02-27T12:56:57.5000463Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-02-27T12:56:57.5002303Z       maxCachedSessions: 100,
+2026-02-27T12:56:57.5002809Z       _sessionCache: [Object],
+2026-02-27T12:56:57.5003285Z       Symbol(shapeMode): false,
+2026-02-27T12:56:57.5003755Z       Symbol(kCapture): false
+2026-02-27T12:56:57.5004206Z     },
+2026-02-27T12:56:57.5004587Z     fetch: [Function: proxyFetch],
+2026-02-27T12:56:57.5006179Z     hook: [Function: bound bound register]
+2026-02-27T12:56:57.5006775Z   },
+2026-02-27T12:56:57.5007146Z   url: '/search/issues',
+2026-02-27T12:56:57.5008425Z   q: 'repo:Raulito007/gatitos is:issue is:open label:agentic-workflows in:title "[aw] Astro — Workflow de scaffolding del blog Hugo failed"',
+2026-02-27T12:56:57.5009574Z   per_page: 1
+2026-02-27T12:56:57.5009960Z }
+2026-02-27T12:56:57.6588403Z GET /search/issues?q=repo%3ARaulito007%2Fgatitos%20is%3Aissue%20is%3Aopen%20label%3Aagentic-workflows%20in%3Atitle%20%22%5Baw%5D%20Astro%20%E2%80%94%20Workflow%20de%20scaffolding%20del%20blog%20Hugo%20failed%22&per_page=1 - 200 in 163ms
+2026-02-27T12:56:57.6594390Z Found existing issue #1: https://github.com/Raulito007/gatitos/issues/1
+2026-02-27T12:56:57.6604079Z Error reading agent output file: ENOENT: no such file or directory, open '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.6618153Z request {
+2026-02-27T12:56:57.6618857Z   method: 'POST',
+2026-02-27T12:56:57.6619463Z   baseUrl: 'https://api.github.com',
+2026-02-27T12:56:57.6620190Z   headers: {
+2026-02-27T12:56:57.6622022Z     accept: 'application/vnd.github.v3+json',
+2026-02-27T12:56:57.6660582Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-02-27T12:56:57.6661654Z   },
+2026-02-27T12:56:57.6662074Z   mediaType: { format: '', previews: [] },
+2026-02-27T12:56:57.6662601Z   request: {
+2026-02-27T12:56:57.6662987Z     agent: Agent {
+2026-02-27T12:56:57.6663442Z       _events: [Object: null prototype],
+2026-02-27T12:56:57.6663963Z       _eventsCount: 2,
+2026-02-27T12:56:57.6664491Z       _maxListeners: undefined,
+2026-02-27T12:56:57.6665009Z       options: [Object: null prototype],
+2026-02-27T12:56:57.6665581Z       defaultPort: 443,
+2026-02-27T12:56:57.6666030Z       protocol: 'https:',
+2026-02-27T12:56:57.6666504Z       requests: [Object: null prototype] {},
+2026-02-27T12:56:57.6667071Z       sockets: [Object: null prototype] {},
+2026-02-27T12:56:57.6667669Z       freeSockets: [Object: null prototype] {},
+2026-02-27T12:56:57.6668227Z       keepAliveMsecs: 1000,
+2026-02-27T12:56:57.6668692Z       keepAlive: true,
+2026-02-27T12:56:57.6669108Z       maxSockets: Infinity,
+2026-02-27T12:56:57.6669568Z       maxFreeSockets: 256,
+2026-02-27T12:56:57.6670007Z       scheduling: 'lifo',
+2026-02-27T12:56:57.6670465Z       maxTotalSockets: Infinity,
+2026-02-27T12:56:57.6671319Z       totalSocketCount: 0,
+2026-02-27T12:56:57.6671833Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-02-27T12:56:57.6672367Z       maxCachedSessions: 100,
+2026-02-27T12:56:57.6672845Z       _sessionCache: [Object],
+2026-02-27T12:56:57.6673323Z       Symbol(shapeMode): false,
+2026-02-27T12:56:57.6673818Z       Symbol(kCapture): false
+2026-02-27T12:56:57.6674278Z     },
+2026-02-27T12:56:57.6674650Z     fetch: [Function: proxyFetch],
+2026-02-27T12:56:57.6675175Z     hook: [Function: bound bound register]
+2026-02-27T12:56:57.6675704Z   },
+2026-02-27T12:56:57.6676218Z   url: '/repos/{owner}/{repo}/issues/{issue_number}/comments',
+2026-02-27T12:56:57.6676877Z   owner: 'Raulito007',
+2026-02-27T12:56:57.6677308Z   repo: 'gatitos',
+2026-02-27T12:56:57.6677702Z   issue_number: 1,
+2026-02-27T12:56:57.6678516Z   body: 'Agent job [22486925250](https://github.com/Raulito007/gatitos/actions/runs/22486925250) failed.\n' +
+2026-02-27T12:56:57.6679454Z     '\n' +
+2026-02-27T12:56:57.6679809Z     '\n' +
+2026-02-27T12:56:57.6680168Z     '\n' +
+2026-02-27T12:56:57.6680514Z     '\n' +
+2026-02-27T12:56:57.6681988Z     '> Generated from [Astro — Workflow de scaffolding del blog Hugo](https://github.com/Raulito007/gatitos/actions/runs/22486925250)'
+2026-02-27T12:56:57.6683089Z }
+2026-02-27T12:56:58.1523127Z POST /repos/Raulito007/gatitos/issues/1/comments - 201 in 489ms
+2026-02-27T12:56:58.1524885Z ✓ Added comment to existing issue #1
+2026-02-27T12:56:58.1617869Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:58.1622934Z ##[debug]Set output result = 
+2026-02-27T12:56:58.1623821Z ##[debug]Finishing: Handle Agent Failure

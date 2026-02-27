@@ -1,0 +1,65 @@
+﻿2026-02-27T12:56:58.5052458Z ##[debug]Starting: Complete job
+2026-02-27T12:56:58.5055021Z Evaluate and set job outputs
+2026-02-27T12:56:58.5061835Z ##[debug]Evaluating: steps.noop.outputs.noop_message
+2026-02-27T12:56:58.5062535Z ##[debug]Evaluating Index:
+2026-02-27T12:56:58.5063024Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.5063500Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:58.5063978Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:58.5064577Z ##[debug]......=> Object
+2026-02-27T12:56:58.5065070Z ##[debug]......Evaluating String:
+2026-02-27T12:56:58.5065574Z ##[debug]......=> 'noop'
+2026-02-27T12:56:58.5066065Z ##[debug]....=> Object
+2026-02-27T12:56:58.5066502Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.5066973Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:58.5067425Z ##[debug]..=> Object
+2026-02-27T12:56:58.5067840Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.5068315Z ##[debug]..=> 'noop_message'
+2026-02-27T12:56:58.5068775Z ##[debug]=> null
+2026-02-27T12:56:58.5069180Z ##[debug]Result: null
+2026-02-27T12:56:58.5070370Z ##[debug]Evaluating: steps.missing_tool.outputs.tools_reported
+2026-02-27T12:56:58.5071403Z ##[debug]Evaluating Index:
+2026-02-27T12:56:58.5071866Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.5072328Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:58.5072809Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:58.5073299Z ##[debug]......=> Object
+2026-02-27T12:56:58.5073785Z ##[debug]......Evaluating String:
+2026-02-27T12:56:58.5074306Z ##[debug]......=> 'missing_tool'
+2026-02-27T12:56:58.5074811Z ##[debug]....=> Object
+2026-02-27T12:56:58.5075256Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.5075742Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:58.5076194Z ##[debug]..=> Object
+2026-02-27T12:56:58.5076616Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.5077087Z ##[debug]..=> 'tools_reported'
+2026-02-27T12:56:58.5077550Z ##[debug]=> null
+2026-02-27T12:56:58.5077944Z ##[debug]Result: null
+2026-02-27T12:56:58.5078911Z ##[debug]Evaluating: steps.missing_tool.outputs.total_count
+2026-02-27T12:56:58.5079571Z ##[debug]Evaluating Index:
+2026-02-27T12:56:58.5080028Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:58.5080498Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:58.5081239Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:58.5081739Z ##[debug]......=> Object
+2026-02-27T12:56:58.5082208Z ##[debug]......Evaluating String:
+2026-02-27T12:56:58.5082714Z ##[debug]......=> 'missing_tool'
+2026-02-27T12:56:58.5083461Z ##[debug]....=> Object
+2026-02-27T12:56:58.5083897Z ##[debug]....Evaluating String:
+2026-02-27T12:56:58.5084377Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:58.5084826Z ##[debug]..=> Object
+2026-02-27T12:56:58.5085250Z ##[debug]..Evaluating String:
+2026-02-27T12:56:58.5085719Z ##[debug]..=> 'total_count'
+2026-02-27T12:56:58.5086159Z ##[debug]=> null
+2026-02-27T12:56:58.5086565Z ##[debug]Result: null
+2026-02-27T12:56:58.5087298Z ##[debug]Skip output 'noop_message' since it's empty
+2026-02-27T12:56:58.5087932Z ##[debug]Skip output 'tools_reported' since it's empty
+2026-02-27T12:56:58.5088603Z ##[debug]Skip output 'total_count' since it's empty
+2026-02-27T12:56:58.5090267Z Uploading runner diagnostic logs
+2026-02-27T12:56:58.5111021Z ##[debug]Starting diagnostic file upload.
+2026-02-27T12:56:58.5111884Z ##[debug]Setting up diagnostic log folders.
+2026-02-27T12:56:58.5117032Z ##[debug]Creating diagnostic log files folder.
+2026-02-27T12:56:58.5128677Z ##[debug]Copying 1 worker diagnostic logs.
+2026-02-27T12:56:58.5139270Z ##[debug]Copying 1 runner diagnostic logs.
+2026-02-27T12:56:58.5142407Z ##[debug]Zipping diagnostic files.
+2026-02-27T12:56:58.5289635Z ##[debug]Uploading diagnostic metadata file.
+2026-02-27T12:56:58.5322968Z ##[debug]Diagnostic file upload complete.
+2026-02-27T12:56:58.5324011Z Completed runner diagnostic log upload
+2026-02-27T12:56:58.5324551Z Cleaning up orphan processes
+2026-02-27T12:56:58.5350594Z ##[debug]Finishing: Complete job

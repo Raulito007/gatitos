@@ -1,0 +1,55 @@
+﻿2026-02-27T12:55:29.3309060Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN || secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:55:29.3309672Z ##[debug]Evaluating Or:
+2026-02-27T12:55:29.3311608Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:29.3311872Z ##[debug]....Evaluating secrets:
+2026-02-27T12:55:29.3312153Z ##[debug]....=> Object
+2026-02-27T12:55:29.3312389Z ##[debug]....Evaluating String:
+2026-02-27T12:55:29.3312659Z ##[debug]....=> 'GH_AW_GITHUB_MCP_SERVER_TOKEN'
+2026-02-27T12:55:29.3312991Z ##[debug]..=> null
+2026-02-27T12:55:29.3313206Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:29.3313429Z ##[debug]....Evaluating secrets:
+2026-02-27T12:55:29.3313663Z ##[debug]....=> Object
+2026-02-27T12:55:29.3313865Z ##[debug]....Evaluating String:
+2026-02-27T12:55:29.3314098Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:55:29.3314339Z ##[debug]..=> null
+2026-02-27T12:55:29.3314554Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:29.3314774Z ##[debug]....Evaluating secrets:
+2026-02-27T12:55:29.3314998Z ##[debug]....=> Object
+2026-02-27T12:55:29.3315231Z ##[debug]....Evaluating String:
+2026-02-27T12:55:29.3315473Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:55:29.3315855Z ##[debug]..=> '***'
+2026-02-27T12:55:29.3316152Z ##[debug]=> '***'
+2026-02-27T12:55:29.3318994Z ##[debug]Expanded: (null || null || '***')
+2026-02-27T12:55:29.3319386Z ##[debug]Result: '***'
+2026-02-27T12:55:29.3319835Z ##[debug]Evaluating condition for step: 'Checkout PR branch'
+2026-02-27T12:55:29.3324663Z ##[debug]Evaluating: (success() && (github.event.pull_request || github.event.issue.pull_request))
+2026-02-27T12:55:29.3325277Z ##[debug]Evaluating And:
+2026-02-27T12:55:29.3327452Z ##[debug]..Evaluating success:
+2026-02-27T12:55:29.3327848Z ##[debug]..=> true
+2026-02-27T12:55:29.3328137Z ##[debug]..Evaluating Or:
+2026-02-27T12:55:29.3328429Z ##[debug]....Evaluating Index:
+2026-02-27T12:55:29.3328729Z ##[debug]......Evaluating Index:
+2026-02-27T12:55:29.3329025Z ##[debug]........Evaluating github:
+2026-02-27T12:55:29.3329337Z ##[debug]........=> Object
+2026-02-27T12:55:29.3329647Z ##[debug]........Evaluating String:
+2026-02-27T12:55:29.3329949Z ##[debug]........=> 'event'
+2026-02-27T12:55:29.3330241Z ##[debug]......=> Object
+2026-02-27T12:55:29.3330522Z ##[debug]......Evaluating String:
+2026-02-27T12:55:29.3330827Z ##[debug]......=> 'pull_request'
+2026-02-27T12:55:29.3331121Z ##[debug]....=> null
+2026-02-27T12:55:29.3331386Z ##[debug]....Evaluating Index:
+2026-02-27T12:55:29.3331676Z ##[debug]......Evaluating Index:
+2026-02-27T12:55:29.3331972Z ##[debug]........Evaluating Index:
+2026-02-27T12:55:29.3332285Z ##[debug]..........Evaluating github:
+2026-02-27T12:55:29.3332590Z ##[debug]..........=> Object
+2026-02-27T12:55:29.3332895Z ##[debug]..........Evaluating String:
+2026-02-27T12:55:29.3333196Z ##[debug]..........=> 'event'
+2026-02-27T12:55:29.3333489Z ##[debug]........=> Object
+2026-02-27T12:55:29.3333771Z ##[debug]........Evaluating String:
+2026-02-27T12:55:29.3334067Z ##[debug]........=> 'issue'
+2026-02-27T12:55:29.3334336Z ##[debug]......=> null
+2026-02-27T12:55:29.3334609Z ##[debug]....=> null
+2026-02-27T12:55:29.3334867Z ##[debug]..=> null
+2026-02-27T12:55:29.3335109Z ##[debug]=> null
+2026-02-27T12:55:29.3337693Z ##[debug]Expanded: (true && (null || null))
+2026-02-27T12:55:29.3338093Z ##[debug]Result: null

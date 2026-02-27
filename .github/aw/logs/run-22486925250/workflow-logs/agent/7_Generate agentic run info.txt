@@ -1,0 +1,123 @@
+﻿2026-02-27T12:55:29.3345855Z ##[debug]Evaluating condition for step: 'Generate agentic run info'
+2026-02-27T12:55:29.3347697Z ##[debug]Evaluating: success()
+2026-02-27T12:55:29.3348138Z ##[debug]Evaluating success:
+2026-02-27T12:55:29.3348481Z ##[debug]=> true
+2026-02-27T12:55:29.3348791Z ##[debug]Result: true
+2026-02-27T12:55:29.3349263Z ##[debug]Starting: Generate agentic run info
+2026-02-27T12:55:29.3381403Z ##[debug]Loading inputs
+2026-02-27T12:55:29.3382898Z ##[debug]Evaluating: github.token
+2026-02-27T12:55:29.3383160Z ##[debug]Evaluating Index:
+2026-02-27T12:55:29.3383389Z ##[debug]..Evaluating github:
+2026-02-27T12:55:29.3383632Z ##[debug]..=> Object
+2026-02-27T12:55:29.3383838Z ##[debug]..Evaluating String:
+2026-02-27T12:55:29.3384060Z ##[debug]..=> 'token'
+2026-02-27T12:55:29.3384415Z ##[debug]=> '***'
+2026-02-27T12:55:29.3384722Z ##[debug]Result: '***'
+2026-02-27T12:55:29.3387417Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:55:29.3387764Z ##[debug]Evaluating Equal:
+2026-02-27T12:55:29.3388696Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:29.3388978Z ##[debug]....Evaluating runner:
+2026-02-27T12:55:29.3389243Z ##[debug]....=> Object
+2026-02-27T12:55:29.3389469Z ##[debug]....Evaluating String:
+2026-02-27T12:55:29.3389707Z ##[debug]....=> 'debug'
+2026-02-27T12:55:29.3389996Z ##[debug]..=> '1'
+2026-02-27T12:55:29.3390206Z ##[debug]..Evaluating String:
+2026-02-27T12:55:29.3390419Z ##[debug]..=> '1'
+2026-02-27T12:55:29.3393821Z ##[debug]=> true
+2026-02-27T12:55:29.3395309Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:55:29.3395550Z ##[debug]Result: true
+2026-02-27T12:55:29.3400937Z ##[debug]Loading env
+2026-02-27T12:55:29.3404776Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:55:29.3405151Z with:
+2026-02-27T12:55:29.3409197Z   script: const fs = require('fs');
+
+const awInfo = {
+  engine_id: "copilot",
+  engine_name: "GitHub Copilot CLI",
+  model: process.env.GH_AW_MODEL_AGENT_COPILOT || "",
+  version: "",
+  agent_version: "0.0.418",
+  cli_version: "v0.50.6",
+  workflow_name: "Astro — Workflow de scaffolding del blog Hugo",
+  experimental: false,
+  supports_tools_allowlist: true,
+  run_id: context.runId,
+  run_number: context.runNumber,
+  run_attempt: process.env.GITHUB_RUN_ATTEMPT,
+  repository: context.repo.owner + '/' + context.repo.repo,
+  ref: context.ref,
+  sha: context.sha,
+  actor: context.actor,
+  event_name: context.eventName,
+  staged: false,
+  allowed_domains: ["defaults"],
+  firewall_enabled: true,
+  awf_version: "v0.23.0",
+  awmg_version: "v0.1.5",
+  steps: {
+    firewall: "squid"
+  },
+  created_at: new Date().toISOString()
+};
+
+// Write to /tmp/gh-aw directory to avoid inclusion in PR
+const tmpPath = '/tmp/gh-aw/aw_info.json';
+fs.writeFileSync(tmpPath, JSON.stringify(awInfo, null, 2));
+console.log('Generated aw_info.json at:', tmpPath);
+console.log(JSON.stringify(awInfo, null, 2));
+
+// Set model as output for reuse in other steps/jobs
+core.setOutput('model', awInfo.model);
+
+2026-02-27T12:55:29.3413485Z   github-token: ***
+2026-02-27T12:55:29.3413678Z   debug: true
+2026-02-27T12:55:29.3413877Z   user-agent: actions/github-script
+2026-02-27T12:55:29.3414124Z   result-encoding: json
+2026-02-27T12:55:29.3414319Z   retries: 0
+2026-02-27T12:55:29.3414520Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:55:29.3414788Z env:
+2026-02-27T12:55:29.3414943Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:29.3415152Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:29.3415368Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:29.3415559Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:29.3415816Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:29.3416161Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:29.3416652Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:29.3417068Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:29.3417404Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:29.3417635Z ##[endgroup]
+2026-02-27T12:55:29.4119161Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-02-27T12:55:29.4121480Z {
+2026-02-27T12:55:29.4121787Z   "engine_id": "copilot",
+2026-02-27T12:55:29.4122214Z   "engine_name": "GitHub Copilot CLI",
+2026-02-27T12:55:29.4122554Z   "model": "",
+2026-02-27T12:55:29.4122757Z   "version": "",
+2026-02-27T12:55:29.4122974Z   "agent_version": "0.0.418",
+2026-02-27T12:55:29.4123237Z   "cli_version": "v0.50.6",
+2026-02-27T12:55:29.4123850Z   "workflow_name": "Astro — Workflow de scaffolding del blog Hugo",
+2026-02-27T12:55:29.4124261Z   "experimental": false,
+2026-02-27T12:55:29.4124524Z   "supports_tools_allowlist": true,
+2026-02-27T12:55:29.4124806Z   "run_id": 22486925250,
+2026-02-27T12:55:29.4125031Z   "run_number": 7,
+2026-02-27T12:55:29.4125245Z   "run_attempt": "2",
+2026-02-27T12:55:29.4125486Z   "repository": "Raulito007/gatitos",
+2026-02-27T12:55:29.4125785Z   "ref": "refs/heads/master",
+2026-02-27T12:55:29.4126083Z   "sha": "53d63d7377194d8cd97ec92a8ec48a1dcef34bbc",
+2026-02-27T12:55:29.4126617Z   "actor": "Raulito007",
+2026-02-27T12:55:29.4126942Z   "event_name": "workflow_dispatch",
+2026-02-27T12:55:29.4127214Z   "staged": false,
+2026-02-27T12:55:29.4127432Z   "allowed_domains": [
+2026-02-27T12:55:29.4127656Z     "defaults"
+2026-02-27T12:55:29.4127843Z   ],
+2026-02-27T12:55:29.4128034Z   "firewall_enabled": true,
+2026-02-27T12:55:29.4128347Z   "awf_version": "v0.23.0",
+2026-02-27T12:55:29.4128598Z   "awmg_version": "v0.1.5",
+2026-02-27T12:55:29.4128832Z   "steps": {
+2026-02-27T12:55:29.4129025Z     "firewall": "squid"
+2026-02-27T12:55:29.4129240Z   },
+2026-02-27T12:55:29.4129431Z   "created_at": "2026-02-27T12:55:29.411Z"
+2026-02-27T12:55:29.4129710Z }
+2026-02-27T12:55:29.4185780Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:55:29.4203891Z ##[debug]Set output model = 
+2026-02-27T12:55:29.4204299Z ##[debug]Set output result = 
+2026-02-27T12:55:29.4204834Z ##[debug]Finishing: Generate agentic run info

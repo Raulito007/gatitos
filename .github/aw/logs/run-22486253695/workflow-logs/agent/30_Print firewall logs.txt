@@ -1,0 +1,34 @@
+﻿2026-02-27T12:34:28.9797708Z ##[group]Run # Fix permissions on firewall logs so they can be uploaded as artifacts
+2026-02-27T12:34:28.9797970Z [36;1m# Fix permissions on firewall logs so they can be uploaded as artifacts[0m
+2026-02-27T12:34:28.9798114Z [36;1m# AWF runs with sudo, creating files owned by root[0m
+2026-02-27T12:34:28.9798318Z [36;1msudo chmod -R a+r /tmp/gh-aw/sandbox/firewall/logs 2>/dev/null || true[0m
+2026-02-27T12:34:28.9798652Z [36;1m# Only run awf logs summary if awf command exists (it may not be installed if workflow failed before install step)[0m
+2026-02-27T12:34:28.9798764Z [36;1mif command -v awf &> /dev/null; then[0m
+2026-02-27T12:34:28.9798903Z [36;1m  awf logs summary | tee -a "$GITHUB_STEP_SUMMARY"[0m
+2026-02-27T12:34:28.9798986Z [36;1melse[0m
+2026-02-27T12:34:28.9799175Z [36;1m  echo 'AWF binary not installed, skipping firewall log summary'[0m
+2026-02-27T12:34:28.9799246Z [36;1mfi[0m
+2026-02-27T12:34:28.9847208Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:34:28.9847297Z env:
+2026-02-27T12:34:28.9847418Z   DEFAULT_BRANCH: master
+2026-02-27T12:34:28.9847511Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:34:28.9847589Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:34:28.9847670Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:34:28.9847814Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:34:28.9847972Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:34:28.9848154Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:34:28.9848319Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:34:28.9848421Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:34:28.9848540Z   AWF_LOGS_DIR: /tmp/gh-aw/sandbox/firewall/logs
+2026-02-27T12:34:28.9848625Z ##[endgroup]
+2026-02-27T12:34:29.1175645Z <details>
+2026-02-27T12:34:29.1176667Z <summary>Firewall Activity</summary>
+2026-02-27T12:34:29.1177077Z 
+2026-02-27T12:34:29.1177713Z ▼ 2 requests | 2 allowed | 0 blocked | 1 unique domain
+2026-02-27T12:34:29.1178152Z 
+2026-02-27T12:34:29.1178375Z | Domain | Allowed | Denied |
+2026-02-27T12:34:29.1178841Z |--------|---------|--------|
+2026-02-27T12:34:29.1179296Z | api.githubcopilot.com | 2 | 0 |
+2026-02-27T12:34:29.1179635Z 
+2026-02-27T12:34:29.1179775Z </details>
+2026-02-27T12:34:29.1179972Z 

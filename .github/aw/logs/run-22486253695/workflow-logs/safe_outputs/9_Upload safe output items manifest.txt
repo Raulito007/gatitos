@@ -1,0 +1,25 @@
+﻿2026-02-27T12:34:54.1688442Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+2026-02-27T12:34:54.1690160Z with:
+2026-02-27T12:34:54.1690801Z   name: safe-output-items
+2026-02-27T12:34:54.1691615Z   path: /tmp/safe-output-items.jsonl
+2026-02-27T12:34:54.1692490Z   if-no-files-found: warn
+2026-02-27T12:34:54.1693253Z   compression-level: 6
+2026-02-27T12:34:54.1693952Z   overwrite: false
+2026-02-27T12:34:54.1694652Z   include-hidden-files: false
+2026-02-27T12:34:54.1695407Z env:
+2026-02-27T12:34:54.1696035Z   GH_AW_ENGINE_ID: copilot
+2026-02-27T12:34:54.1696804Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:34:54.1697828Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:34:54.1699194Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:34:54.1700464Z ##[endgroup]
+2026-02-27T12:34:54.3430679Z With the provided path, there will be 1 file uploaded
+2026-02-27T12:34:54.3454756Z Artifact name is valid!
+2026-02-27T12:34:54.3458637Z Root directory input is valid!
+2026-02-27T12:34:54.5756266Z Beginning upload of artifact content to blob storage
+2026-02-27T12:34:54.8614513Z Uploaded bytes 162
+2026-02-27T12:34:54.9290136Z Finished uploading artifact content to blob storage!
+2026-02-27T12:34:54.9295169Z SHA256 digest of uploaded artifact zip is fd458f1246ca009cdc01210f85252975620551c02d41d5db07cd031d0440a2f9
+2026-02-27T12:34:54.9300159Z Finalizing artifact upload
+2026-02-27T12:34:55.1838231Z Artifact safe-output-items.zip successfully finalized. Artifact ID 5689979567
+2026-02-27T12:34:55.1843155Z Artifact safe-output-items has been successfully uploaded! Final size is 162 bytes. Artifact ID is 5689979567
+2026-02-27T12:34:55.1851765Z Artifact download URL: https://github.com/Raulito007/gatitos/actions/runs/22486253695/artifacts/5689979567

@@ -1,0 +1,48 @@
+﻿2026-02-27T12:56:15.4237446Z ##[debug]Evaluating condition for step: 'Upload Safe Outputs'
+2026-02-27T12:56:15.4239111Z ##[debug]Evaluating: always()
+2026-02-27T12:56:15.4239477Z ##[debug]Evaluating always:
+2026-02-27T12:56:15.4239784Z ##[debug]=> true
+2026-02-27T12:56:15.4240109Z ##[debug]Result: true
+2026-02-27T12:56:15.4240574Z ##[debug]Starting: Upload Safe Outputs
+2026-02-27T12:56:15.4261560Z ##[debug]Loading inputs
+2026-02-27T12:56:15.4262512Z ##[debug]Evaluating: env.GH_AW_SAFE_OUTPUTS
+2026-02-27T12:56:15.4262806Z ##[debug]Evaluating Index:
+2026-02-27T12:56:15.4263037Z ##[debug]..Evaluating env:
+2026-02-27T12:56:15.4263266Z ##[debug]..=> Object
+2026-02-27T12:56:15.4263479Z ##[debug]..Evaluating String:
+2026-02-27T12:56:15.4263724Z ##[debug]..=> 'GH_AW_SAFE_OUTPUTS'
+2026-02-27T12:56:15.4264064Z ##[debug]=> '/opt/gh-aw/safeoutputs/outputs.jsonl'
+2026-02-27T12:56:15.4264447Z ##[debug]Result: '/opt/gh-aw/safeoutputs/outputs.jsonl'
+2026-02-27T12:56:15.4267498Z ##[debug]Loading env
+2026-02-27T12:56:15.4271406Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+2026-02-27T12:56:15.4271844Z with:
+2026-02-27T12:56:15.4272014Z   name: safe-output
+2026-02-27T12:56:15.4272244Z   path: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:15.4272535Z   if-no-files-found: warn
+2026-02-27T12:56:15.4272764Z   compression-level: 6
+2026-02-27T12:56:15.4272970Z   overwrite: false
+2026-02-27T12:56:15.4273173Z   include-hidden-files: false
+2026-02-27T12:56:15.4273392Z env:
+2026-02-27T12:56:15.4273566Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:15.4273778Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:15.4274003Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:15.4274218Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:15.4274482Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:15.4274848Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:15.4275262Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:15.4275693Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:15.4276055Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:15.4276308Z ##[endgroup]
+2026-02-27T12:56:15.5726141Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:15.5727615Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:15.5728249Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:15.5728735Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:15.5752128Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:15.5752962Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:15.5753737Z ##[debug]matchDirectories 'true'
+2026-02-27T12:56:15.5754497Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:15.5755284Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:15.5756179Z ##[debug]Search path '/opt/gh-aw/safeoutputs/outputs.jsonl'
+2026-02-27T12:56:15.5765434Z ##[warning]No files were found with the provided path: /opt/gh-aw/safeoutputs/outputs.jsonl. No artifacts will be uploaded.
+2026-02-27T12:56:15.5840808Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:15.5842972Z ##[debug]Finishing: Upload Safe Outputs

@@ -1,0 +1,53 @@
+﻿2026-02-27T12:56:56.0966026Z ##[debug]Evaluating condition for step: 'Download agent output artifact'
+2026-02-27T12:56:56.0968501Z ##[debug]Evaluating: success()
+2026-02-27T12:56:56.0969209Z ##[debug]Evaluating success:
+2026-02-27T12:56:56.0969916Z ##[debug]=> true
+2026-02-27T12:56:56.0973107Z ##[debug]Result: true
+2026-02-27T12:56:56.0974258Z ##[debug]Starting: Download agent output artifact
+2026-02-27T12:56:56.1020391Z ##[debug]Loading inputs
+2026-02-27T12:56:56.1027664Z ##[debug]Evaluating: github.repository
+2026-02-27T12:56:56.1028267Z ##[debug]Evaluating Index:
+2026-02-27T12:56:56.1028745Z ##[debug]..Evaluating github:
+2026-02-27T12:56:56.1029236Z ##[debug]..=> Object
+2026-02-27T12:56:56.1029692Z ##[debug]..Evaluating String:
+2026-02-27T12:56:56.1030204Z ##[debug]..=> 'repository'
+2026-02-27T12:56:56.1031152Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:56:56.1031716Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:56:56.1034191Z ##[debug]Evaluating: github.run_id
+2026-02-27T12:56:56.1034749Z ##[debug]Evaluating Index:
+2026-02-27T12:56:56.1056846Z ##[debug]..Evaluating github:
+2026-02-27T12:56:56.1057741Z ##[debug]..=> Object
+2026-02-27T12:56:56.1058216Z ##[debug]..Evaluating String:
+2026-02-27T12:56:56.1058715Z ##[debug]..=> 'run_id'
+2026-02-27T12:56:56.1059182Z ##[debug]=> '22486925250'
+2026-02-27T12:56:56.1059658Z ##[debug]Result: '22486925250'
+2026-02-27T12:56:56.1061736Z ##[debug]Loading env
+2026-02-27T12:56:56.1078192Z ##[group]Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+2026-02-27T12:56:56.1079011Z with:
+2026-02-27T12:56:56.1079373Z   name: agent-output
+2026-02-27T12:56:56.1080414Z   path: /tmp/gh-aw/safeoutputs/
+2026-02-27T12:56:56.1081211Z   merge-multiple: false
+2026-02-27T12:56:56.1081698Z   repository: Raulito007/gatitos
+2026-02-27T12:56:56.1082160Z   run-id: 22486925250
+2026-02-27T12:56:56.1082573Z ##[endgroup]
+2026-02-27T12:56:56.6357366Z ##[debug]Resolved path is /tmp/gh-aw/safeoutputs
+2026-02-27T12:56:56.6358128Z Downloading single artifact
+2026-02-27T12:56:56.6359281Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:56.6360434Z ##[debug]Workflow Job Run Backend ID: 361c7d1f-0191-5629-9a63-a9e2cfb5af4a
+2026-02-27T12:56:56.6373023Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:56:56.6469105Z ##[debug][Response] - 200
+2026-02-27T12:56:56.6518460Z ##[debug]Headers: {
+2026-02-27T12:56:56.6518946Z ##[debug]  "content-length": "16",
+2026-02-27T12:56:56.6519515Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:56.6520141Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:56 GMT",
+2026-02-27T12:56:56.6529357Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:56.6530239Z ##[debug]  "x-github-request-id": "1201:29EB90:5D0DE:665A4:69A19498"
+2026-02-27T12:56:56.6531618Z ##[debug]}
+2026-02-27T12:56:56.6532372Z ##[debug]Body: {
+2026-02-27T12:56:56.6532774Z ##[debug]  "artifacts": []
+2026-02-27T12:56:56.6533202Z ##[debug]}
+2026-02-27T12:56:56.6600227Z ##[error]Unable to download artifact(s): Artifact not found for name: agent-output
+        Please ensure that your artifact is not expired and the artifact was uploaded using a compatible version of toolkit/upload-artifact.
+        For more information, visit the GitHub Artifacts FAQ: https://github.com/actions/toolkit/blob/main/packages/artifact/docs/faq.md
+2026-02-27T12:56:56.6656993Z ##[debug]Node Action run completed with exit code 1
+2026-02-27T12:56:56.6701643Z ##[debug]Finishing: Download agent output artifact

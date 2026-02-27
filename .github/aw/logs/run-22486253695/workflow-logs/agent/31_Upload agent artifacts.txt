@@ -1,0 +1,37 @@
+﻿2026-02-27T12:34:29.1305713Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+2026-02-27T12:34:29.1306187Z with:
+2026-02-27T12:34:29.1306395Z   name: agent-artifacts
+2026-02-27T12:34:29.1307207Z   path: /tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw_info.json
+/tmp/gh-aw/mcp-logs/
+/tmp/gh-aw/sandbox/firewall/logs/
+/tmp/gh-aw/agent-stdio.log
+/tmp/gh-aw/agent/
+/tmp/gh-aw/aw-*.patch
+
+2026-02-27T12:34:29.1308278Z   if-no-files-found: ignore
+2026-02-27T12:34:29.1308537Z   compression-level: 6
+2026-02-27T12:34:29.1308766Z   overwrite: false
+2026-02-27T12:34:29.1308976Z   include-hidden-files: false
+2026-02-27T12:34:29.1309201Z env:
+2026-02-27T12:34:29.1309379Z   DEFAULT_BRANCH: master
+2026-02-27T12:34:29.1309609Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:34:29.1309843Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:34:29.1310059Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:34:29.1310339Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:34:29.1310700Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:34:29.1311138Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:34:29.1311557Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:34:29.1311897Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:34:29.1312141Z ##[endgroup]
+2026-02-27T12:34:29.2934763Z With the provided path, there will be 14 files uploaded
+2026-02-27T12:34:29.2939635Z Artifact name is valid!
+2026-02-27T12:34:29.2940418Z Root directory input is valid!
+2026-02-27T12:34:29.4003141Z Beginning upload of artifact content to blob storage
+2026-02-27T12:34:29.5691209Z Uploaded bytes 44132
+2026-02-27T12:34:29.5972129Z Finished uploading artifact content to blob storage!
+2026-02-27T12:34:29.5973687Z SHA256 digest of uploaded artifact zip is 4ac15e56a7131ccd258917b1e97fe8c25afafc5a201d244fbedd15e8c96ceb01
+2026-02-27T12:34:29.5975746Z Finalizing artifact upload
+2026-02-27T12:34:29.7247562Z Artifact agent-artifacts.zip successfully finalized. Artifact ID 5689974347
+2026-02-27T12:34:29.7248737Z Artifact agent-artifacts has been successfully uploaded! Final size is 44132 bytes. Artifact ID is 5689974347
+2026-02-27T12:34:29.7253241Z Artifact download URL: https://github.com/Raulito007/gatitos/actions/runs/22486253695/artifacts/5689974347

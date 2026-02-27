@@ -1,0 +1,146 @@
+﻿2026-02-27T12:55:21.4715651Z ##[debug]Starting: Set up job
+2026-02-27T12:55:21.4717107Z Current runner version: '2.331.0'
+2026-02-27T12:55:21.4738670Z ##[group]Runner Image Provisioner
+2026-02-27T12:55:21.4739581Z Hosted Compute Agent
+2026-02-27T12:55:21.4740117Z Version: 20260213.493
+2026-02-27T12:55:21.4740740Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-02-27T12:55:21.4741571Z Build Date: 2026-02-13T00:28:41Z
+2026-02-27T12:55:21.4742193Z Worker ID: {01573ff6-af83-4e20-aa2b-1c5cc2cc2aea}
+2026-02-27T12:55:21.4742875Z Azure Region: eastus2
+2026-02-27T12:55:21.4743426Z ##[endgroup]
+2026-02-27T12:55:21.4744803Z ##[group]Operating System
+2026-02-27T12:55:21.4745401Z Ubuntu
+2026-02-27T12:55:21.4745969Z 24.04.3
+2026-02-27T12:55:21.4746723Z LTS
+2026-02-27T12:55:21.4747183Z ##[endgroup]
+2026-02-27T12:55:21.4747786Z ##[group]Runner Image
+2026-02-27T12:55:21.4748368Z Image: ubuntu-24.04
+2026-02-27T12:55:21.4749065Z Version: 20260224.36.1
+2026-02-27T12:55:21.4750167Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260224.36/images/ubuntu/Ubuntu2404-Readme.md
+2026-02-27T12:55:21.4751573Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260224.36
+2026-02-27T12:55:21.4752554Z ##[endgroup]
+2026-02-27T12:55:21.4753827Z ##[group]GITHUB_TOKEN Permissions
+2026-02-27T12:55:21.4756687Z Contents: read
+2026-02-27T12:55:21.4757542Z Metadata: read
+2026-02-27T12:55:21.4758125Z ##[endgroup]
+2026-02-27T12:55:21.4760274Z Secret source: Actions
+2026-02-27T12:55:21.4761023Z ##[debug]Primary repository: Raulito007/gatitos
+2026-02-27T12:55:21.4761746Z Prepare workflow directory
+2026-02-27T12:55:21.4836781Z ##[debug]Creating pipeline directory: '/home/runner/work/gatitos'
+2026-02-27T12:55:21.4840310Z ##[debug]Creating workspace directory: '/home/runner/work/gatitos/gatitos'
+2026-02-27T12:55:21.4841797Z ##[debug]Update context data
+2026-02-27T12:55:21.4845307Z ##[debug]Evaluating job-level environment variables
+2026-02-27T12:55:21.5204014Z ##[debug]Evaluating: github.event.repository.default_branch
+2026-02-27T12:55:21.5209702Z ##[debug]Evaluating Index:
+2026-02-27T12:55:21.5212134Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:21.5212789Z ##[debug]....Evaluating Index:
+2026-02-27T12:55:21.5213573Z ##[debug]......Evaluating github:
+2026-02-27T12:55:21.5223159Z ##[debug]......=> Object
+2026-02-27T12:55:21.5232352Z ##[debug]......Evaluating String:
+2026-02-27T12:55:21.5233456Z ##[debug]......=> 'event'
+2026-02-27T12:55:21.5237951Z ##[debug]....=> Object
+2026-02-27T12:55:21.5239048Z ##[debug]....Evaluating String:
+2026-02-27T12:55:21.5239701Z ##[debug]....=> 'repository'
+2026-02-27T12:55:21.5240768Z ##[debug]..=> Object
+2026-02-27T12:55:21.5241505Z ##[debug]..Evaluating String:
+2026-02-27T12:55:21.5242110Z ##[debug]..=> 'default_branch'
+2026-02-27T12:55:21.5243355Z ##[debug]=> 'master'
+2026-02-27T12:55:21.5246894Z ##[debug]Result: 'master'
+2026-02-27T12:55:21.5267177Z ##[debug]Evaluating job container
+2026-02-27T12:55:21.5270053Z ##[debug]Evaluating job service containers
+2026-02-27T12:55:21.5272552Z ##[debug]Evaluating job defaults
+2026-02-27T12:55:21.5298771Z Prepare all required actions
+2026-02-27T12:55:21.5337325Z Getting action download info
+2026-02-27T12:55:21.9231936Z Download action repository 'github/gh-aw@fa00c211a1435b633eb568b1b41a203486ec760d' (SHA:fa00c211a1435b633eb568b1b41a203486ec760d)
+2026-02-27T12:55:23.2968112Z ##[debug]Download 'https://api.github.com/repos/github/gh-aw/tarball/fa00c211a1435b633eb568b1b41a203486ec760d' to '/home/runner/work/_actions/_temp_7d5fc42e-ae99-4692-b74f-9fd0d3726353/6d57dec7-c015-44ba-b057-16e5cf770fd5.tar.gz'
+2026-02-27T12:55:25.0090079Z ##[debug]Unwrap 'github-gh-aw-fa00c21' to '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d'
+2026-02-27T12:55:25.6879212Z ##[debug]Archive '/home/runner/work/_actions/_temp_7d5fc42e-ae99-4692-b74f-9fd0d3726353/6d57dec7-c015-44ba-b057-16e5cf770fd5.tar.gz' has been unzipped into '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d'.
+2026-02-27T12:55:25.7631685Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-02-27T12:55:25.7654396Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd.tar.gz' to '/home/runner/work/_actions/_temp_6e10da53-8461-46e7-98de-9ca3429daae5/6bfe7348-b8cc-4afe-a79e-b77a58103d7b.tar.gz'
+2026-02-27T12:55:25.7874509Z ##[debug]Unwrap 'actions-checkout-de0fac2' to '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd'
+2026-02-27T12:55:25.7995456Z ##[debug]Archive '/home/runner/work/_actions/_temp_6e10da53-8461-46e7-98de-9ca3429daae5/6bfe7348-b8cc-4afe-a79e-b77a58103d7b.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd'.
+2026-02-27T12:55:25.8025319Z Download action repository 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' (SHA:ed597411d8f924073f98dfc5c65a23a2325f34cd)
+2026-02-27T12:55:25.9622852Z ##[debug]Download 'https://api.github.com/repos/actions/github-script/tarball/ed597411d8f924073f98dfc5c65a23a2325f34cd' to '/home/runner/work/_actions/_temp_5a81c108-f4da-4ea0-b5c0-c33549b25685/0e65d19d-d70c-44e0-9547-f5242d997113.tar.gz'
+2026-02-27T12:55:25.9834916Z ##[debug]Unwrap 'actions-github-script-ed59741' to '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'
+2026-02-27T12:55:25.9926256Z ##[debug]Archive '/home/runner/work/_actions/_temp_5a81c108-f4da-4ea0-b5c0-c33549b25685/0e65d19d-d70c-44e0-9547-f5242d997113.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:25.9962403Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:25.9967248Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:25.9971779Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:25.9977390Z Download action repository 'actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53' (SHA:018cc2cf5baa6db3ef3c5f8a56943fffe632ef53)
+2026-02-27T12:55:26.1983593Z ##[debug]Download 'https://api.github.com/repos/actions/download-artifact/tarball/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53' to '/home/runner/work/_actions/_temp_cb20a3ef-7602-4135-9457-05f26cecb5e5/54c97bd4-3c83-4a1c-95d0-ed1923c1e1df.tar.gz'
+2026-02-27T12:55:26.2416230Z ##[debug]Unwrap 'actions-download-artifact-018cc2c' to '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53'
+2026-02-27T12:55:26.2617265Z ##[debug]Archive '/home/runner/work/_actions/_temp_cb20a3ef-7602-4135-9457-05f26cecb5e5/54c97bd4-3c83-4a1c-95d0-ed1923c1e1df.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53'.
+2026-02-27T12:55:26.2654985Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.2658266Z Download action repository 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' (SHA:b7c566a772e6b6bfb58ed0dc250532a479d7789f)
+2026-02-27T12:55:26.2712336Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f.tar.gz' to '/home/runner/work/_actions/_temp_4ce667e9-67fe-4baa-827e-74dd898c99f8/bca9e2a7-d41a-46da-95ec-51409a1cb629.tar.gz'
+2026-02-27T12:55:26.3347983Z ##[debug]Unwrap 'actions-upload-artifact-b7c566a' to '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'
+2026-02-27T12:55:26.3711932Z ##[debug]Archive '/home/runner/work/_actions/_temp_4ce667e9-67fe-4baa-827e-74dd898c99f8/bca9e2a7-d41a-46da-95ec-51409a1cb629.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'.
+2026-02-27T12:55:26.3767210Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.3769704Z ##[debug]Action 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'.
+2026-02-27T12:55:26.3772116Z ##[debug]Action 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'.
+2026-02-27T12:55:26.3774392Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.3776811Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.3779187Z ##[debug]Action 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'.
+2026-02-27T12:55:26.3781416Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.3783638Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:55:26.3785846Z ##[debug]Action 'actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f'.
+2026-02-27T12:55:26.3799551Z ##[debug]action.yml for action: '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d/actions/setup/action.yml'.
+2026-02-27T12:55:26.4382381Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/de0fac2e4500dabe0009e67214ff5f5447ce83dd/action.yml'.
+2026-02-27T12:55:26.4599490Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4645605Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4684979Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4790561Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4830754Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53/action.yml'.
+2026-02-27T12:55:26.4870006Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4910778Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml'.
+2026-02-27T12:55:26.4948981Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.4988895Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml'.
+2026-02-27T12:55:26.5027094Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml'.
+2026-02-27T12:55:26.5065090Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.5104624Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.5144473Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml'.
+2026-02-27T12:55:26.5182935Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.5222799Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:55:26.5262320Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml'.
+2026-02-27T12:55:26.5334936Z ##[debug]Set step '__github_gh-aw' display name to: 'Setup Scripts'
+2026-02-27T12:55:26.5337080Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout repository'
+2026-02-27T12:55:26.5338308Z ##[debug]Set step '__run' display name to: 'Create gh-aw temp directory'
+2026-02-27T12:55:26.5339392Z ##[debug]Set step '__run_2' display name to: 'Configure Git credentials'
+2026-02-27T12:55:26.5340452Z ##[debug]Set step 'checkout-pr' display name to: 'Checkout PR branch'
+2026-02-27T12:55:26.5341561Z ##[debug]Set step 'generate_aw_info' display name to: 'Generate agentic run info'
+2026-02-27T12:55:26.5342627Z ##[debug]Set step '__run_3' display name to: 'Install GitHub Copilot CLI'
+2026-02-27T12:55:26.5343629Z ##[debug]Set step '__run_4' display name to: 'Install awf binary'
+2026-02-27T12:55:26.5344888Z ##[debug]Set step 'determine-automatic-lockdown' display name to: 'Determine automatic lockdown mode for GitHub MCP Server'
+2026-02-27T12:55:26.5346121Z ##[debug]Set step '__run_5' display name to: 'Download container images'
+2026-02-27T12:55:26.5347438Z ##[debug]Set step '__run_6' display name to: 'Write Safe Outputs Config'
+2026-02-27T12:55:26.5348565Z ##[debug]Set step 'safe-outputs-config' display name to: 'Generate Safe Outputs MCP Server Config'
+2026-02-27T12:55:26.5349768Z ##[debug]Set step 'safe-outputs-start' display name to: 'Start Safe Outputs MCP HTTP Server'
+2026-02-27T12:55:26.5350868Z ##[debug]Set step 'start-mcp-gateway' display name to: 'Start MCP Gateway'
+2026-02-27T12:55:26.5351994Z ##[debug]Set step '__actions_github-script' display name to: 'Generate workflow overview'
+2026-02-27T12:55:26.5353151Z ##[debug]Set step '__actions_download-artifact' display name to: 'Download prompt artifact'
+2026-02-27T12:55:26.5354227Z ##[debug]Set step '__run_7' display name to: 'Clean git credentials'
+2026-02-27T12:55:26.5355272Z ##[debug]Set step 'agentic_execution' display name to: 'Execute GitHub Copilot CLI'
+2026-02-27T12:55:26.5356304Z ##[debug]Set step '__run_8' display name to: 'Configure Git credentials'
+2026-02-27T12:55:26.5357575Z ##[debug]Set step '__run_9' display name to: 'Copy Copilot session state files to logs'
+2026-02-27T12:55:26.5358629Z ##[debug]Set step '__run_10' display name to: 'Stop MCP Gateway'
+2026-02-27T12:55:26.5359649Z ##[debug]Set step '__actions_github-script_2' display name to: 'Redact secrets in logs'
+2026-02-27T12:55:26.5360736Z ##[debug]Set step '__actions_upload-artifact' display name to: 'Upload Safe Outputs'
+2026-02-27T12:55:26.5361780Z ##[debug]Set step 'collect_output' display name to: 'Ingest agent output'
+2026-02-27T12:55:26.5362875Z ##[debug]Set step '__actions_upload-artifact_2' display name to: 'Upload sanitized agent output'
+2026-02-27T12:55:26.5364254Z ##[debug]Set step '__actions_upload-artifact_3' display name to: 'Upload engine output files'
+2026-02-27T12:55:26.5365744Z ##[debug]Set step '__actions_github-script_3' display name to: 'Parse agent logs for step summary'
+2026-02-27T12:55:26.5367166Z ##[debug]Set step '__actions_github-script_4' display name to: 'Parse MCP Gateway logs for step summary'
+2026-02-27T12:55:26.5368369Z ##[debug]Set step '__run_11' display name to: 'Print firewall logs'
+2026-02-27T12:55:26.5369579Z ##[debug]Set step '__actions_upload-artifact_4' display name to: 'Upload agent artifacts'
+2026-02-27T12:55:26.5370715Z ##[debug]Set step 'detection_guard' display name to: 'Check if detection needed'
+2026-02-27T12:55:26.5371806Z ##[debug]Set step '__run_12' display name to: 'Clear MCP configuration for detection'
+2026-02-27T12:55:26.5372871Z ##[debug]Set step '__run_13' display name to: 'Prepare threat detection files'
+2026-02-27T12:55:26.5374016Z ##[debug]Set step '__actions_github-script_5' display name to: 'Setup threat detection'
+2026-02-27T12:55:26.5375148Z ##[debug]Set step '__run_14' display name to: 'Ensure threat-detection directory and log'
+2026-02-27T12:55:26.5376297Z ##[debug]Set step 'detection_agentic_execution' display name to: 'Execute GitHub Copilot CLI'
+2026-02-27T12:55:26.5377726Z ##[debug]Set step 'parse_detection_results' display name to: 'Parse threat detection results'
+2026-02-27T12:55:26.5378937Z ##[debug]Set step '__actions_upload-artifact_5' display name to: 'Upload threat detection log'
+2026-02-27T12:55:26.5380072Z ##[debug]Set step 'detection_conclusion' display name to: 'Set detection conclusion'
+2026-02-27T12:55:26.5380607Z Complete job name: agent
+2026-02-27T12:55:26.5482002Z ##[debug]Collect running processes for tracking orphan processes.
+2026-02-27T12:55:26.5695592Z ##[debug]Finishing: Set up job

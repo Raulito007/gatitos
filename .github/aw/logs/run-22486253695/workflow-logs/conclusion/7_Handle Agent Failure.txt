@@ -1,0 +1,41 @@
+﻿2026-02-27T12:35:15.0644277Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:35:15.0645156Z with:
+2026-02-27T12:35:15.0645808Z   github-token: ***
+2026-02-27T12:35:15.0647262Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/handle_agent_failure.cjs');
+await main();
+
+2026-02-27T12:35:15.0648819Z   debug: false
+2026-02-27T12:35:15.0649275Z   user-agent: actions/github-script
+2026-02-27T12:35:15.0649793Z   result-encoding: json
+2026-02-27T12:35:15.0650211Z   retries: 0
+2026-02-27T12:35:15.0650655Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:35:15.0651481Z env:
+2026-02-27T12:35:15.0652001Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:35:15.0653505Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:35:15.0654464Z   GH_AW_RUN_URL: https://github.com/Raulito007/gatitos/actions/runs/22486253695
+2026-02-27T12:35:15.0655261Z   GH_AW_AGENT_CONCLUSION: failure
+2026-02-27T12:35:15.0655765Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:35:15.0656249Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-02-27T12:35:15.0656802Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-02-27T12:35:15.0657304Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-02-27T12:35:15.0657807Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 
+2026-02-27T12:35:15.0658301Z   GH_AW_GROUP_REPORTS: false
+2026-02-27T12:35:15.0658995Z ##[endgroup]
+2026-02-27T12:35:15.1662462Z Agent conclusion: failure
+2026-02-27T12:35:15.1669138Z Workflow name: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:35:15.1672847Z Workflow ID: astro
+2026-02-27T12:35:15.1675634Z Secret verification result: success
+2026-02-27T12:35:15.1678423Z Assignment error count: 0
+2026-02-27T12:35:15.1681439Z Create discussion error count: 0
+2026-02-27T12:35:15.1684756Z Code push failure count: 0
+2026-02-27T12:35:15.1687674Z Checkout PR success: true
+2026-02-27T12:35:15.2075451Z fatal: not a git repository (or any of the parent directories): .git
+2026-02-27T12:35:15.2076550Z Searching for pull request from branch: master
+2026-02-27T12:35:15.5622565Z No pull request found for branch: master
+2026-02-27T12:35:15.5626299Z Parent issue creation is disabled (group-reports: false)
+2026-02-27T12:35:15.5652086Z Checking for existing issue with title: "[aw] Astro — Workflow de scaffolding del blog Hugo failed"
+2026-02-27T12:35:15.7818348Z Found existing issue #1: https://github.com/Raulito007/gatitos/issues/1
+2026-02-27T12:35:15.7828031Z Error reading agent output file: ENOENT: no such file or directory, open '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:35:16.2447190Z ✓ Added comment to existing issue #1

@@ -1,0 +1,82 @@
+﻿2026-02-27T12:56:14.2269279Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-port
+2026-02-27T12:56:14.2269699Z ##[debug]Evaluating Index:
+2026-02-27T12:56:14.2269939Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:14.2270171Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:14.2270407Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:14.2270685Z ##[debug]......=> Object
+2026-02-27T12:56:14.2270916Z ##[debug]......Evaluating String:
+2026-02-27T12:56:14.2271184Z ##[debug]......=> 'start-mcp-gateway'
+2026-02-27T12:56:14.2271465Z ##[debug]....=> Object
+2026-02-27T12:56:14.2271677Z ##[debug]....Evaluating String:
+2026-02-27T12:56:14.2271921Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:14.2272149Z ##[debug]..=> Object
+2026-02-27T12:56:14.2272354Z ##[debug]..Evaluating String:
+2026-02-27T12:56:14.2272584Z ##[debug]..=> 'gateway-port'
+2026-02-27T12:56:14.2272818Z ##[debug]=> '80'
+2026-02-27T12:56:14.2273022Z ##[debug]Result: '80'
+2026-02-27T12:56:14.2273612Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-api-key
+2026-02-27T12:56:14.2274026Z ##[debug]Evaluating Index:
+2026-02-27T12:56:14.2274253Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:14.2274479Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:14.2274712Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:14.2274944Z ##[debug]......=> Object
+2026-02-27T12:56:14.2275167Z ##[debug]......Evaluating String:
+2026-02-27T12:56:14.2275423Z ##[debug]......=> 'start-mcp-gateway'
+2026-02-27T12:56:14.2275687Z ##[debug]....=> Object
+2026-02-27T12:56:14.2275901Z ##[debug]....Evaluating String:
+2026-02-27T12:56:14.2276131Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:14.2276342Z ##[debug]..=> Object
+2026-02-27T12:56:14.2276781Z ##[debug]..Evaluating String:
+2026-02-27T12:56:14.2277025Z ##[debug]..=> 'gateway-api-key'
+2026-02-27T12:56:14.2277467Z ##[debug]=> '''***'''
+2026-02-27T12:56:14.2277864Z ##[debug]Result: '''***'''
+2026-02-27T12:56:14.2278389Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-pid
+2026-02-27T12:56:14.2278763Z ##[debug]Evaluating Index:
+2026-02-27T12:56:14.2279002Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:14.2279234Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:14.2279467Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:14.2279707Z ##[debug]......=> Object
+2026-02-27T12:56:14.2279929Z ##[debug]......Evaluating String:
+2026-02-27T12:56:14.2280187Z ##[debug]......=> 'start-mcp-gateway'
+2026-02-27T12:56:14.2280442Z ##[debug]....=> Object
+2026-02-27T12:56:14.2280656Z ##[debug]....Evaluating String:
+2026-02-27T12:56:14.2281067Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:14.2281288Z ##[debug]..=> Object
+2026-02-27T12:56:14.2281494Z ##[debug]..Evaluating String:
+2026-02-27T12:56:14.2281733Z ##[debug]..=> 'gateway-pid'
+2026-02-27T12:56:14.2281957Z ##[debug]=> '3721'
+2026-02-27T12:56:14.2282157Z ##[debug]Result: '3721'
+2026-02-27T12:56:14.2282520Z ##[debug]Evaluating condition for step: 'Stop MCP Gateway'
+2026-02-27T12:56:14.2283463Z ##[debug]Evaluating: always()
+2026-02-27T12:56:14.2283775Z ##[debug]Evaluating always:
+2026-02-27T12:56:14.2284063Z ##[debug]=> true
+2026-02-27T12:56:14.2284373Z ##[debug]Result: true
+2026-02-27T12:56:14.2284761Z ##[debug]Starting: Stop MCP Gateway
+2026-02-27T12:56:14.2291716Z ##[debug]Loading inputs
+2026-02-27T12:56:14.2292511Z ##[debug]Loading env
+2026-02-27T12:56:14.2296131Z ##[group]Run bash /opt/gh-aw/actions/stop_mcp_gateway.sh "$GATEWAY_PID"
+2026-02-27T12:56:14.2296924Z [36;1mbash /opt/gh-aw/actions/stop_mcp_gateway.sh "$GATEWAY_PID"[0m
+2026-02-27T12:56:14.2342430Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:56:14.2342677Z env:
+2026-02-27T12:56:14.2342855Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:14.2343084Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:14.2343313Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:14.2343515Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:14.2343791Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:14.2344153Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:14.2344560Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:14.2345170Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:14.2345521Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:14.2345772Z   MCP_GATEWAY_PORT: 80
+2026-02-27T12:56:14.2346184Z   MCP_GATEWAY_API_KEY: '***'
+2026-02-27T12:56:14.2346628Z   GATEWAY_PID: 3721
+2026-02-27T12:56:14.2346835Z ##[endgroup]
+2026-02-27T12:56:14.2392296Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/858b9714-c29b-47b6-98f5-fbd04befb87d.sh
+2026-02-27T12:56:14.2422999Z Stopping MCP gateway (PID: 3721)...
+2026-02-27T12:56:14.2536258Z Attempting graceful shutdown via /close endpoint...
+2026-02-27T12:56:14.2645114Z Failed to invoke /close endpoint (curl exit: 22)
+2026-02-27T12:56:14.2645673Z Response: 
+2026-02-27T12:56:14.2646002Z Falling back to kill signal...
+2026-02-27T12:56:14.2646738Z Gateway process is still running, sending termination signal...
+2026-02-27T12:56:15.2924163Z Gateway stopped successfully
+2026-02-27T12:56:15.2933044Z ##[debug]Finishing: Stop MCP Gateway

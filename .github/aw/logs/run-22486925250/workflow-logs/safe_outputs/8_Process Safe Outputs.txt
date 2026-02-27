@@ -1,0 +1,104 @@
+﻿2026-02-27T12:56:42.0296191Z ##[debug]Evaluating: env.GH_AW_AGENT_OUTPUT
+2026-02-27T12:56:42.0299817Z ##[debug]Evaluating Index:
+2026-02-27T12:56:42.0300765Z ##[debug]..Evaluating env:
+2026-02-27T12:56:42.0301669Z ##[debug]..=> Object
+2026-02-27T12:56:42.0302994Z ##[debug]..Evaluating String:
+2026-02-27T12:56:42.0304324Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:42.0308274Z ##[debug]=> '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:42.0310411Z ##[debug]Result: '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:42.0312680Z ##[debug]Evaluating: github.server_url
+2026-02-27T12:56:42.0313689Z ##[debug]Evaluating Index:
+2026-02-27T12:56:42.0315040Z ##[debug]..Evaluating github:
+2026-02-27T12:56:42.0317807Z ##[debug]..=> Object
+2026-02-27T12:56:42.0320264Z ##[debug]..Evaluating String:
+2026-02-27T12:56:42.0321187Z ##[debug]..=> 'server_url'
+2026-02-27T12:56:42.0322131Z ##[debug]=> 'https://github.com'
+2026-02-27T12:56:42.0323132Z ##[debug]Result: 'https://github.com'
+2026-02-27T12:56:42.0324790Z ##[debug]Evaluating: github.api_url
+2026-02-27T12:56:42.0325845Z ##[debug]Evaluating Index:
+2026-02-27T12:56:42.0326712Z ##[debug]..Evaluating github:
+2026-02-27T12:56:42.0328439Z ##[debug]..=> Object
+2026-02-27T12:56:42.0329696Z ##[debug]..Evaluating String:
+2026-02-27T12:56:42.0330675Z ##[debug]..=> 'api_url'
+2026-02-27T12:56:42.0331583Z ##[debug]=> 'https://api.github.com'
+2026-02-27T12:56:42.0333037Z ##[debug]Result: 'https://api.github.com'
+2026-02-27T12:56:42.0336570Z ##[debug]Evaluating: secrets.GH_AW_CI_TRIGGER_TOKEN
+2026-02-27T12:56:42.0339768Z ##[debug]Evaluating Index:
+2026-02-27T12:56:42.0340741Z ##[debug]..Evaluating secrets:
+2026-02-27T12:56:42.0342083Z ##[debug]..=> Object
+2026-02-27T12:56:42.0342950Z ##[debug]..Evaluating String:
+2026-02-27T12:56:42.0344273Z ##[debug]..=> 'GH_AW_CI_TRIGGER_TOKEN'
+2026-02-27T12:56:42.0345280Z ##[debug]=> null
+2026-02-27T12:56:42.0346448Z ##[debug]Result: null
+2026-02-27T12:56:42.0349648Z ##[debug]Evaluating condition for step: 'Process Safe Outputs'
+2026-02-27T12:56:42.0353220Z ##[debug]Evaluating: success()
+2026-02-27T12:56:42.0354994Z ##[debug]Evaluating success:
+2026-02-27T12:56:42.0358788Z ##[debug]=> true
+2026-02-27T12:56:42.0360567Z ##[debug]Result: true
+2026-02-27T12:56:42.0362543Z ##[debug]Starting: Process Safe Outputs
+2026-02-27T12:56:42.0467888Z ##[debug]Loading inputs
+2026-02-27T12:56:42.0472964Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:56:42.0476630Z ##[debug]Evaluating Or:
+2026-02-27T12:56:42.0479363Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:42.0480296Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:42.0481686Z ##[debug]....=> Object
+2026-02-27T12:56:42.0482567Z ##[debug]....Evaluating String:
+2026-02-27T12:56:42.0483919Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:56:42.0484878Z ##[debug]..=> null
+2026-02-27T12:56:42.0485659Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:42.0487215Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:42.0508577Z ##[debug]....=> Object
+2026-02-27T12:56:42.0510552Z ##[debug]....Evaluating String:
+2026-02-27T12:56:42.0513190Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:56:42.0515964Z ##[debug]..=> '***'
+2026-02-27T12:56:42.0517884Z ##[debug]=> '***'
+2026-02-27T12:56:42.0519149Z ##[debug]Expanded: (null || '***')
+2026-02-27T12:56:42.0520857Z ##[debug]Result: '***'
+2026-02-27T12:56:42.0525682Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:42.0527304Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:42.0529779Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:42.0530712Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:42.0531626Z ##[debug]....=> Object
+2026-02-27T12:56:42.0532899Z ##[debug]....Evaluating String:
+2026-02-27T12:56:42.0533805Z ##[debug]....=> 'debug'
+2026-02-27T12:56:42.0538102Z ##[debug]..=> '1'
+2026-02-27T12:56:42.0538971Z ##[debug]..Evaluating String:
+2026-02-27T12:56:42.0540337Z ##[debug]..=> '1'
+2026-02-27T12:56:42.0542146Z ##[debug]=> true
+2026-02-27T12:56:42.0544173Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:42.0545060Z ##[debug]Result: true
+2026-02-27T12:56:42.0575110Z ##[debug]Loading env
+2026-02-27T12:56:42.0593243Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:42.0594532Z with:
+2026-02-27T12:56:42.0595498Z   github-token: ***
+2026-02-27T12:56:42.0599024Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/safe_output_handler_manager.cjs');
+await main();
+
+2026-02-27T12:56:42.0601928Z   debug: true
+2026-02-27T12:56:42.0602666Z   user-agent: actions/github-script
+2026-02-27T12:56:42.0603584Z   result-encoding: json
+2026-02-27T12:56:42.0604339Z   retries: 0
+2026-02-27T12:56:42.0605130Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:42.0606126Z env:
+2026-02-27T12:56:42.0606778Z   GH_AW_ENGINE_ID: copilot
+2026-02-27T12:56:42.0607840Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:56:42.0608946Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:42.0610418Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:42.0650244Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,api.snapcraft.io,archive.ubuntu.com,azure.archive.ubuntu.com,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,github.com,host.docker.internal,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,packagecloud.io,packages.cloud.google.com,packages.microsoft.com,ppa.launchpad.net,raw.githubusercontent.com,registry.npmjs.org,s.symcb.com,s.symcd.com,security.ubuntu.com,telemetry.enterprise.githubcopilot.com,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com
+2026-02-27T12:56:42.0690470Z   GITHUB_SERVER_URL: https://github.com
+2026-02-27T12:56:42.0691556Z   GITHUB_API_URL: https://api.github.com
+2026-02-27T12:56:42.0693765Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"max":1,"max_patch_size":1024},"missing_data":{},"missing_tool":{}}
+2026-02-27T12:56:42.0695966Z   GH_AW_CI_TRIGGER_TOKEN: 
+2026-02-27T12:56:42.0697758Z ##[endgroup]
+2026-02-27T12:56:42.4915487Z Safe Output Handler Manager starting...
+2026-02-27T12:56:42.4924933Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"max":1,"max_patch_size":1024},"missing_data":{},"missing_tool":{}}
+2026-02-27T12:56:42.4936307Z ##[debug]Configuration: ["create_pull_request","missing_data","missing_tool"]
+2026-02-27T12:56:42.4948398Z Error reading agent output file: ENOENT: no such file or directory, open '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:42.4952103Z No agent output available - nothing to process
+2026-02-27T12:56:42.5022835Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:42.5043514Z ##[debug]Set output temporary_id_map = {}
+2026-02-27T12:56:42.5044741Z ##[debug]Set output processed_count = 0
+2026-02-27T12:56:42.5045750Z ##[debug]Set output result = 
+2026-02-27T12:56:42.5047846Z ##[debug]Finishing: Process Safe Outputs

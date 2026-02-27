@@ -1,0 +1,236 @@
+﻿2026-02-27T12:55:43.6935350Z ##[debug]Evaluating condition for step: 'Write Safe Outputs Config'
+2026-02-27T12:55:43.6937768Z ##[debug]Evaluating: success()
+2026-02-27T12:55:43.6938352Z ##[debug]Evaluating success:
+2026-02-27T12:55:43.6938946Z ##[debug]=> true
+2026-02-27T12:55:43.6939515Z ##[debug]Result: true
+2026-02-27T12:55:43.6940311Z ##[debug]Starting: Write Safe Outputs Config
+2026-02-27T12:55:43.6952147Z ##[debug]Loading inputs
+2026-02-27T12:55:43.6953473Z ##[debug]Loading env
+2026-02-27T12:55:43.6960100Z ##[group]Run mkdir -p /opt/gh-aw/safeoutputs
+2026-02-27T12:55:43.6961334Z [36;1mmkdir -p /opt/gh-aw/safeoutputs[0m
+2026-02-27T12:55:43.6961647Z [36;1mmkdir -p /tmp/gh-aw/safeoutputs[0m
+2026-02-27T12:55:43.6961967Z [36;1mmkdir -p /tmp/gh-aw/mcp-logs/safeoutputs[0m
+2026-02-27T12:55:43.6962416Z [36;1mcat > /opt/gh-aw/safeoutputs/config.json << 'GH_AW_SAFE_OUTPUTS_CONFIG_EOF'[0m
+2026-02-27T12:55:43.6962967Z [36;1m{"create_pull_request":{"max":1},"missing_data":{},"missing_tool":{},"noop":{"max":1}}[0m
+2026-02-27T12:55:43.6963430Z [36;1mGH_AW_SAFE_OUTPUTS_CONFIG_EOF[0m
+2026-02-27T12:55:43.6963819Z [36;1mcat > /opt/gh-aw/safeoutputs/tools.json << 'GH_AW_SAFE_OUTPUTS_TOOLS_EOF'[0m
+2026-02-27T12:55:43.6964196Z [36;1m[[0m
+2026-02-27T12:55:43.6964352Z [36;1m  {[0m
+2026-02-27T12:55:43.6965680Z [36;1m    "description": "Create a new GitHub pull request to propose code changes. Use this after making file edits to submit them for review and merging. The PR will be created from the current branch with your committed changes. For code review comments on an existing PR, use create_pull_request_review_comment instead. CONSTRAINTS: Maximum 1 pull request(s) can be created.",[0m
+2026-02-27T12:55:43.6967369Z [36;1m    "inputSchema": {[0m
+2026-02-27T12:55:43.6967625Z [36;1m      "additionalProperties": false,[0m
+2026-02-27T12:55:43.6967906Z [36;1m      "properties": {[0m
+2026-02-27T12:55:43.6968128Z [36;1m        "body": {[0m
+2026-02-27T12:55:43.6968813Z [36;1m          "description": "Detailed PR description in Markdown. Include what changes were made, why, testing notes, and any breaking changes. Do NOT repeat the title as a heading.",[0m
+2026-02-27T12:55:43.6969750Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6969978Z [36;1m        },[0m
+2026-02-27T12:55:43.6970156Z [36;1m        "branch": {[0m
+2026-02-27T12:55:43.6970647Z [36;1m          "description": "Source branch name containing the changes. If omitted, uses the current working branch.",[0m
+2026-02-27T12:55:43.6971157Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6971374Z [36;1m        },[0m
+2026-02-27T12:55:43.6971559Z [36;1m        "draft": {[0m
+2026-02-27T12:55:43.6972300Z [36;1m          "description": "Whether to create the PR as a draft. Draft PRs cannot be merged until marked as ready for review. Use mark_pull_request_as_ready_for_review to convert a draft PR. Default: true.",[0m
+2026-02-27T12:55:43.6973092Z [36;1m          "type": "boolean"[0m
+2026-02-27T12:55:43.6973315Z [36;1m        },[0m
+2026-02-27T12:55:43.6973498Z [36;1m        "labels": {[0m
+2026-02-27T12:55:43.6973986Z [36;1m          "description": "Labels to categorize the PR (e.g., 'enhancement', 'bugfix'). Labels must exist in the repository.",[0m
+2026-02-27T12:55:43.6974511Z [36;1m          "items": {[0m
+2026-02-27T12:55:43.6974723Z [36;1m            "type": "string"[0m
+2026-02-27T12:55:43.6974950Z [36;1m          },[0m
+2026-02-27T12:55:43.6975133Z [36;1m          "type": "array"[0m
+2026-02-27T12:55:43.6975350Z [36;1m        },[0m
+2026-02-27T12:55:43.6975525Z [36;1m        "title": {[0m
+2026-02-27T12:55:43.6976170Z [36;1m          "description": "Concise PR title describing the changes. Follow repository conventions (e.g., conventional commits). The title appears as the main heading.",[0m
+2026-02-27T12:55:43.6977371Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6977610Z [36;1m        }[0m
+2026-02-27T12:55:43.6977781Z [36;1m      },[0m
+2026-02-27T12:55:43.6977956Z [36;1m      "required": [[0m
+2026-02-27T12:55:43.6978164Z [36;1m        "title",[0m
+2026-02-27T12:55:43.6978563Z [36;1m        "body"[0m
+2026-02-27T12:55:43.6978750Z [36;1m      ],[0m
+2026-02-27T12:55:43.6978921Z [36;1m      "type": "object"[0m
+2026-02-27T12:55:43.6979129Z [36;1m    },[0m
+2026-02-27T12:55:43.6979318Z [36;1m    "name": "create_pull_request"[0m
+2026-02-27T12:55:43.6979569Z [36;1m  },[0m
+2026-02-27T12:55:43.6979732Z [36;1m  {[0m
+2026-02-27T12:55:43.6980888Z [36;1m    "description": "Report that a tool or capability needed to complete the task is not available, or share any information you deem important about missing functionality or limitations. Use this when you cannot accomplish what was requested because the required functionality is missing or access is restricted.",[0m
+2026-02-27T12:55:43.6982135Z [36;1m    "inputSchema": {[0m
+2026-02-27T12:55:43.6982380Z [36;1m      "additionalProperties": false,[0m
+2026-02-27T12:55:43.6982645Z [36;1m      "properties": {[0m
+2026-02-27T12:55:43.6982874Z [36;1m        "alternatives": {[0m
+2026-02-27T12:55:43.6983424Z [36;1m          "description": "Any workarounds, manual steps, or alternative approaches the user could take (max 256 characters).",[0m
+2026-02-27T12:55:43.6983971Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6984192Z [36;1m        },[0m
+2026-02-27T12:55:43.6984374Z [36;1m        "reason": {[0m
+2026-02-27T12:55:43.6984925Z [36;1m          "description": "Explanation of why this tool is needed or what information you want to share about the limitation (max 256 characters).",[0m
+2026-02-27T12:55:43.6985527Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6985746Z [36;1m        },[0m
+2026-02-27T12:55:43.6985920Z [36;1m        "tool": {[0m
+2026-02-27T12:55:43.6986755Z [36;1m          "description": "Optional: Name or description of the missing tool or capability (max 128 characters). Be specific about what functionality is needed.",[0m
+2026-02-27T12:55:43.6987429Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6987649Z [36;1m        }[0m
+2026-02-27T12:55:43.6987959Z [36;1m      },[0m
+2026-02-27T12:55:43.6988128Z [36;1m      "required": [[0m
+2026-02-27T12:55:43.6988334Z [36;1m        "reason"[0m
+2026-02-27T12:55:43.6988533Z [36;1m      ],[0m
+2026-02-27T12:55:43.6988707Z [36;1m      "type": "object"[0m
+2026-02-27T12:55:43.6988918Z [36;1m    },[0m
+2026-02-27T12:55:43.6989239Z [36;1m    "name": "missing_tool"[0m
+2026-02-27T12:55:43.6989639Z [36;1m  },[0m
+2026-02-27T12:55:43.6989925Z [36;1m  {[0m
+2026-02-27T12:55:43.6991387Z [36;1m    "description": "Log a transparency message when no significant actions are needed. Use this to confirm workflow completion and provide visibility when analysis is complete but no changes or outputs are required (e.g., 'No issues found', 'All checks passed'). This ensures the workflow produces human-visible output even when no other actions are taken.",[0m
+2026-02-27T12:55:43.6992808Z [36;1m    "inputSchema": {[0m
+2026-02-27T12:55:43.6993049Z [36;1m      "additionalProperties": false,[0m
+2026-02-27T12:55:43.6993335Z [36;1m      "properties": {[0m
+2026-02-27T12:55:43.6993554Z [36;1m        "message": {[0m
+2026-02-27T12:55:43.6994305Z [36;1m          "description": "Status or completion message to log. Should explain what was analyzed and the outcome (e.g., 'Code review complete - no issues found', 'Analysis complete - all tests passing').",[0m
+2026-02-27T12:55:43.6995109Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.6995330Z [36;1m        }[0m
+2026-02-27T12:55:43.6995492Z [36;1m      },[0m
+2026-02-27T12:55:43.6995665Z [36;1m      "required": [[0m
+2026-02-27T12:55:43.6995867Z [36;1m        "message"[0m
+2026-02-27T12:55:43.6996054Z [36;1m      ],[0m
+2026-02-27T12:55:43.6996228Z [36;1m      "type": "object"[0m
+2026-02-27T12:55:43.6996600Z [36;1m    },[0m
+2026-02-27T12:55:43.6996783Z [36;1m    "name": "noop"[0m
+2026-02-27T12:55:43.6996977Z [36;1m  },[0m
+2026-02-27T12:55:43.6997129Z [36;1m  {[0m
+2026-02-27T12:55:43.6997904Z [36;1m    "description": "Report that data or information needed to complete the task is not available. Use this when you cannot accomplish what was requested because required data, context, or information is missing.",[0m
+2026-02-27T12:55:43.6998919Z [36;1m    "inputSchema": {[0m
+2026-02-27T12:55:43.6999150Z [36;1m      "additionalProperties": false,[0m
+2026-02-27T12:55:43.6999417Z [36;1m      "properties": {[0m
+2026-02-27T12:55:43.6999634Z [36;1m        "alternatives": {[0m
+2026-02-27T12:55:43.7000168Z [36;1m          "description": "Any workarounds, manual steps, or alternative approaches the user could take (max 256 characters).",[0m
+2026-02-27T12:55:43.7000725Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.7000937Z [36;1m        },[0m
+2026-02-27T12:55:43.7001118Z [36;1m        "context": {[0m
+2026-02-27T12:55:43.7001596Z [36;1m          "description": "Additional context about the missing data or where it should come from (max 256 characters).",[0m
+2026-02-27T12:55:43.7002111Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.7002340Z [36;1m        },[0m
+2026-02-27T12:55:43.7002519Z [36;1m        "data_type": {[0m
+2026-02-27T12:55:43.7003072Z [36;1m          "description": "Type or description of the missing data or information (max 128 characters). Be specific about what data is needed.",[0m
+2026-02-27T12:55:43.7003658Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.7003873Z [36;1m        },[0m
+2026-02-27T12:55:43.7004048Z [36;1m        "reason": {[0m
+2026-02-27T12:55:43.7004484Z [36;1m          "description": "Explanation of why this data is needed to complete the task (max 256 characters).",[0m
+2026-02-27T12:55:43.7004955Z [36;1m          "type": "string"[0m
+2026-02-27T12:55:43.7005168Z [36;1m        }[0m
+2026-02-27T12:55:43.7005340Z [36;1m      },[0m
+2026-02-27T12:55:43.7005508Z [36;1m      "required": [],[0m
+2026-02-27T12:55:43.7005720Z [36;1m      "type": "object"[0m
+2026-02-27T12:55:43.7005930Z [36;1m    },[0m
+2026-02-27T12:55:43.7006101Z [36;1m    "name": "missing_data"[0m
+2026-02-27T12:55:43.7006613Z [36;1m  }[0m
+2026-02-27T12:55:43.7006785Z [36;1m][0m
+2026-02-27T12:55:43.7006965Z [36;1mGH_AW_SAFE_OUTPUTS_TOOLS_EOF[0m
+2026-02-27T12:55:43.7007386Z [36;1mcat > /opt/gh-aw/safeoutputs/validation.json << 'GH_AW_SAFE_OUTPUTS_VALIDATION_EOF'[0m
+2026-02-27T12:55:43.7007799Z [36;1m{[0m
+2026-02-27T12:55:43.7007971Z [36;1m  "create_pull_request": {[0m
+2026-02-27T12:55:43.7008192Z [36;1m    "defaultMax": 1,[0m
+2026-02-27T12:55:43.7008400Z [36;1m    "fields": {[0m
+2026-02-27T12:55:43.7008595Z [36;1m      "body": {[0m
+2026-02-27T12:55:43.7008786Z [36;1m        "required": true,[0m
+2026-02-27T12:55:43.7009014Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7009234Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7009449Z [36;1m        "maxLength": 65000[0m
+2026-02-27T12:55:43.7009661Z [36;1m      },[0m
+2026-02-27T12:55:43.7009826Z [36;1m      "branch": {[0m
+2026-02-27T12:55:43.7010029Z [36;1m        "required": true,[0m
+2026-02-27T12:55:43.7010260Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7010472Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7010690Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7010894Z [36;1m      },[0m
+2026-02-27T12:55:43.7011068Z [36;1m      "draft": {[0m
+2026-02-27T12:55:43.7011264Z [36;1m        "type": "boolean"[0m
+2026-02-27T12:55:43.7011471Z [36;1m      },[0m
+2026-02-27T12:55:43.7011641Z [36;1m      "labels": {[0m
+2026-02-27T12:55:43.7011841Z [36;1m        "type": "array",[0m
+2026-02-27T12:55:43.7012061Z [36;1m        "itemType": "string",[0m
+2026-02-27T12:55:43.7012307Z [36;1m        "itemSanitize": true,[0m
+2026-02-27T12:55:43.7012541Z [36;1m        "itemMaxLength": 128[0m
+2026-02-27T12:55:43.7012765Z [36;1m      },[0m
+2026-02-27T12:55:43.7012937Z [36;1m      "repo": {[0m
+2026-02-27T12:55:43.7013126Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7013345Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7013547Z [36;1m      },[0m
+2026-02-27T12:55:43.7013854Z [36;1m      "title": {[0m
+2026-02-27T12:55:43.7014055Z [36;1m        "required": true,[0m
+2026-02-27T12:55:43.7014267Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7014486Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7014702Z [36;1m        "maxLength": 128[0m
+2026-02-27T12:55:43.7014905Z [36;1m      }[0m
+2026-02-27T12:55:43.7015065Z [36;1m    }[0m
+2026-02-27T12:55:43.7015222Z [36;1m  },[0m
+2026-02-27T12:55:43.7015388Z [36;1m  "missing_data": {[0m
+2026-02-27T12:55:43.7015599Z [36;1m    "defaultMax": 20,[0m
+2026-02-27T12:55:43.7015802Z [36;1m    "fields": {[0m
+2026-02-27T12:55:43.7016002Z [36;1m      "alternatives": {[0m
+2026-02-27T12:55:43.7016219Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7016601Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7016832Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7017035Z [36;1m      },[0m
+2026-02-27T12:55:43.7017207Z [36;1m      "context": {[0m
+2026-02-27T12:55:43.7017422Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7017633Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7017854Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7018055Z [36;1m      },[0m
+2026-02-27T12:55:43.7018227Z [36;1m      "data_type": {[0m
+2026-02-27T12:55:43.7018437Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7018650Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7018868Z [36;1m        "maxLength": 128[0m
+2026-02-27T12:55:43.7019067Z [36;1m      },[0m
+2026-02-27T12:55:43.7019246Z [36;1m      "reason": {[0m
+2026-02-27T12:55:43.7019454Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7019666Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7019883Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7020089Z [36;1m      }[0m
+2026-02-27T12:55:43.7020243Z [36;1m    }[0m
+2026-02-27T12:55:43.7020409Z [36;1m  },[0m
+2026-02-27T12:55:43.7020573Z [36;1m  "missing_tool": {[0m
+2026-02-27T12:55:43.7020921Z [36;1m    "defaultMax": 20,[0m
+2026-02-27T12:55:43.7021134Z [36;1m    "fields": {[0m
+2026-02-27T12:55:43.7021326Z [36;1m      "alternatives": {[0m
+2026-02-27T12:55:43.7021546Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7021762Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7021992Z [36;1m        "maxLength": 512[0m
+2026-02-27T12:55:43.7022203Z [36;1m      },[0m
+2026-02-27T12:55:43.7022367Z [36;1m      "reason": {[0m
+2026-02-27T12:55:43.7022566Z [36;1m        "required": true,[0m
+2026-02-27T12:55:43.7022779Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7022999Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7023225Z [36;1m        "maxLength": 256[0m
+2026-02-27T12:55:43.7023436Z [36;1m      },[0m
+2026-02-27T12:55:43.7023616Z [36;1m      "tool": {[0m
+2026-02-27T12:55:43.7023815Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7024033Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7024251Z [36;1m        "maxLength": 128[0m
+2026-02-27T12:55:43.7024464Z [36;1m      }[0m
+2026-02-27T12:55:43.7024628Z [36;1m    }[0m
+2026-02-27T12:55:43.7024790Z [36;1m  },[0m
+2026-02-27T12:55:43.7024947Z [36;1m  "noop": {[0m
+2026-02-27T12:55:43.7025136Z [36;1m    "defaultMax": 1,[0m
+2026-02-27T12:55:43.7025340Z [36;1m    "fields": {[0m
+2026-02-27T12:55:43.7025536Z [36;1m      "message": {[0m
+2026-02-27T12:55:43.7025745Z [36;1m        "required": true,[0m
+2026-02-27T12:55:43.7025962Z [36;1m        "type": "string",[0m
+2026-02-27T12:55:43.7026179Z [36;1m        "sanitize": true,[0m
+2026-02-27T12:55:43.7026399Z [36;1m        "maxLength": 65000[0m
+2026-02-27T12:55:43.7026978Z [36;1m      }[0m
+2026-02-27T12:55:43.7027141Z [36;1m    }[0m
+2026-02-27T12:55:43.7027303Z [36;1m  }[0m
+2026-02-27T12:55:43.7027456Z [36;1m}[0m
+2026-02-27T12:55:43.7027645Z [36;1mGH_AW_SAFE_OUTPUTS_VALIDATION_EOF[0m
+2026-02-27T12:55:43.7075792Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:55:43.7076028Z env:
+2026-02-27T12:55:43.7076192Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:43.7076755Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:43.7076980Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:43.7077187Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:43.7077450Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:43.7077807Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:43.7078209Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:43.7078619Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:43.7078943Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:43.7079181Z ##[endgroup]
+2026-02-27T12:55:43.7125190Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/d02db265-959e-48b3-abb7-cbfbe8c49156.sh
+2026-02-27T12:55:43.7222613Z ##[debug]Finishing: Write Safe Outputs Config

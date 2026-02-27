@@ -1,0 +1,41 @@
+﻿2026-02-27T12:55:43.7229383Z ##[debug]Evaluating condition for step: 'Generate Safe Outputs MCP Server Config'
+2026-02-27T12:55:43.7230553Z ##[debug]Evaluating: success()
+2026-02-27T12:55:43.7230889Z ##[debug]Evaluating success:
+2026-02-27T12:55:43.7231221Z ##[debug]=> true
+2026-02-27T12:55:43.7231522Z ##[debug]Result: true
+2026-02-27T12:55:43.7231992Z ##[debug]Starting: Generate Safe Outputs MCP Server Config
+2026-02-27T12:55:43.7238619Z ##[debug]Loading inputs
+2026-02-27T12:55:43.7239415Z ##[debug]Loading env
+2026-02-27T12:55:43.7242851Z ##[group]Run # Generate a secure random API key (360 bits of entropy, 40+ chars)
+2026-02-27T12:55:43.7243360Z [36;1m# Generate a secure random API key (360 bits of entropy, 40+ chars)[0m
+2026-02-27T12:55:43.7243787Z [36;1m# Mask immediately to prevent timing vulnerabilities[0m
+2026-02-27T12:55:43.7244152Z [36;1mAPI_KEY=$(openssl rand -base64 45 | tr -d '/+=')[0m
+2026-02-27T12:55:43.7244462Z [36;1mecho "::add-mask::${API_KEY}"[0m
+2026-02-27T12:55:43.7244702Z [36;1m[0m
+2026-02-27T12:55:43.7244887Z [36;1mPORT=3001[0m
+2026-02-27T12:55:43.7245060Z [36;1m[0m
+2026-02-27T12:55:43.7245223Z [36;1m# Set outputs for next steps[0m
+2026-02-27T12:55:43.7245611Z [36;1m{[0m
+2026-02-27T12:55:43.7245805Z [36;1m  echo "safe_outputs_api_key=${API_KEY}"[0m
+2026-02-27T12:55:43.7246093Z [36;1m  echo "safe_outputs_port=${PORT}"[0m
+2026-02-27T12:55:43.7246350Z [36;1m} >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:55:43.7246891Z [36;1m[0m
+2026-02-27T12:55:43.7247147Z [36;1mecho "Safe Outputs MCP server will run on port ${PORT}"[0m
+2026-02-27T12:55:43.7291511Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:55:43.7291745Z env:
+2026-02-27T12:55:43.7291909Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:43.7292129Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:43.7292337Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:43.7292532Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:43.7292793Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:43.7293131Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:43.7293533Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:43.7293957Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:43.7294296Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:43.7294528Z ##[endgroup]
+2026-02-27T12:55:43.7340449Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/5cd72bf7-00a0-4121-9179-714d0643b5bd.sh
+2026-02-27T12:55:43.7398755Z ::add-mask::***
+2026-02-27T12:55:43.7399780Z Safe Outputs MCP server will run on port 3001
+2026-02-27T12:55:43.7404613Z ##[debug]Set output safe_outputs_api_key = ***
+2026-02-27T12:55:43.7404964Z ##[debug]Set output safe_outputs_port = 3001
+2026-02-27T12:55:43.7405461Z ##[debug]Finishing: Generate Safe Outputs MCP Server Config

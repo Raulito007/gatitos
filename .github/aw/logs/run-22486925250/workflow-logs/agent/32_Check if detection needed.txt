@@ -1,0 +1,66 @@
+﻿2026-02-27T12:56:16.7747100Z ##[debug]Evaluating: steps.collect_output.outputs.output_types
+2026-02-27T12:56:16.7747564Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.7747812Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:16.7748063Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7748313Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:16.7748592Z ##[debug]......=> Object
+2026-02-27T12:56:16.7748840Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7749105Z ##[debug]......=> 'collect_output'
+2026-02-27T12:56:16.7749371Z ##[debug]....=> Object
+2026-02-27T12:56:16.7749591Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7749830Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:16.7750046Z ##[debug]..=> Object
+2026-02-27T12:56:16.7750257Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.7750493Z ##[debug]..=> 'output_types'
+2026-02-27T12:56:16.7750719Z ##[debug]=> ''
+2026-02-27T12:56:16.7750926Z ##[debug]Result: ''
+2026-02-27T12:56:16.7751349Z ##[debug]Evaluating: steps.collect_output.outputs.has_patch
+2026-02-27T12:56:16.7751721Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.7751960Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:16.7752197Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7752434Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:16.7752680Z ##[debug]......=> Object
+2026-02-27T12:56:16.7752904Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7753158Z ##[debug]......=> 'collect_output'
+2026-02-27T12:56:16.7753401Z ##[debug]....=> Object
+2026-02-27T12:56:16.7753623Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7753863Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:16.7754082Z ##[debug]..=> Object
+2026-02-27T12:56:16.7754293Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.7754527Z ##[debug]..=> 'has_patch'
+2026-02-27T12:56:16.7754743Z ##[debug]=> 'false'
+2026-02-27T12:56:16.7754944Z ##[debug]Result: 'false'
+2026-02-27T12:56:16.7755350Z ##[debug]Evaluating condition for step: 'Check if detection needed'
+2026-02-27T12:56:16.7757125Z ##[debug]Evaluating: always()
+2026-02-27T12:56:16.7757484Z ##[debug]Evaluating always:
+2026-02-27T12:56:16.7757798Z ##[debug]=> true
+2026-02-27T12:56:16.7758139Z ##[debug]Result: true
+2026-02-27T12:56:16.7758718Z ##[debug]Starting: Check if detection needed
+2026-02-27T12:56:16.7766195Z ##[debug]Loading inputs
+2026-02-27T12:56:16.7767483Z ##[debug]Loading env
+2026-02-27T12:56:16.7771281Z ##[group]Run if [[ -n "$OUTPUT_TYPES" || "$HAS_PATCH" == "true" ]]; then
+2026-02-27T12:56:16.7771741Z [36;1mif [[ -n "$OUTPUT_TYPES" || "$HAS_PATCH" == "true" ]]; then[0m
+2026-02-27T12:56:16.7772129Z [36;1m  echo "run_detection=true" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.7772580Z [36;1m  echo "Detection will run: output_types=$OUTPUT_TYPES, has_patch=$HAS_PATCH"[0m
+2026-02-27T12:56:16.7772991Z [36;1melse[0m
+2026-02-27T12:56:16.7773240Z [36;1m  echo "run_detection=false" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:56:16.7773653Z [36;1m  echo "Detection skipped: no agent outputs or patches to analyze"[0m
+2026-02-27T12:56:16.7774017Z [36;1mfi[0m
+2026-02-27T12:56:16.7822113Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:56:16.7822371Z env:
+2026-02-27T12:56:16.7822555Z   DEFAULT_BRANCH: master
+2026-02-27T12:56:16.7822786Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:56:16.7823020Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:56:16.7823234Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:56:16.7823514Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:56:16.7824042Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:56:16.7824455Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:56:16.7824886Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:56:16.7825233Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:56:16.7825479Z   OUTPUT_TYPES: 
+2026-02-27T12:56:16.7825669Z   HAS_PATCH: false
+2026-02-27T12:56:16.7825863Z ##[endgroup]
+2026-02-27T12:56:16.7873185Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/bd1ca9e1-9b66-4ded-a4f4-776a28c39bf3.sh
+2026-02-27T12:56:16.7893001Z Detection skipped: no agent outputs or patches to analyze
+2026-02-27T12:56:16.7897876Z ##[debug]Set output run_detection = false
+2026-02-27T12:56:16.7898350Z ##[debug]Finishing: Check if detection needed

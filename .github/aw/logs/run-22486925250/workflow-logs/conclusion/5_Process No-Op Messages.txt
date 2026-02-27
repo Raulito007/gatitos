@@ -1,0 +1,68 @@
+﻿2026-02-27T12:56:56.6893315Z ##[debug]Evaluating: env.GH_AW_AGENT_OUTPUT
+2026-02-27T12:56:56.6894107Z ##[debug]Evaluating Index:
+2026-02-27T12:56:56.6894593Z ##[debug]..Evaluating env:
+2026-02-27T12:56:56.6895103Z ##[debug]..=> Object
+2026-02-27T12:56:56.6895567Z ##[debug]..Evaluating String:
+2026-02-27T12:56:56.6896089Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-02-27T12:56:56.6898434Z ##[debug]=> '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:56.6899241Z ##[debug]Result: '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:56.6900376Z ##[debug]Evaluating condition for step: 'Process No-Op Messages'
+2026-02-27T12:56:56.6902776Z ##[debug]Evaluating: success()
+2026-02-27T12:56:56.6903484Z ##[debug]Evaluating success:
+2026-02-27T12:56:56.6904158Z ##[debug]=> true
+2026-02-27T12:56:56.6904806Z ##[debug]Result: true
+2026-02-27T12:56:56.6905656Z ##[debug]Starting: Process No-Op Messages
+2026-02-27T12:56:56.6968636Z ##[debug]Loading inputs
+2026-02-27T12:56:56.6974257Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-02-27T12:56:56.6975167Z ##[debug]Evaluating Or:
+2026-02-27T12:56:56.6977409Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:56.6977958Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:56.6978499Z ##[debug]....=> Object
+2026-02-27T12:56:56.6978972Z ##[debug]....Evaluating String:
+2026-02-27T12:56:56.6979469Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:56:56.6980003Z ##[debug]..=> null
+2026-02-27T12:56:56.6980425Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:56.6981325Z ##[debug]....Evaluating secrets:
+2026-02-27T12:56:56.6983124Z ##[debug]....=> Object
+2026-02-27T12:56:56.6983740Z ##[debug]....Evaluating String:
+2026-02-27T12:56:56.6984242Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-02-27T12:56:56.6985489Z ##[debug]..=> '***'
+2026-02-27T12:56:56.6986702Z ##[debug]=> '***'
+2026-02-27T12:56:56.6991426Z ##[debug]Expanded: (null || '***')
+2026-02-27T12:56:56.6992189Z ##[debug]Result: '***'
+2026-02-27T12:56:56.6994844Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:56:56.6995521Z ##[debug]Evaluating Equal:
+2026-02-27T12:56:56.6996802Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:56.6997327Z ##[debug]....Evaluating runner:
+2026-02-27T12:56:56.6997858Z ##[debug]....=> Object
+2026-02-27T12:56:56.6998323Z ##[debug]....Evaluating String:
+2026-02-27T12:56:56.6998817Z ##[debug]....=> 'debug'
+2026-02-27T12:56:56.6999352Z ##[debug]..=> '1'
+2026-02-27T12:56:56.6999785Z ##[debug]..Evaluating String:
+2026-02-27T12:56:56.7000261Z ##[debug]..=> '1'
+2026-02-27T12:56:56.7003861Z ##[debug]=> true
+2026-02-27T12:56:56.7005666Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:56:56.7006190Z ##[debug]Result: true
+2026-02-27T12:56:56.7059048Z ##[debug]Loading env
+2026-02-27T12:56:56.7080495Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:56:56.7081573Z with:
+2026-02-27T12:56:56.7082173Z   github-token: ***
+2026-02-27T12:56:56.7083493Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/noop.cjs');
+await main();
+
+2026-02-27T12:56:56.7085115Z   debug: true
+2026-02-27T12:56:56.7085511Z   user-agent: actions/github-script
+2026-02-27T12:56:56.7086034Z   result-encoding: json
+2026-02-27T12:56:56.7086450Z   retries: 0
+2026-02-27T12:56:56.7086894Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:56:56.7087431Z env:
+2026-02-27T12:56:56.7087924Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:56.7088549Z   GH_AW_NOOP_MAX: 1
+2026-02-27T12:56:56.7089106Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:56.7089750Z ##[endgroup]
+2026-02-27T12:56:57.0389339Z Error reading agent output file: ENOENT: no such file or directory, open '/tmp/gh-aw/safeoutputs/agent_output.json'
+2026-02-27T12:56:57.0466373Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:57.0487219Z ##[debug]Set output result = 
+2026-02-27T12:56:57.0488292Z ##[debug]Finishing: Process No-Op Messages

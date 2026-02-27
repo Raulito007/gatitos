@@ -1,0 +1,19 @@
+﻿2026-02-27T12:35:16.4008226Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:35:16.4009078Z with:
+2026-02-27T12:35:16.4009729Z   github-token: ***
+2026-02-27T12:35:16.4011497Z   script: const { setupGlobals } = require('/opt/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io);
+const { main } = require('/opt/gh-aw/actions/handle_create_pr_error.cjs');
+await main();
+
+2026-02-27T12:35:16.4013057Z   debug: false
+2026-02-27T12:35:16.4013477Z   user-agent: actions/github-script
+2026-02-27T12:35:16.4013983Z   result-encoding: json
+2026-02-27T12:35:16.4014409Z   retries: 0
+2026-02-27T12:35:16.4014886Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:35:16.4015426Z env:
+2026-02-27T12:35:16.4015912Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:35:16.4016700Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:35:16.4017592Z   GH_AW_RUN_URL: https://github.com/Raulito007/gatitos/actions/runs/22486253695
+2026-02-27T12:35:16.4018362Z ##[endgroup]
+2026-02-27T12:35:16.4792486Z No create_pull_request error message - skipping

@@ -1,0 +1,42 @@
+﻿2026-02-27T12:56:16.7932952Z ##[debug]Evaluating: steps.collect_output.outputs.has_patch
+2026-02-27T12:56:16.7933329Z ##[debug]Evaluating Index:
+2026-02-27T12:56:16.7933569Z ##[debug]..Evaluating Index:
+2026-02-27T12:56:16.7933806Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7934046Z ##[debug]......Evaluating steps:
+2026-02-27T12:56:16.7934293Z ##[debug]......=> Object
+2026-02-27T12:56:16.7934532Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7934788Z ##[debug]......=> 'collect_output'
+2026-02-27T12:56:16.7935036Z ##[debug]....=> Object
+2026-02-27T12:56:16.7935250Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7935489Z ##[debug]....=> 'outputs'
+2026-02-27T12:56:16.7935708Z ##[debug]..=> Object
+2026-02-27T12:56:16.7935921Z ##[debug]..Evaluating String:
+2026-02-27T12:56:16.7936153Z ##[debug]..=> 'has_patch'
+2026-02-27T12:56:16.7936369Z ##[debug]=> 'false'
+2026-02-27T12:56:16.7936846Z ##[debug]Result: 'false'
+2026-02-27T12:56:16.7937251Z ##[debug]Evaluating condition for step: 'Setup threat detection'
+2026-02-27T12:56:16.7938549Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-02-27T12:56:16.7939080Z ##[debug]Evaluating And:
+2026-02-27T12:56:16.7939396Z ##[debug]..Evaluating always:
+2026-02-27T12:56:16.7939692Z ##[debug]..=> true
+2026-02-27T12:56:16.7939975Z ##[debug]..Evaluating Equal:
+2026-02-27T12:56:16.7940290Z ##[debug]....Evaluating Index:
+2026-02-27T12:56:16.7940602Z ##[debug]......Evaluating Index:
+2026-02-27T12:56:16.7940918Z ##[debug]........Evaluating Index:
+2026-02-27T12:56:16.7941247Z ##[debug]..........Evaluating steps:
+2026-02-27T12:56:16.7941570Z ##[debug]..........=> Object
+2026-02-27T12:56:16.7941884Z ##[debug]..........Evaluating String:
+2026-02-27T12:56:16.7942222Z ##[debug]..........=> 'detection_guard'
+2026-02-27T12:56:16.7942552Z ##[debug]........=> Object
+2026-02-27T12:56:16.7942863Z ##[debug]........Evaluating String:
+2026-02-27T12:56:16.7943176Z ##[debug]........=> 'outputs'
+2026-02-27T12:56:16.7943477Z ##[debug]......=> Object
+2026-02-27T12:56:16.7943778Z ##[debug]......Evaluating String:
+2026-02-27T12:56:16.7944098Z ##[debug]......=> 'run_detection'
+2026-02-27T12:56:16.7944398Z ##[debug]....=> 'false'
+2026-02-27T12:56:16.7944696Z ##[debug]....Evaluating String:
+2026-02-27T12:56:16.7944987Z ##[debug]....=> 'true'
+2026-02-27T12:56:16.7945264Z ##[debug]..=> false
+2026-02-27T12:56:16.7945522Z ##[debug]=> false
+2026-02-27T12:56:16.7945902Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-02-27T12:56:16.7946293Z ##[debug]Result: false

@@ -1,0 +1,68 @@
+﻿2026-02-27T12:56:47.7298609Z ##[debug]Starting: Set up job
+2026-02-27T12:56:47.7299814Z Current runner version: '2.331.0'
+2026-02-27T12:56:47.7352137Z ##[group]Runner Image Provisioner
+2026-02-27T12:56:47.7352878Z Hosted Compute Agent
+2026-02-27T12:56:47.7353539Z Version: 20260115.477
+2026-02-27T12:56:47.7354132Z Commit: 4b342d620503cbe250a3154040964899ea7c9b00
+2026-02-27T12:56:47.7354834Z Build Date: 2026-01-15T22:32:41Z
+2026-02-27T12:56:47.7355521Z Worker ID: {017f73f0-d5af-467b-8a2d-8ed9cb3476d0}
+2026-02-27T12:56:47.7356229Z Azure Region: eastus
+2026-02-27T12:56:47.7356745Z ##[endgroup]
+2026-02-27T12:56:47.7358072Z ##[group]VM Image
+2026-02-27T12:56:47.7358651Z - OS: Linux (x64)
+2026-02-27T12:56:47.7359166Z - Source: Docker
+2026-02-27T12:56:47.7359750Z - Name: ubuntu:24.04
+2026-02-27T12:56:47.7360258Z - Version: 20260120.46.1
+2026-02-27T12:56:47.7371218Z ##[endgroup]
+2026-02-27T12:56:47.7372823Z ##[group]GITHUB_TOKEN Permissions
+2026-02-27T12:56:47.7374688Z Contents: write
+2026-02-27T12:56:47.7375355Z Issues: write
+2026-02-27T12:56:47.7375916Z Metadata: read
+2026-02-27T12:56:47.7376461Z PullRequests: write
+2026-02-27T12:56:47.7376958Z ##[endgroup]
+2026-02-27T12:56:47.7379020Z Secret source: Actions
+2026-02-27T12:56:47.7380054Z ##[debug]Primary repository: Raulito007/gatitos
+2026-02-27T12:56:47.7471356Z Prepare workflow directory
+2026-02-27T12:56:47.7598833Z ##[debug]Creating pipeline directory: '/home/runner/work/gatitos'
+2026-02-27T12:56:47.7612853Z ##[debug]Creating workspace directory: '/home/runner/work/gatitos/gatitos'
+2026-02-27T12:56:47.7614389Z ##[debug]Update context data
+2026-02-27T12:56:47.7617742Z ##[debug]Evaluating job-level environment variables
+2026-02-27T12:56:47.8083462Z ##[debug]Evaluating job container
+2026-02-27T12:56:47.8086772Z ##[debug]Evaluating job service containers
+2026-02-27T12:56:47.8089537Z ##[debug]Evaluating job defaults
+2026-02-27T12:56:47.8145794Z Prepare all required actions
+2026-02-27T12:56:47.8224018Z Getting action download info
+2026-02-27T12:56:48.1436738Z Download action repository 'github/gh-aw@fa00c211a1435b633eb568b1b41a203486ec760d' (SHA:fa00c211a1435b633eb568b1b41a203486ec760d)
+2026-02-27T12:56:49.3591377Z ##[debug]Download 'https://api.github.com/repos/github/gh-aw/tarball/fa00c211a1435b633eb568b1b41a203486ec760d' to '/home/runner/work/_actions/_temp_efc4b572-cb44-43bc-92b0-ac7f95a975de/7c747b6d-c5a2-4657-bf07-36e924c386e9.tar.gz'
+2026-02-27T12:56:51.5574496Z ##[debug]Unwrap 'github-gh-aw-fa00c21' to '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d'
+2026-02-27T12:56:54.5034174Z ##[debug]Archive '/home/runner/work/_actions/_temp_efc4b572-cb44-43bc-92b0-ac7f95a975de/7c747b6d-c5a2-4657-bf07-36e924c386e9.tar.gz' has been unzipped into '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d'.
+2026-02-27T12:56:54.6038077Z Download action repository 'actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53' (SHA:018cc2cf5baa6db3ef3c5f8a56943fffe632ef53)
+2026-02-27T12:56:54.7428401Z ##[debug]Download 'https://api.github.com/repos/actions/download-artifact/tarball/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53' to '/home/runner/work/_actions/_temp_506c48f9-5ff0-4976-81db-63a85021a16f/716abcbd-8d74-4b4d-9d35-62de2791afcc.tar.gz'
+2026-02-27T12:56:54.7872377Z ##[debug]Unwrap 'actions-download-artifact-018cc2c' to '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53'
+2026-02-27T12:56:54.8056902Z ##[debug]Archive '/home/runner/work/_actions/_temp_506c48f9-5ff0-4976-81db-63a85021a16f/716abcbd-8d74-4b4d-9d35-62de2791afcc.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53'.
+2026-02-27T12:56:54.8113856Z Download action repository 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' (SHA:ed597411d8f924073f98dfc5c65a23a2325f34cd)
+2026-02-27T12:56:54.9452663Z ##[debug]Download 'https://api.github.com/repos/actions/github-script/tarball/ed597411d8f924073f98dfc5c65a23a2325f34cd' to '/home/runner/work/_actions/_temp_97e5127b-017c-40d7-8224-e3a838404959/ab3335ca-cb64-4438-82a9-41684d1d9083.tar.gz'
+2026-02-27T12:56:54.9635167Z ##[debug]Unwrap 'actions-github-script-ed59741' to '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'
+2026-02-27T12:56:54.9720234Z ##[debug]Archive '/home/runner/work/_actions/_temp_97e5127b-017c-40d7-8224-e3a838404959/ab3335ca-cb64-4438-82a9-41684d1d9083.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:56:55.0178708Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:56:55.0186365Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:56:55.0191428Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:56:55.0196021Z ##[debug]Action 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' already downloaded at '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd'.
+2026-02-27T12:56:55.0214837Z ##[debug]action.yml for action: '/home/runner/work/_actions/github/gh-aw/fa00c211a1435b633eb568b1b41a203486ec760d/actions/setup/action.yml'.
+2026-02-27T12:56:55.0998864Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/018cc2cf5baa6db3ef3c5f8a56943fffe632ef53/action.yml'.
+2026-02-27T12:56:55.1085131Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:56:55.1292865Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:56:55.1360286Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:56:55.1420455Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:56:55.1514308Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/ed597411d8f924073f98dfc5c65a23a2325f34cd/action.yml'.
+2026-02-27T12:56:55.1652306Z ##[debug]Set step '__github_gh-aw' display name to: 'Setup Scripts'
+2026-02-27T12:56:55.1656268Z ##[debug]Set step '__actions_download-artifact' display name to: 'Download agent output artifact'
+2026-02-27T12:56:55.1659089Z ##[debug]Set step '__run' display name to: 'Setup agent output environment variable'
+2026-02-27T12:56:55.1662100Z ##[debug]Set step 'noop' display name to: 'Process No-Op Messages'
+2026-02-27T12:56:55.1664562Z ##[debug]Set step 'missing_tool' display name to: 'Record Missing Tool'
+2026-02-27T12:56:55.1667037Z ##[debug]Set step 'handle_agent_failure' display name to: 'Handle Agent Failure'
+2026-02-27T12:56:55.1669538Z ##[debug]Set step 'handle_noop_message' display name to: 'Handle No-Op Message'
+2026-02-27T12:56:55.1672693Z ##[debug]Set step 'handle_create_pr_error' display name to: 'Handle Create Pull Request Error'
+2026-02-27T12:56:55.1673780Z Complete job name: conclusion
+2026-02-27T12:56:55.1721906Z ##[debug]Collect running processes for tracking orphan processes.
+2026-02-27T12:56:55.1795874Z ##[debug]Finishing: Set up job

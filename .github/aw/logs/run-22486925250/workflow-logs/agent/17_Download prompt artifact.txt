@@ -1,0 +1,121 @@
+﻿2026-02-27T12:55:50.1734179Z ##[debug]Evaluating condition for step: 'Download prompt artifact'
+2026-02-27T12:55:50.1735542Z ##[debug]Evaluating: success()
+2026-02-27T12:55:50.1735875Z ##[debug]Evaluating success:
+2026-02-27T12:55:50.1736218Z ##[debug]=> true
+2026-02-27T12:55:50.1736904Z ##[debug]Result: true
+2026-02-27T12:55:50.1737424Z ##[debug]Starting: Download prompt artifact
+2026-02-27T12:55:50.1773757Z ##[debug]Loading inputs
+2026-02-27T12:55:50.1777256Z ##[debug]Evaluating: github.repository
+2026-02-27T12:55:50.1777567Z ##[debug]Evaluating Index:
+2026-02-27T12:55:50.1777856Z ##[debug]..Evaluating github:
+2026-02-27T12:55:50.1778116Z ##[debug]..=> Object
+2026-02-27T12:55:50.1778337Z ##[debug]..Evaluating String:
+2026-02-27T12:55:50.1778573Z ##[debug]..=> 'repository'
+2026-02-27T12:55:50.1778825Z ##[debug]=> 'Raulito007/gatitos'
+2026-02-27T12:55:50.1779101Z ##[debug]Result: 'Raulito007/gatitos'
+2026-02-27T12:55:50.1780215Z ##[debug]Evaluating: github.run_id
+2026-02-27T12:55:50.1780479Z ##[debug]Evaluating Index:
+2026-02-27T12:55:50.1780725Z ##[debug]..Evaluating github:
+2026-02-27T12:55:50.1780957Z ##[debug]..=> Object
+2026-02-27T12:55:50.1781159Z ##[debug]..Evaluating String:
+2026-02-27T12:55:50.1781379Z ##[debug]..=> 'run_id'
+2026-02-27T12:55:50.1781591Z ##[debug]=> '22486925250'
+2026-02-27T12:55:50.1781811Z ##[debug]Result: '22486925250'
+2026-02-27T12:55:50.1782455Z ##[debug]Loading env
+2026-02-27T12:55:50.1791356Z ##[group]Run actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+2026-02-27T12:55:50.1791790Z with:
+2026-02-27T12:55:50.1791960Z   name: prompt
+2026-02-27T12:55:50.1792160Z   path: /tmp/gh-aw/aw-prompts
+2026-02-27T12:55:50.1792402Z   merge-multiple: false
+2026-02-27T12:55:50.1792619Z   repository: Raulito007/gatitos
+2026-02-27T12:55:50.1792846Z   run-id: 22486925250
+2026-02-27T12:55:50.1793033Z env:
+2026-02-27T12:55:50.1793197Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:50.1793420Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:50.1793637Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:50.1793835Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:50.1794097Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:50.1794441Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:50.1794828Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:50.1795244Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:50.1795582Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:50.1795811Z ##[endgroup]
+2026-02-27T12:55:50.3792422Z ##[debug]Resolved path is /tmp/gh-aw/aw-prompts
+2026-02-27T12:55:50.3793406Z Downloading single artifact
+2026-02-27T12:55:50.3811782Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:55:50.3813443Z ##[debug]Workflow Job Run Backend ID: d67c210d-b851-5326-a894-3c39bd19201d
+2026-02-27T12:55:50.3823014Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:55:50.4801516Z ##[debug][Response] - 200
+2026-02-27T12:55:50.4802470Z ##[debug]Headers: {
+2026-02-27T12:55:50.4802893Z ##[debug]  "content-length": "333",
+2026-02-27T12:55:50.4803473Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:55:50.4804108Z ##[debug]  "date": "Fri, 27 Feb 2026 12:55:50 GMT",
+2026-02-27T12:55:50.4804723Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:55:50.4805452Z ##[debug]  "x-github-request-id": "FC03:216ECC:49E23:51554:69A19456"
+2026-02-27T12:55:50.4806142Z ##[debug]}
+2026-02-27T12:55:50.4806986Z ##[debug]Body: {
+2026-02-27T12:55:50.4807223Z ##[debug]  "artifacts": [
+2026-02-27T12:55:50.4807479Z ##[debug]    {
+2026-02-27T12:55:50.4807836Z ##[debug]      "workflow_run_backend_id": "418d9389-e065-450b-9f60-6b0abe09b7e3",
+2026-02-27T12:55:50.4808442Z ##[debug]      "workflow_job_run_backend_id": "9bcdb844-2982-5d96-8191-8e4bf3fc6d92",
+2026-02-27T12:55:50.4809253Z ##[debug]      "database_id": "5690177528",
+2026-02-27T12:55:50.4809578Z ##[debug]      "name": "prompt",
+2026-02-27T12:55:50.4810022Z ##[debug]      "size": "2874",
+2026-02-27T12:55:50.4810289Z ##[debug]      "created_at": "2026-02-27T12:51:04Z",
+2026-02-27T12:55:50.4810789Z ##[debug]      "digest": "sha256:45796fad34d399171f7e38c51672d348b0eb79c66121691a222881b1013b9e01"
+2026-02-27T12:55:50.4811261Z ##[debug]    }
+2026-02-27T12:55:50.4811447Z ##[debug]  ]
+2026-02-27T12:55:50.4811617Z ##[debug]}
+2026-02-27T12:55:50.4814450Z ##[debug]Found named artifact 'prompt' (ID: 5690177528, Size: 2874)
+2026-02-27T12:55:50.4815126Z Preparing to download the following artifacts:
+2026-02-27T12:55:50.4816151Z - prompt (ID: 5690177528, Size: 2874, Expected Digest: sha256:45796fad34d399171f7e38c51672d348b0eb79c66121691a222881b1013b9e01)
+2026-02-27T12:55:50.4823683Z ##[debug]Artifact destination folder does not exist, creating: /tmp/gh-aw/aw-prompts
+2026-02-27T12:55:50.4833646Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:55:50.4834682Z ##[debug]Workflow Job Run Backend ID: d67c210d-b851-5326-a894-3c39bd19201d
+2026-02-27T12:55:50.4837127Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-02-27T12:55:50.5392002Z ##[debug][Response] - 200
+2026-02-27T12:55:50.5392834Z ##[debug]Headers: {
+2026-02-27T12:55:50.5393251Z ##[debug]  "content-length": "333",
+2026-02-27T12:55:50.5393740Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:55:50.5394158Z ##[debug]  "date": "Fri, 27 Feb 2026 12:55:50 GMT",
+2026-02-27T12:55:50.5394716Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:55:50.5395480Z ##[debug]  "x-github-request-id": "FC03:216ECC:49E5B:51591:69A19456"
+2026-02-27T12:55:50.5395942Z ##[debug]}
+2026-02-27T12:55:50.5396660Z ##[debug]Body: {
+2026-02-27T12:55:50.5396953Z ##[debug]  "artifacts": [
+2026-02-27T12:55:50.5397246Z ##[debug]    {
+2026-02-27T12:55:50.5397643Z ##[debug]      "workflow_run_backend_id": "418d9389-e065-450b-9f60-6b0abe09b7e3",
+2026-02-27T12:55:50.5398371Z ##[debug]      "workflow_job_run_backend_id": "9bcdb844-2982-5d96-8191-8e4bf3fc6d92",
+2026-02-27T12:55:50.5398910Z ##[debug]      "database_id": "5690177528",
+2026-02-27T12:55:50.5399258Z ##[debug]      "name": "prompt",
+2026-02-27T12:55:50.5399571Z ##[debug]      "size": "2874",
+2026-02-27T12:55:50.5399905Z ##[debug]      "created_at": "2026-02-27T12:51:04Z",
+2026-02-27T12:55:50.5400533Z ##[debug]      "digest": "sha256:45796fad34d399171f7e38c51672d348b0eb79c66121691a222881b1013b9e01"
+2026-02-27T12:55:50.5401026Z ##[debug]    }
+2026-02-27T12:55:50.5401211Z ##[debug]  ]
+2026-02-27T12:55:50.5401390Z ##[debug]}
+2026-02-27T12:55:50.5402372Z ##[debug][Request] GetSignedArtifactURL https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/GetSignedArtifactURL
+2026-02-27T12:55:50.5583719Z ##[debug][Response] - 200
+2026-02-27T12:55:50.5584853Z ##[debug]Headers: {
+2026-02-27T12:55:50.5585101Z ##[debug]  "content-length": "635",
+2026-02-27T12:55:50.5585447Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:55:50.5585831Z ##[debug]  "date": "Fri, 27 Feb 2026 12:55:50 GMT",
+2026-02-27T12:55:50.5586195Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:55:50.5586813Z ##[debug]  "x-github-request-id": "FC03:216ECC:49EA3:515E2:69A19456"
+2026-02-27T12:55:50.5587220Z ##[debug]}
+2026-02-27T12:55:50.5591621Z ::add-mask::***
+2026-02-27T12:55:50.5593495Z ::add-mask::***
+2026-02-27T12:55:50.5594685Z ##[debug]Body: {
+2026-02-27T12:55:50.5600055Z ##[debug]  "signed_url": "https://productionresultssa0.blob.core.windows.net/actions-results/418d9389-e065-450b-9f60-6b0abe09b7e3/workflow-job-run-9bcdb844-2982-5d96-8191-8e4bf3fc6d92/artifacts/cf07194ee232eb531e15f690000d19846dea69cf05504782658afcfacb9228a2.zip?rscd=attachment%3B+filename%3D%22prompt.zip%22&rsct=application%2Fzip&se=2026-02-27T13%3A05%3A50Z&sig=***&ske=2026-02-27T16%3A36%3A59Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-02-27T12%3A36%3A59Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=r&spr=https&sr=b&st=2026-02-27T12%3A55%3A45Z&sv=2025-11-05"
+2026-02-27T12:55:50.5604586Z ##[debug]}
+2026-02-27T12:55:50.5606778Z Redirecting to blob download url: https://productionresultssa0.blob.core.windows.net/actions-results/418d9389-e065-450b-9f60-6b0abe09b7e3/workflow-job-run-9bcdb844-2982-5d96-8191-8e4bf3fc6d92/artifacts/cf07194ee232eb531e15f690000d19846dea69cf05504782658afcfacb9228a2.zip
+2026-02-27T12:55:50.5608429Z Starting download of artifact to: /tmp/gh-aw/aw-prompts
+2026-02-27T12:55:50.6029831Z (node:4047) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-02-27T12:55:50.6031057Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-02-27T12:55:50.6069715Z SHA256 digest of downloaded artifact is 45796fad34d399171f7e38c51672d348b0eb79c66121691a222881b1013b9e01
+2026-02-27T12:55:50.6070663Z Artifact download completed successfully.
+2026-02-27T12:55:50.6071177Z Total of 1 artifact(s) downloaded
+2026-02-27T12:55:50.6076257Z Download artifact has finished successfully
+2026-02-27T12:55:50.6142652Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:55:50.6145021Z ##[debug]Set output download-path = /tmp/gh-aw/aw-prompts
+2026-02-27T12:55:50.6145654Z ##[debug]Finishing: Download prompt artifact

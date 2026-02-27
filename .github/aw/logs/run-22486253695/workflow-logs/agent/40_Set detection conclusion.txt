@@ -1,0 +1,29 @@
+﻿2026-02-27T12:34:29.7618186Z ##[group]Run if [[ "$RUN_DETECTION" != "true" ]]; then
+2026-02-27T12:34:29.7618582Z [36;1mif [[ "$RUN_DETECTION" != "true" ]]; then[0m
+2026-02-27T12:34:29.7618925Z [36;1m  echo "conclusion=skipped" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7619266Z [36;1m  echo "success=true" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7619636Z [36;1m  echo "Detection was not needed, marking as skipped"[0m
+2026-02-27T12:34:29.7620006Z [36;1melif [[ "$DETECTION_SUCCESS" == "true" ]]; then[0m
+2026-02-27T12:34:29.7620525Z [36;1m  echo "conclusion=success" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7620855Z [36;1m  echo "success=true" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7621186Z [36;1m  echo "Detection passed successfully"[0m
+2026-02-27T12:34:29.7621478Z [36;1melse[0m
+2026-02-27T12:34:29.7621729Z [36;1m  echo "conclusion=failure" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7622080Z [36;1m  echo "success=false" >> "$GITHUB_OUTPUT"[0m
+2026-02-27T12:34:29.7622393Z [36;1m  echo "Detection found issues"[0m
+2026-02-27T12:34:29.7622674Z [36;1mfi[0m
+2026-02-27T12:34:29.7668288Z shell: /usr/bin/bash -e {0}
+2026-02-27T12:34:29.7668549Z env:
+2026-02-27T12:34:29.7668742Z   DEFAULT_BRANCH: master
+2026-02-27T12:34:29.7668986Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:34:29.7669227Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:34:29.7669445Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:34:29.7669732Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:34:29.7670104Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:34:29.7670521Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:34:29.7670950Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:34:29.7671298Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:34:29.7671554Z   RUN_DETECTION: false
+2026-02-27T12:34:29.7671771Z   DETECTION_SUCCESS: 
+2026-02-27T12:34:29.7671985Z ##[endgroup]
+2026-02-27T12:34:29.7735143Z Detection was not needed, marking as skipped

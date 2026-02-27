@@ -1,0 +1,125 @@
+﻿2026-02-27T12:55:32.8199471Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_TOKEN
+2026-02-27T12:55:32.8200057Z ##[debug]Evaluating Index:
+2026-02-27T12:55:32.8200476Z ##[debug]..Evaluating secrets:
+2026-02-27T12:55:32.8200938Z ##[debug]..=> Object
+2026-02-27T12:55:32.8201334Z ##[debug]..Evaluating String:
+2026-02-27T12:55:32.8201829Z ##[debug]..=> 'GH_AW_GITHUB_TOKEN'
+2026-02-27T12:55:32.8202315Z ##[debug]=> null
+2026-02-27T12:55:32.8202668Z ##[debug]Result: null
+2026-02-27T12:55:32.8203514Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN
+2026-02-27T12:55:32.8204124Z ##[debug]Evaluating Index:
+2026-02-27T12:55:32.8204550Z ##[debug]..Evaluating secrets:
+2026-02-27T12:55:32.8204985Z ##[debug]..=> Object
+2026-02-27T12:55:32.8205375Z ##[debug]..Evaluating String:
+2026-02-27T12:55:32.8205850Z ##[debug]..=> 'GH_AW_GITHUB_MCP_SERVER_TOKEN'
+2026-02-27T12:55:32.8206373Z ##[debug]=> null
+2026-02-27T12:55:32.8207020Z ##[debug]Result: null
+2026-02-27T12:55:32.8207944Z ##[debug]Evaluating condition for step: 'Determine automatic lockdown mode for GitHub MCP Server'
+2026-02-27T12:55:32.8210537Z ##[debug]Evaluating: success()
+2026-02-27T12:55:32.8211149Z ##[debug]Evaluating success:
+2026-02-27T12:55:32.8211753Z ##[debug]=> true
+2026-02-27T12:55:32.8212322Z ##[debug]Result: true
+2026-02-27T12:55:32.8213556Z ##[debug]Starting: Determine automatic lockdown mode for GitHub MCP Server
+2026-02-27T12:55:32.8260210Z ##[debug]Loading inputs
+2026-02-27T12:55:32.8261700Z ##[debug]Evaluating: github.token
+2026-02-27T12:55:32.8261991Z ##[debug]Evaluating Index:
+2026-02-27T12:55:32.8262216Z ##[debug]..Evaluating github:
+2026-02-27T12:55:32.8262459Z ##[debug]..=> Object
+2026-02-27T12:55:32.8262668Z ##[debug]..Evaluating String:
+2026-02-27T12:55:32.8262881Z ##[debug]..=> 'token'
+2026-02-27T12:55:32.8263302Z ##[debug]=> '***'
+2026-02-27T12:55:32.8263623Z ##[debug]Result: '***'
+2026-02-27T12:55:32.8265014Z ##[debug]Evaluating: (runner.debug == '1')
+2026-02-27T12:55:32.8265313Z ##[debug]Evaluating Equal:
+2026-02-27T12:55:32.8265537Z ##[debug]..Evaluating Index:
+2026-02-27T12:55:32.8265775Z ##[debug]....Evaluating runner:
+2026-02-27T12:55:32.8266013Z ##[debug]....=> Object
+2026-02-27T12:55:32.8266217Z ##[debug]....Evaluating String:
+2026-02-27T12:55:32.8266687Z ##[debug]....=> 'debug'
+2026-02-27T12:55:32.8266987Z ##[debug]..=> '1'
+2026-02-27T12:55:32.8267194Z ##[debug]..Evaluating String:
+2026-02-27T12:55:32.8267413Z ##[debug]..=> '1'
+2026-02-27T12:55:32.8267598Z ##[debug]=> true
+2026-02-27T12:55:32.8267794Z ##[debug]Expanded: ('1' == '1')
+2026-02-27T12:55:32.8268010Z ##[debug]Result: true
+2026-02-27T12:55:32.8271985Z ##[debug]Loading env
+2026-02-27T12:55:32.8275613Z ##[group]Run actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
+2026-02-27T12:55:32.8275973Z with:
+2026-02-27T12:55:32.8276858Z   script: const determineAutomaticLockdown = require('/opt/gh-aw/actions/determine_automatic_lockdown.cjs');
+await determineAutomaticLockdown(github, context, core);
+
+2026-02-27T12:55:32.8277732Z   github-token: ***
+2026-02-27T12:55:32.8277920Z   debug: true
+2026-02-27T12:55:32.8278115Z   user-agent: actions/github-script
+2026-02-27T12:55:32.8278363Z   result-encoding: json
+2026-02-27T12:55:32.8278553Z   retries: 0
+2026-02-27T12:55:32.8278753Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-02-27T12:55:32.8279020Z env:
+2026-02-27T12:55:32.8279184Z   DEFAULT_BRANCH: master
+2026-02-27T12:55:32.8279396Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-02-27T12:55:32.8279607Z   GH_AW_ASSETS_BRANCH: 
+2026-02-27T12:55:32.8279795Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-02-27T12:55:32.8280050Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-02-27T12:55:32.8280389Z   GH_AW_SAFE_OUTPUTS: /opt/gh-aw/safeoutputs/outputs.jsonl
+2026-02-27T12:55:32.8280771Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /opt/gh-aw/safeoutputs/config.json
+2026-02-27T12:55:32.8281184Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /opt/gh-aw/safeoutputs/tools.json
+2026-02-27T12:55:32.8281507Z   GH_AW_WORKFLOW_ID_SANITIZED: astro
+2026-02-27T12:55:32.8281739Z   GH_AW_GITHUB_TOKEN: 
+2026-02-27T12:55:32.8281937Z   GH_AW_GITHUB_MCP_SERVER_TOKEN: 
+2026-02-27T12:55:32.8282372Z ##[endgroup]
+2026-02-27T12:55:32.8983365Z Determining automatic lockdown mode for GitHub MCP server
+2026-02-27T12:55:32.8985286Z Checking repository: Raulito007/gatitos
+2026-02-27T12:55:32.8993302Z request {
+2026-02-27T12:55:32.8993926Z   method: 'GET',
+2026-02-27T12:55:32.8994346Z   baseUrl: 'https://api.github.com',
+2026-02-27T12:55:32.8994774Z   headers: {
+2026-02-27T12:55:32.8995123Z     accept: 'application/vnd.github.v3+json',
+2026-02-27T12:55:32.8995781Z     'user-agent': 'actions/github-script octokit-core.js/5.0.1 Node.js/24'
+2026-02-27T12:55:32.8996174Z   },
+2026-02-27T12:55:32.8996378Z   mediaType: { format: '', previews: [] },
+2026-02-27T12:55:32.8996910Z   request: {
+2026-02-27T12:55:32.8997101Z     agent: Agent {
+2026-02-27T12:55:32.8997323Z       _events: [Object: null prototype],
+2026-02-27T12:55:32.8997596Z       _eventsCount: 2,
+2026-02-27T12:55:32.8997819Z       _maxListeners: undefined,
+2026-02-27T12:55:32.8998075Z       options: [Object: null prototype],
+2026-02-27T12:55:32.8998370Z       defaultPort: 443,
+2026-02-27T12:55:32.8998606Z       protocol: 'https:',
+2026-02-27T12:55:32.8998860Z       requests: [Object: null prototype] {},
+2026-02-27T12:55:32.8999171Z       sockets: [Object: null prototype] {},
+2026-02-27T12:55:32.8999792Z       freeSockets: [Object: null prototype] {},
+2026-02-27T12:55:32.9000098Z       keepAliveMsecs: 1000,
+2026-02-27T12:55:32.9000335Z       keepAlive: true,
+2026-02-27T12:55:32.9000546Z       maxSockets: Infinity,
+2026-02-27T12:55:32.9000776Z       maxFreeSockets: 256,
+2026-02-27T12:55:32.9001008Z       scheduling: 'lifo',
+2026-02-27T12:55:32.9001235Z       maxTotalSockets: Infinity,
+2026-02-27T12:55:32.9001489Z       totalSocketCount: 0,
+2026-02-27T12:55:32.9001736Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-02-27T12:55:32.9002035Z       maxCachedSessions: 100,
+2026-02-27T12:55:32.9002299Z       _sessionCache: [Object],
+2026-02-27T12:55:32.9002542Z       Symbol(shapeMode): false,
+2026-02-27T12:55:32.9002778Z       Symbol(kCapture): false
+2026-02-27T12:55:32.9002980Z     },
+2026-02-27T12:55:32.9003159Z     fetch: [Function: proxyFetch],
+2026-02-27T12:55:32.9003410Z     hook: [Function: bound bound register]
+2026-02-27T12:55:32.9003643Z   },
+2026-02-27T12:55:32.9003799Z   url: '/repos/{owner}/{repo}',
+2026-02-27T12:55:32.9004019Z   owner: 'Raulito007',
+2026-02-27T12:55:32.9004214Z   repo: 'gatitos'
+2026-02-27T12:55:32.9004383Z }
+2026-02-27T12:55:33.1278494Z GET /repos/Raulito007/gatitos - 200 in 228ms
+2026-02-27T12:55:33.1279510Z Repository visibility: public
+2026-02-27T12:55:33.1280045Z Repository is private: false
+2026-02-27T12:55:33.1280547Z GH_AW_GITHUB_TOKEN configured: false
+2026-02-27T12:55:33.1281147Z GH_AW_GITHUB_MCP_SERVER_TOKEN configured: false
+2026-02-27T12:55:33.1281533Z Custom github-token configured: false
+2026-02-27T12:55:33.1281851Z Any custom token configured: false
+2026-02-27T12:55:33.1282183Z Automatic lockdown mode determined: false
+2026-02-27T12:55:33.1289115Z Automatic lockdown mode disabled for public repository (no custom tokens configured)
+2026-02-27T12:55:33.1290749Z To enable lockdown mode for enhanced security, configure GH_AW_GITHUB_TOKEN as a repository secret and set 'lockdown: true' in your workflow.
+2026-02-27T12:55:33.1515021Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:55:33.1517845Z ##[debug]Set output lockdown = false
+2026-02-27T12:55:33.1518160Z ##[debug]Set output visibility = public
+2026-02-27T12:55:33.1518466Z ##[debug]Set output result = 
+2026-02-27T12:55:33.1519008Z ##[debug]Finishing: Determine automatic lockdown mode for GitHub MCP Server

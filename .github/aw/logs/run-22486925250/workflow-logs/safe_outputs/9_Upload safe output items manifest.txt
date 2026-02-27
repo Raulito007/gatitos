@@ -1,0 +1,86 @@
+﻿2026-02-27T12:56:42.5073985Z ##[debug]Evaluating condition for step: 'Upload safe output items manifest'
+2026-02-27T12:56:42.5078852Z ##[debug]Evaluating: always()
+2026-02-27T12:56:42.5080137Z ##[debug]Evaluating always:
+2026-02-27T12:56:42.5081936Z ##[debug]=> true
+2026-02-27T12:56:42.5083307Z ##[debug]Result: true
+2026-02-27T12:56:42.5087542Z ##[debug]Starting: Upload safe output items manifest
+2026-02-27T12:56:42.5153179Z ##[debug]Loading inputs
+2026-02-27T12:56:42.5164018Z ##[debug]Loading env
+2026-02-27T12:56:42.5175761Z ##[group]Run actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+2026-02-27T12:56:42.5177281Z with:
+2026-02-27T12:56:42.5178004Z   name: safe-output-items
+2026-02-27T12:56:42.5178862Z   path: /tmp/safe-output-items.jsonl
+2026-02-27T12:56:42.5179963Z   if-no-files-found: warn
+2026-02-27T12:56:42.5180782Z   compression-level: 6
+2026-02-27T12:56:42.5181536Z   overwrite: false
+2026-02-27T12:56:42.5182392Z   include-hidden-files: false
+2026-02-27T12:56:42.5183216Z env:
+2026-02-27T12:56:42.5183864Z   GH_AW_ENGINE_ID: copilot
+2026-02-27T12:56:42.5184711Z   GH_AW_WORKFLOW_ID: astro
+2026-02-27T12:56:42.5185808Z   GH_AW_WORKFLOW_NAME: Astro — Workflow de scaffolding del blog Hugo
+2026-02-27T12:56:42.5187425Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/safeoutputs/agent_output.json
+2026-02-27T12:56:42.5188540Z ##[endgroup]
+2026-02-27T12:56:42.6974156Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:42.6979098Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:42.6981562Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:42.6984117Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:42.7010730Z ##[debug]followSymbolicLinks 'true'
+2026-02-27T12:56:42.7013213Z ##[debug]implicitDescendants 'true'
+2026-02-27T12:56:42.7015588Z ##[debug]matchDirectories 'true'
+2026-02-27T12:56:42.7018248Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-02-27T12:56:42.7020732Z ##[debug]excludeHiddenFiles 'true'
+2026-02-27T12:56:42.7027468Z ##[debug]Search path '/tmp/safe-output-items.jsonl'
+2026-02-27T12:56:42.7054893Z ##[debug]File:/tmp/safe-output-items.jsonl was found using the provided searchPath
+2026-02-27T12:56:42.7058349Z With the provided path, there will be 1 file uploaded
+2026-02-27T12:56:42.7060914Z ##[debug]Root artifact directory is /tmp
+2026-02-27T12:56:42.7067558Z Artifact name is valid!
+2026-02-27T12:56:42.7071810Z Root directory input is valid!
+2026-02-27T12:56:42.7095638Z ##[debug]Workflow Run Backend ID: 5113e6a8-5011-493b-9b3a-183d2ce6fd94
+2026-02-27T12:56:42.7099509Z ##[debug]Workflow Job Run Backend ID: 7bbd714f-0fb9-56fd-a649-f6263a26245b
+2026-02-27T12:56:42.7112980Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-02-27T12:56:42.8644653Z ##[debug][Response] - 200
+2026-02-27T12:56:42.8651703Z ##[debug]Headers: {
+2026-02-27T12:56:42.8652530Z ##[debug]  "content-length": "578",
+2026-02-27T12:56:42.8653523Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:42.8655035Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:42 GMT",
+2026-02-27T12:56:42.8656173Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:42.8657658Z ##[debug]  "x-github-request-id": "2433:1247DE:A8D014:BAFECD:69A1948A"
+2026-02-27T12:56:42.8658835Z ##[debug]}
+2026-02-27T12:56:42.8665340Z ::add-mask::***
+2026-02-27T12:56:42.8670204Z ::add-mask::***
+2026-02-27T12:56:42.8673895Z ##[debug]Body: {
+2026-02-27T12:56:42.8674664Z ##[debug]  "ok": true,
+2026-02-27T12:56:42.8703000Z ##[debug]  "signed_upload_url": "https://productionresultssa0.blob.core.windows.net/actions-results/5113e6a8-5011-493b-9b3a-183d2ce6fd94/workflow-job-run-7bbd714f-0fb9-56fd-a649-f6263a26245b/artifacts/5c9fd43f33e46d8bdc40fb2a3888de69ff00269004b934139fb5c2b07094dc2c.zip?se=2026-02-27T13%3A56%3A42Z&sig=***&ske=2026-02-27T16%3A29%3A31Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-02-27T12%3A29%3A31Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-02-27T12%3A56%3A37Z&sv=2025-11-05"
+2026-02-27T12:56:42.8709995Z ##[debug]}
+2026-02-27T12:56:42.8721227Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-02-27T12:56:42.8745878Z ##[debug]Zip write high watermark value 8388608
+2026-02-27T12:56:42.8750442Z ##[debug]Zip read high watermark value 8388608
+2026-02-27T12:56:42.8821298Z ##[debug]Uploading artifact zip to blob storage with maxConcurrency: 5, bufferSize: 8388608
+2026-02-27T12:56:42.8833395Z Beginning upload of artifact content to blob storage
+2026-02-27T12:56:42.9077736Z ##[debug]Zip stream for upload has ended.
+2026-02-27T12:56:42.9084396Z ##[debug]Zip stream for upload has finished.
+2026-02-27T12:56:43.0898756Z Uploaded bytes 162
+2026-02-27T12:56:43.1380190Z Finished uploading artifact content to blob storage!
+2026-02-27T12:56:43.1387777Z SHA256 digest of uploaded artifact zip is d50787f3fc30f19c570b4fccb4e51b286e5e723fd62b04033ad94597b30f639b
+2026-02-27T12:56:43.1395733Z Finalizing artifact upload
+2026-02-27T12:56:43.1410609Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-02-27T12:56:43.3153425Z ##[debug][Response] - 200
+2026-02-27T12:56:43.3161079Z ##[debug]Headers: {
+2026-02-27T12:56:43.3161979Z ##[debug]  "content-length": "39",
+2026-02-27T12:56:43.3163007Z ##[debug]  "content-type": "application/json",
+2026-02-27T12:56:43.3164104Z ##[debug]  "date": "Fri, 27 Feb 2026 12:56:43 GMT",
+2026-02-27T12:56:43.3165200Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-02-27T12:56:43.3166463Z ##[debug]  "x-github-request-id": "2430:246D9B:A7F618:BA96A1:69A1948B"
+2026-02-27T12:56:43.3168576Z ##[debug]}
+2026-02-27T12:56:43.3172509Z ##[debug]Body: {
+2026-02-27T12:56:43.3173309Z ##[debug]  "ok": true,
+2026-02-27T12:56:43.3174841Z ##[debug]  "artifact_id": "5690254274"
+2026-02-27T12:56:43.3175749Z ##[debug]}
+2026-02-27T12:56:43.3182019Z Artifact safe-output-items.zip successfully finalized. Artifact ID 5690254274
+2026-02-27T12:56:43.3186389Z Artifact safe-output-items has been successfully uploaded! Final size is 162 bytes. Artifact ID is 5690254274
+2026-02-27T12:56:43.3200474Z Artifact download URL: https://github.com/Raulito007/gatitos/actions/runs/22486925250/artifacts/5690254274
+2026-02-27T12:56:43.3265187Z ##[debug]Node Action run completed with exit code 0
+2026-02-27T12:56:43.3269924Z ##[debug]Set output artifact-id = 5690254274
+2026-02-27T12:56:43.3271684Z ##[debug]Set output artifact-digest = d50787f3fc30f19c570b4fccb4e51b286e5e723fd62b04033ad94597b30f639b
+2026-02-27T12:56:43.3274224Z ##[debug]Set output artifact-url = https://github.com/Raulito007/gatitos/actions/runs/22486925250/artifacts/5690254274
+2026-02-27T12:56:43.3276667Z ##[debug]Finishing: Upload safe output items manifest
